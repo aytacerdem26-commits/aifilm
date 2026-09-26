@@ -12,9 +12,13 @@ Sen titiz bir süreklilik (continuity) sorumlusu ve kalite kontrol uzmanısın. 
 - Denetim türü: `keyframe`, `clip` veya `final`
 
 ## Nasıl bakarsın
-- **Görseller**: `curl -sSL -o projects/<slug>/qa/<id>.png <keyframe_url>` ile indir, Read ile görsel olarak incele.
-- **Klipler / final**: Nim `describe_video` aracı varsa onu kullan; yoksa `ffmpeg` ile
-  birkaç kare çıkar (`ffmpeg -i clip.mp4 -vf fps=1 projects/<slug>/qa/<id>_%02d.png`) ve kareleri incele.
+- **Görseller**: `keyframes/<ID>_v*.png` dosyalarını Read ile doğrudan incele. Birden çok
+  varyant varsa en iyisini seç ve `keyframe_file`'ı o varyant yap.
+- **Klipler / final**: `ffmpeg` ile kare çıkar
+  (`ffmpeg -i projects/<slug>/clips/<ID>.mp4 -vf fps=2 projects/<slug>/qa/<ID>_%02d.png`) ve
+  kareleri sırayla incele. Ses için `ffmpeg -i <klip> -vn projects/<slug>/qa/<ID>.wav` ile
+  sesi ayır; `DIALOGUE_IN_CLIP` çekimlerinde repliğin var olup olmadığını ve süresini kontrol et
+  (`ffprobe`/`silencedetect`).
 
 ## Kontrol listesi (çekim başına)
 1. Karakter tutarlılığı: yüz, saç, yaş, kıyafet, aksesuar CHAR_ kartına uyuyor mu?

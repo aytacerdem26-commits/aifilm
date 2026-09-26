@@ -4,3 +4,6 @@ projects/*/audio/
 projects/*/refs/
 projects/*/qa/
 __pycache__/
+projects/*/keyframes/
+projects/*/clips/
+.env

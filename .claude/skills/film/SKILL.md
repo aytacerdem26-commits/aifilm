@@ -18,30 +18,30 @@ Argüman: `$ARGUMENTS`
   Makul varsayılanlar: 60 sn, sinematik gerçekçi, 16:9, ~dengeli bütçe.
 - `slug` üret (kısa, küçük harf, tireli), `templates/` içeriğini `projects/<slug>/` altına kopyala,
   `00_brief.md`'yi doldur.
-- `mcp__Nim__get_credit_balance` varsa bakiyeyi kontrol et ve kullanıcıya söyle.
+- `python3 scripts/genaipro.py credits` ile bakiyeyi kontrol et ve kullanıcıya söyle.
+  `GENAIPRO_API_KEY` yoksa kullanıcıdan anahtarı `.env` dosyasına
+  (`GENAIPRO_API_KEY=...`) eklemesini iste; anahtarı sohbete yazdırma, commit'leme.
 
 ## Aşamalar
 
 | # | Agent | Onay kapısı (kullanıcıya göster) |
 |---|---|---|
 | 1 | `senarist` | Logline + sahne özeti + süre → onay / revizyon notu |
-| 2 | `sanat-yonetmeni` | Stil özeti + referans görsel URL'leri → onay |
+| 2 | `sanat-yonetmeni` | Stil özeti + referans görseller (dosyaları kullanıcıya göster, SendUserFile varsa onunla) → onay |
 | 3 | `yonetmen` | Çekim listesi tablosu (ID, süre, kadraj, açıklama) + **maliyet tahmini** → onay |
 | 4 | `goruntu-uretici` | — (doğrudan 5'e geç) |
-| 5 | `sureklilik-denetcisi` (keyframe) | Anahtar kare URL'leri + denetim sonucu → onay / yeniden üret |
-| 6 | `animator` | — |
-| 7 | `sureklilik-denetcisi` (clip) | Klip URL'leri + denetim → onay / yeniden üret |
+| 5 | `sureklilik-denetcisi` (keyframe) | Anahtar kare dosyaları (kontakt tabaka) + denetim sonucu → onay / yeniden üret |
+| 6 | `animator` (Veo frames-to-video) | — |
+| 7 | `sureklilik-denetcisi` (clip) | Klip dosyaları + denetim → onay / yeniden üret |
 | 8 | `ses-tasarimcisi` | Ses seçimi (voice varyantları), müzik → onay |
 | 9 | `kurgucu` | Final dosya |
 | 10 | `sureklilik-denetcisi` (final) | Son rapor → teslim |
 
 ### Paralellik
 - 2 (referanslar) bittikten sonra, 3 ile birlikte ses tasarımcısına yalnızca ses tasarımı
-  (voice sample) işini arka planda verebilirsin.
-- 4 ve 6'da çekim sayısı 10'dan fazlaysa, çekimleri 2 gruba bölüp aynı agent'tan iki örneği
-  paralel çalıştırabilirsin; her örneğe yalnızca kendi ID listesini ver ve JSON'a yazarken
-  çakışmaması için grupların bitişini bekleyip birleştirmeyi sen yap
-  (örneklere `03_cekim_listesi.<grup>.json` kopyası üzerinde çalışmalarını söyle).
+  (ElevenLabs ses adayları / Sirius ses tasarımı) işini arka planda verebilirsin.
+- 4 ve 6'da agent'ı bölme: `genaipro.py keyframes/clips` tüm çekimleri zaten paralel gönderir
+  ve çekim listesini tek yerden günceller. Aynı anda iki üretici çalıştırma (JSON çakışır).
 
 ### Revizyon döngüsü
 Denetçi `YENİDEN ÜRET` dediği çekimleri, önerilen prompt değişiklikleriyle birlikte ilgili
@@ -55,9 +55,12 @@ kullanıcıya "kabul et / çekimi senaryodan çıkar / prompt'u elle değiştir"
 - Beklenen dönüş formatı: kısa özet + dosya yolları + harcanan kredi
 
 ## Maliyet disiplini
-- Aşama 3 sonunda tahmini toplam maliyeti hesapla: (çekim sayısı × görsel birim fiyatı) +
-  (çekim sayısı × klip birim fiyatı) + lipsync saniyeleri + voice sample'lar. Birim
-  fiyatları `mcp__Nim__models_explore` (recommend/get) sonuçlarından al.
+- genaipro'da iki ayrı havuz var:
+  - **Veo havuzu**: her görsel/video *isteği* 1 kredi (istek başına 1–4 varyant aynı fiyat).
+    Tahmin = referans istekleri + çekim sayısı (anahtar kare) + END_FRAME sayısı + çekim sayısı
+    (klip) + beklenen yeniden üretimler (~%30).
+  - **Voice AI havuzu**: karakter başına (Labs/ElevenLabs; Sirius ≈ karakter/2). Tahmin =
+    toplam V.O./diyalog karakter sayısı. Ses tasarımı önizlemeleri ücretsizdir.
 - Tahmin bütçeyi aşıyorsa: çekim sayısını azaltma / daha ucuz model / daha kısa klip seçeneklerini sun.
 
 ## status.md
@@ -65,6 +68,6 @@ Her aşamadan sonra `projects/<slug>/status.md`'yi güncelle: tamamlanan aşamal
 harcanan kredi, sıradaki adım. Böylece oturum kopsa da `/film <slug> devam` çalışır.
 
 ## Teslim
-Kullanıcıya: final dosya yolu, süre, toplam harcanan kredi, çekim URL'leri listesi ve
+Kullanıcıya: final dosya yolu, süre, toplam harcanan kredi, çekim dosyaları listesi ve
 iyileştirme önerileri (2–3 madde). Git'e yalnızca metin dosyalarını commit'le
-(`renders/`, `final/`, `audio/`, `refs/` `.gitignore`'da).
+(`renders/`, `final/`, `audio/`, `refs/`, `keyframes/`, `clips/`, `.env` `.gitignore`'da).

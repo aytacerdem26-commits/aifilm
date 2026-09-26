@@ -5,7 +5,8 @@ Kullanım:
     python3 scripts/assemble.py projects/<slug> [--no-music] [--subs] [--vertical]
 
 Beklenen yapı:
-    projects/<slug>/03_cekim_listesi.json
+    projects/<slug>/03_cekim_listesi.json    (clip_file yerel yol, yoksa clip_url indirilir;
+                                             clip_volume: klibin kendi sesi, 0 = sessiz)
     projects/<slug>/audio/vo_<SHOT_ID>.mp3   (opsiyonel, anlatıcı sesi)
     projects/<slug>/audio/music.mp3          (opsiyonel, müzik)
 Çıktı:
@@ -60,13 +61,13 @@ def download(url, dest):
         shutil.copyfileobj(r, f)
 
 
-def normalize(src, dst, dur, w, h, fps):
+def normalize(src, dst, dur, w, h, fps, volume=1.0):
     """Kırp, ölçekle/pad'le, fps'i eşitle, sessizse boş ses izi ekle."""
     vf = (f"scale={w}:{h}:force_original_aspect_ratio=decrease,"
           f"pad={w}:{h}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps={fps},format=yuv420p")
     cmd = ["ffmpeg", "-y", "-i", str(src)]
     if has_audio(src):
-        amap = ["-map", "0:v:0", "-map", "0:a:0"]
+        amap = ["-map", "0:v:0", "-map", "0:a:0", "-af", f"volume={volume}"]
     else:
         cmd += ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]
         amap = ["-map", "0:v:0", "-map", "1:a:0"]
@@ -150,9 +151,10 @@ def main():
     w, h = RES.get(ar, RES["16:9"]).get(res, RES["16:9"]["1080p"])
 
     shots = [s for s in data["shots"] if s.get("status") != "cut"]
-    missing = [s["id"] for s in shots if not s.get("clip_url")]
+    missing = [s["id"] for s in shots
+               if not (s.get("clip_file") and (proj / s["clip_file"]).exists()) and not s.get("clip_url")]
     if missing:
-        sys.exit(f"clip_url eksik çekimler: {', '.join(missing)}")
+        sys.exit(f"klibi olmayan çekimler: {', '.join(missing)}")
 
     renders, final, audio = proj / "renders", proj / "final", proj / "audio"
     renders.mkdir(exist_ok=True)
@@ -160,12 +162,15 @@ def main():
 
     norm = []
     for s in shots:
-        # URL değişirse (yeniden üretim) yeni dosya indirilsin diye adına URL özeti eklenir
-        tag = hashlib.sha1(s["clip_url"].encode()).hexdigest()[:8]
-        raw = renders / f"{s['id']}_{tag}_raw.mp4"
-        download(s["clip_url"], raw)
+        if s.get("clip_file") and (proj / s["clip_file"]).exists():
+            raw = proj / s["clip_file"]
+        else:
+            # URL değişirse (yeniden üretim) yeni dosya indirilsin diye adına URL özeti eklenir
+            tag = hashlib.sha1(s["clip_url"].encode()).hexdigest()[:8]
+            raw = renders / f"{s['id']}_{tag}_raw.mp4"
+            download(s["clip_url"], raw)
         out = renders / f"{s['id']}.mp4"
-        normalize(raw, out, float(s["duration_s"]), w, h, fps)
+        normalize(raw, out, float(s["duration_s"]), w, h, fps, s.get("clip_volume", 1.0))
         norm.append(out)
 
     transitions = [s.get("transition_in", "cut") for s in shots]

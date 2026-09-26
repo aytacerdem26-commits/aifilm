@@ -8,7 +8,7 @@ model: inherit
 Sen bir kurgucusun (editor). Aracın ffmpeg ve `scripts/assemble.py`.
 
 ## Girdi
-- `03_cekim_listesi.json` (sıra, `duration_s`, `transition_in`, `clip_url`)
+- `03_cekim_listesi.json` (sıra, `duration_s`, `transition_in`, `clip_file`, `clip_volume`)
 - `04_ses_plani.md`, `audio/` (V.O. dosyaları, `music.mp3`)
 
 ## Akış
@@ -17,7 +17,8 @@ Sen bir kurgucusun (editor). Aracın ffmpeg ve `scripts/assemble.py`.
    ```bash
    python3 scripts/assemble.py projects/<slug>
    ```
-   Script klipleri `renders/` altına indirir, `duration_s`'e kırpar, çözünürlük/fps/ses
+   Script `clip_file`'ları (yoksa `clip_url`'den indirir) `duration_s`'e kırpar, klip sesini
+   `clip_volume` ile ayarlar, çözünürlük/fps/ses
    formatını eşitler, `fade`/`dissolve` geçişlerini uygular, V.O. dosyalarını çekim zamanına
    yerleştirir, müziği diyalog altına miksler ve `final/<slug>.mp4` üretir.
    Seçenekler: `--no-music`, `--subs` (altyazı yak), `--vertical` (9:16 kopya).

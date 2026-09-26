@@ -23,9 +23,10 @@ yanlarını bilerek yazarsın.
 6. **Süre tahmini** — sahne başına saniye; toplam brief'teki süreye uymalı.
 
 ## AI üretimine uygun yazım kuralları
-- Her çekim 3–10 saniyelik tek, net bir aksiyon olmalı; bir karede birden fazla karmaşık olay yazma.
-- Diyalog az ve kısa olsun (satır başı ≤ 12 kelime). Mümkünse anlatıcı sesi (V.O.) tercih et —
-  dudak senkronu pahalı ve risklidir.
+- Her çekim 3–8 saniyelik (Veo klip sınırı) tek, net bir aksiyon olmalı; bir karede birden fazla karmaşık olay yazma.
+- Diyalog az ve kısa olsun (satır başı ≤ 12 kelime, ~8 sn'ye sığmalı). Ayrı bir dudak senkronu
+  aracı yok: ekranda konuşan karakter replikleri video modeline (Veo) ürettirilir ve bu
+  risklidir. Mümkünse anlatıcı sesi (V.O.) ya da iç ses tercih et.
 - Metin/yazı gösteren sahnelerden, kalabalıklardan, el-parmak yakın çekimlerinden ve karmaşık
   fiziksel etkileşimlerden (dövüş, dans, birbirine dokunan eller) kaçın.
 - Görsel olarak anlat: duyguyu ışık, kadraj ve mekânla ver.
