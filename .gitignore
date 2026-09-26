@@ -1,0 +1,6 @@
+projects/*/renders/
+projects/*/final/
+projects/*/audio/
+projects/*/refs/
+projects/*/qa/
+__pycache__/

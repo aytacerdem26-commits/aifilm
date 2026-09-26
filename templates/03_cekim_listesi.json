@@ -1,0 +1,29 @@
+{
+  "title": "Örnek Film",
+  "slug": "ornek-film",
+  "aspect_ratio": "16:9",
+  "resolution": "1080p",
+  "fps": 24,
+  "shots": [
+    {
+      "id": "S01",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_type": "wide",
+      "camera": "slow dolly in",
+      "description_tr": "Şafakta sisli bir sahil kasabası; deniz feneri uzakta yanıp sönüyor.",
+      "characters": [],
+      "location": "LOC_HARBOR",
+      "refs": [],
+      "image_prompt": "Wide establishing shot of a small misty harbor town at dawn, a lighthouse blinking in the distance, fishing boats resting on calm water. 35mm film, anamorphic, soft grain, muted teal and amber palette",
+      "video_prompt": "Slow dolly in toward the harbor, gentle waves, drifting fog, lighthouse beam slowly rotating",
+      "dialogue": null,
+      "voiceover": "Her sabah aynı ışık, aynı bekleyiş.",
+      "transition_in": "fade",
+      "keyframe_url": null,
+      "clip_url": null,
+      "status": "planned",
+      "notes": ""
+    }
+  ]
+}
