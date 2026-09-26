@@ -2,7 +2,7 @@
 
 | # | Aşama | Durum | Not |
 |---|---|---|---|
-| 1 | Senaryo | onay bekliyor | 16 çekim, 118 sn, 3 mekân, V.O. ağırlıklı |
+| 1 | Senaryo | onay bekliyor (rev. 2, İngilizce) | 16 çekim, 118 sn, 3 mekân, V.O. ağırlıklı |
 | 2 | Stil rehberi + referanslar | bekliyor | |
 | 3 | Çekim listesi | bekliyor | |
 | 4 | Anahtar kareler | bekliyor | |
