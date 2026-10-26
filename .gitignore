@@ -14,3 +14,6 @@ projects/*/keyframes/*
 projects/*/clips/*
 projects/*/audio/*
 !projects/*/*/genaipro_tasks.jsonl
+projects/*/qa/*
+projects/*/renders/*
+projects/*/final/*

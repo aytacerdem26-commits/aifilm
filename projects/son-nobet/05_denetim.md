@@ -87,3 +87,65 @@ kopya olmalı); S05/S10/S11/S12 yedekleri için de `_old` kopyası önerilir.
 
 Not: S13 düzenlemesi başarısız olursa (kompozisyon kayarsa), yeni başlangıç karesinden bitiş karesi de
 yeniden üretilmeli (+1 kredi).
+
+---
+
+## Anahtar kare denetimi — 2. tur (2026-10-26)
+
+Kapsam: yalnız S05, S10, S11, S12, S13 (yeniden üretim/düzenleme). 10 yeni varyant Read ile incelendi,
+eski sürümler (`keyframes/old/`) karşılaştırma için tutuldu. Kontakt tabaka (16 çekim, S13/S15
+başlangıç + bitiş = 18 kare): `qa/kontakt_keyframes_v2.jpg`.
+
+### Özet
+
+- **ONAY (5):** S05 (v2), S10 (v2), S11 (v2*), S12 (v2*), S13 (edit_v1 + end_v2) → 16/16 `keyframe_approved`.
+- **\* Klipten önce kredisiz düzeltme şart (S11, S12):** huzme rengi (aşağıda). Yeniden üretim gerekmiyor, 0 kredi.
+- JSON: `keyframe_file` / `keyframe_url` seçilen varyanta çekildi, `notes`'a 2. tur gerekçesi eklendi; JSON geçerli,
+  tüm dosya yolları mevcut, toplam süre 118 sn.
+
+### En kritik 3 sorun
+
+1. **S11/S12 fener huzmesi soğuk beyaz-mavi (hue ~205°)** — S10 ve S13'te amber (hue ~28°). Huzme kadrajın yalnız
+   ~%1–1.5'i (S10'daki amber huzme ~%11) ve doygunluğu düşük, ama S10→S11 ve S12→S13 kesmelerinde amber→beyaz→amber
+   sıçraması kontakt tabakada açıkça görünüyor; ayrıca filmin S15'teki "sıcak ışık → soğuk elektrik" dönüşümünü
+   erken ele veriyor. Klipte huzme döndüğü için daha da dikkat çekecek. **İzleyicinin fark edeceği bir hata.**
+   Çözüm kredisiz: `scripts/warm_beam.py` ile yalnız huzme kutusu amber'e çekilir (test önizlemesi:
+   `qa/S11_S12_huzme_amber_onizleme.png`, temiz sonuç):
+   - `python3 -I scripts/warm_beam.py projects/son-nobet/keyframes/S11_v2.png projects/son-nobet/keyframes/S11_v2_warm.png 180 30 820 170`
+   - `python3 -I scripts/warm_beam.py projects/son-nobet/keyframes/S12_v2.png projects/son-nobet/keyframes/S12_v2_warm.png 740 40 636 120`
+   - Sonra `keyframe_file` → `*_v2_warm.png` (görüntü üretici/yapımcı). `video_prompt`'lara ek:
+     S11 *"the lighthouse beam behind him glows warm amber (#F2A541) as it turns, never white"*,
+     S12 *"the distant lighthouse beam glows warm amber (#F2A541), never white"*.
+   - Kök neden: S11/S12 `image_prompt`'unda yalnız "the lighthouse beam sweeping across the water" yazıyor, "warm" yok,
+     ve cape_night referansı çıkarıldı. İleride bu iki çekim yeniden üretilirse: *"the lighthouse beam is warm amber
+     (#F2A541), no white light anywhere"*.
+2. **S10 ve S11 benzer arkadan kadraj** (kule solda, Nuri arkadan). S11'de Nuri ~1.4x büyük ve küre giriyor, atlama
+   kesmesi gibi durmuyor; kurgucu S10'u Nuri hareket hâlindeyken kesmeli. Red sebebi değil.
+3. **Filigran:** S05 v2 ve S11 v2'de ✦ var (iki varyantta da); S13 start filigransız ama end_v2 filigranlı.
+   Kurgucu bu üç klipte 1. turdaki `delogo` ayarını uygulamalı.
+
+### Küre sürekliliği S11 → S12 → S13
+
+| Çekim | Konum | Ölçek | Yorum |
+|---|---|---|---|
+| S11 v2 | Ufkun altında, ~20 m açıkta, kadraj sağı | Nuri'nin kafasından küçük (~35 px / kafa ~60 px) | Uzaktan yaklaşan kafa boyu küre — doğru |
+| S12 v2 | Kayaların dibinde, dalgaların üstü, kadraj sol altı | Kafadan biraz büyük (~140 / ~120 px) | Kameraya yakın; ters açıda Nuri'nin sağında → S11 ile tutarlı |
+| S13 edit_v1 | ~2 m açıkta suyun üstü, fenerin önü-altı | Kafa/fener boyu (~80 px) | S12 ile aynı mesafe hissi; ufukta disk yok |
+
+Üçünde de küre suyun hemen üstünde, altın yansımalı; ay boyu disk sorunu giderildi. Geografi (kule solda, deniz sağda;
+S12 ters açıda kule sağda) S10–S13 boyunca tutarlı.
+
+### Çekim başına karar
+
+| ID | Seçilen | Karar | Gerekçe |
+|---|---|---|---|
+| S05 | v2 | ONAY | Ufukta küçük sıcak nokta + suda altın iz; ay diski, kule, cam yok; korkuluk temiz. v1'de korkuluk hizasında anlamsız köpük bandı. ✦ filigran. |
+| S10 | v2 | ONAY | Tek Nuri, arkadan başı eğik kayalarda denize iniyor; kemerli kapı, amber huzme. ~%55–60 yükseklik ama kuleden önde olduğu için perspektif doğal. v1: Nuri kuleden büyük, ölçek bozuk. |
+| S11 | v2 | ONAY (+kredisiz huzme düzeltmesi) | Tek kişi, küre ufkun altında, kafa boyundan küçük, dalga tepeleri altın. Huzme soğuk beyaz → warm_beam. v1: kule sağda (geografi ters), küre ufukta ay gibi. ✦ filigran. |
+| S12 | v2 | ONAY (+kredisiz huzme düzeltmesi) | Önden bel üstü, aşağı bakıyor; sakal altı, yanak ve yaka sıcak altın — alttan ışık okunuyor (kısmi ama yeterli; video_prompt titreşimi güçlendiriyor). Palto açık, filigran yok. Huzme soğuk beyaz → warm_beam. v1: yana dönük, yüz önden aydınlık. |
+| S13 | edit_v1 + end_v2 | ONAY | Kadraj/poz end_v2 ile birebir; küre fener boyunda, kayaların dibinde; huzme amber. edit_v2'de küre fenerin ~2 katı. |
+
+### Yapımcıya
+
+- Onaylanan: S01–S16 (16/16). Reddedilen: yok. Ek kredi: 0.
+- Klip üretiminden önce S11/S12 için iki `warm_beam.py` komutu + `keyframe_file` değişikliği + iki `video_prompt` eki yapılmalı.
