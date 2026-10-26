@@ -140,8 +140,13 @@ kelimeleri kullanılmaz; yerine "holding a pistol, raises the pistol, muzzle fla
 
 ## 6. Referanslar
 
-| Blok | Dosya | Not |
+| Blok | Dosya | Kaynak / not |
 |---|---|---|
-| `CHAR_RIZA` | `refs/riza.png` | _(üretim sonrası doldurulacak)_ |
-| `CHAR_KENAN` | `refs/kenan.png` | |
-| `LOC_MEYHANE` + `PROP_PISTOL` | `refs/meyhane.png` | |
+| `CHAR_RIZA` | `refs/riza.png` | Görev `aa9d1571`, varyant 2 (nano_banana_pro, 9:16). Belden yukarı, cepheden. Yara izi **sol kaşta** (görüntüde sağda) doğru taraf, ama ince ve az belirgin. Prompt'ta yara izi her zaman açıkça yazılmalı. |
+| `CHAR_KENAN` | `refs/kenan.png` | Görev `a8896e9e`, varyant 2, `--ref riza.png`. **Yatay aynalandı** (`-flop`): 4 varyantın hepsinde traş çizgisi sol kulağın üstündeydi, aynalamayla sağ kulağa geçti. Orijinali `refs/alts/kenan_v2.png`. |
+| `LOC_MEYHANE` + `PROP_PISTOL` | `refs/meyhane.png` | Görev `5c95f92e`, varyant 3, `--ref riza.png`. Ortada masa, yan yatan tabanca, iki rakı bardağı, etiketsiz şişe, dumanlı kül tablası; arkada buğulu vitrin ve kırmızı/mavi neon. Vitrindeki harf benzeri neon lekesi yerel bulanıklaştırmayla silindi. Orijinali `refs/alts/meyhane_v3.png`. |
+
+Notlar:
+- İndirilen dosyalar `.png` uzantılı ama içerik **JPEG**. Araçlar için sorun değil, ama format kontrolü yapan bir adım olursa bunu bilin.
+- Diğer varyantlar `refs/alts/` altında. Görev kayıtları `refs/genaipro_tasks.jsonl` dosyasında (`fetch` ile kredisiz yeniden indirilebilir).
+- Referans görsellerinde çatışma sonrası hâl (toz, cam, devrik masa) **yok**. Bu hâl prompt'a `LOC_MEYHANE_AFTER` ve toz eki ile eklenir.
