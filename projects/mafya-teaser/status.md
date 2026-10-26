@@ -3,7 +3,7 @@
 | # | Aşama | Durum | Not |
 |---|---|---|---|
 | 1 | Senaryo | onaylandı (rev. 2, çatışmalı) | HESAP — 6 çekim, 30 sn, 3 replik |
-| 2 | Stil rehberi + referanslar | onay bekliyor | refs/riza, kenan (aynalandı), meyhane (neon harf lekesi bulanıklaştırıldı) |
+| 2 | Stil rehberi + referanslar | onaylandı | refs/riza, kenan (aynalandı), meyhane (neon harf lekesi bulanıklaştırıldı) |
 | 3 | Çekim listesi | bekliyor | |
 | 4 | Anahtar kareler | bekliyor | |
 | 5 | Kare denetimi | bekliyor | |

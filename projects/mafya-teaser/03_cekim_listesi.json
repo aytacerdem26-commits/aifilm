@@ -1,0 +1,173 @@
+{
+  "title": "HESAP",
+  "slug": "mafya-teaser",
+  "aspect_ratio": "9:16",
+  "resolution": "1080p",
+  "fps": 24,
+  "shots": [
+    {
+      "id": "S01",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_type": "close-up",
+      "camera": "eye-level, locked off, very slow push-in",
+      "description_tr": "Rıza yakın plan, göz hizası, tungsten ışığında kımıldamadan karşısına (kadraj dışındaki Kenan'a) bakıyor. Ön planda flu: masada yan yatan siyah tabanca ve rakı bardağı. Sakin, alçak sesle repliğini söyler; sonunda dışarıdan yaklaşan araba motoru duyulur. Yara izi SOL kaşta.",
+      "characters": [
+        "CHAR_RIZA"
+      ],
+      "location": "LOC_MEYHANE",
+      "refs": [
+        "refs/riza.png",
+        "refs/meyhane.png"
+      ],
+      "image_prompt": "Vertical close-up at eye level of RIZA seated at the table, face in the upper third of the frame, looking straight ahead past the camera at someone off-screen, lips closed, perfectly still; the thin pale scar is on his LEFT eyebrow (screen right). In the soft out-of-focus foreground at the bottom of the frame: the black pistol lying on its side on the white tablecloth next to a tall raki glass, rendered as round bokeh shapes. RIZA, a 66-year-old Turkish man, broad-shouldered and slightly heavy-set; short fully silver-white hair, a neatly trimmed short white beard, deep horizontal forehead lines, heavy hooded eyelids, dark brown eyes, a thin old pale scar cutting vertically through his left eyebrow; calm, cold, unreadable expression; wearing a charcoal grey wool three-piece suit with matching waistcoat, a crisp white dress shirt with no tie and the top button open, a dark burgundy pocket square in the breast pocket; the interior of an old closed-for-the-night Istanbul meyhane tavern, dark carved wooden wall panelling, wooden shelves on the back wall lined with empty raki and wine bottles, other tables in the background with chairs turned upside down on them; a single set table in the centre with a white linen tablecloth, two tall slim raki glasses, an open raki bottle with no label text, small meze plates, a glass ashtray with a thin curl of cigarette smoke; a large fogged shop window behind the table glowing with diffuse red and blue neon light from outside, no visible sign and no lettering; a black matte semi-automatic pistol, plain and unbranded, no engravings, no markings lying on its side in the centre of the table; night, a single low-hanging tungsten lamp above the table casting a narrow warm amber cone, soft red and blue neon glow seeping through a fogged window behind, everything else falls into deep shadow. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "RIZA (the 66-year-old silver-haired man, thin pale scar through his LEFT eyebrow) sits completely still and stares straight ahead past the camera, his eyes cold and steady; he slowly parts his lips and speaks quietly, then holds the stare. The camera very slowly pushes in on his face. A thin curl of cigarette smoke drifts through the narrow tungsten light cone; the out-of-focus pistol and raki glass in the foreground stay motionless. Sound: faint electrical hum of the tungsten lamp, distant low city rumble; at the very end a car engine is heard approaching from outside. No music. The old man says in Turkish, in a low gravelly voice: \"Bu gece biri beni sattı, Kenan.\" Avoid: no blood, no wounds, no gore, no bodies.",
+      "video_model": "omni",
+      "omni_duration": 6,
+      "dialogue": "RIZA: \"Bu gece biri beni sattı, Kenan.\"",
+      "voiceover": null,
+      "clip_volume": 1.0,
+      "transition_in": "fade",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2), kurguda 5 sn'ye kırpılır. Konuşan yüz yakın, dudak senkronu için ağız net. Yedek (silah filtreye takılırsa): tabancayı kadrajdan çıkar, ön planda yalnızca bardak + kül tablası."
+    },
+    {
+      "id": "S02",
+      "scene": 1,
+      "duration_s": 4,
+      "shot_type": "medium",
+      "camera": "static with a sharp handheld jolt on impact",
+      "description_tr": "Rıza'nın arkasındaki buğulu vitrin, orta plan; Rıza ön planda flu, sırtı kameraya (yüzü görünmez). Sert beyaz far ışığı buğulu camı bir anda doldurur, ardından cam içeri doğru patlar, parçalar tungsten ışığında parlayarak saçılır.",
+      "characters": [
+        "CHAR_RIZA"
+      ],
+      "location": "LOC_MEYHANE",
+      "refs": [
+        "refs/riza.png",
+        "refs/meyhane.png"
+      ],
+      "image_prompt": "Vertical medium shot of the large fogged front window of the tavern behind the table, the window still intact; in the out-of-focus foreground at the bottom of the frame, the back of RIZA's silver-white head and broad charcoal-suited shoulders seated at the table, his face not visible (his scar is on his LEFT eyebrow, hidden from this angle). A harsh cold white car headlight glare is just beginning to bloom through the fog on the glass from outside, overpowering the red and blue neon. RIZA, a 66-year-old Turkish man, broad-shouldered and slightly heavy-set; short fully silver-white hair, a neatly trimmed short white beard, deep horizontal forehead lines, heavy hooded eyelids, dark brown eyes, a thin old pale scar cutting vertically through his left eyebrow; calm, cold, unreadable expression; wearing a charcoal grey wool three-piece suit with matching waistcoat, a crisp white dress shirt with no tie and the top button open, a dark burgundy pocket square in the breast pocket; the interior of an old closed-for-the-night Istanbul meyhane tavern, dark carved wooden wall panelling, wooden shelves on the back wall lined with empty raki and wine bottles, other tables in the background with chairs turned upside down on them; a single set table in the centre with a white linen tablecloth, two tall slim raki glasses, an open raki bottle with no label text, small meze plates, a glass ashtray with a thin curl of cigarette smoke; a large fogged shop window behind the table glowing with diffuse red and blue neon light from outside, no visible sign and no lettering; night, a single low-hanging tungsten lamp above the table casting a narrow warm amber cone, soft red and blue neon glow seeping through a fogged window behind, everything else falls into deep shadow. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "The cold white car headlight glare outside rapidly grows until it floods the whole fogged window with white light, then the large window pane shatters and bursts inward into the room, glittering glass fragments flying through the warm tungsten light and raining down onto the floor. RIZA (the 66-year-old silver-haired man, thin pale scar through his LEFT eyebrow) stays seated in the soft foreground with his back to the camera, face never visible. The camera is static and jolts once sharply at the moment of the shatter. Sound design: tyres screeching outside, a loud glass explosion, shards tinkling and raining onto the wooden floor. No speech, no music. Avoid: no blood, no wounds, no gore, no bodies.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.9,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Veo (1 kredi). Anahtar kare cam sağlamken (patlama klipte); bu yüzden LIGHT_RAID yerine LIGHT_CALM + far parıltısı kullanıldı (LIGHT_RAID 'broken front window' içerir). Risk: cam dışarı patlayabilir -> yedek: far ışığı + çatlaklar, patlama sesi kadraj dışı."
+    },
+    {
+      "id": "S03",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_type": "medium",
+      "camera": "handheld, slight shake, eye level",
+      "description_tr": "Kenan orta plan, karşıdan. Ayağa fırlar, masayı kameraya doğru yan devirir; bardaklar, şişe ve tabaklar uçup kırılır. Devirirken \"Yere yat!\" diye bağırır. Kadraj dışında ilk silah sesleri. Traş çizgisi SAĞ kulak üstünde.",
+      "characters": [
+        "CHAR_KENAN"
+      ],
+      "location": "LOC_MEYHANE",
+      "refs": [
+        "refs/kenan.png",
+        "refs/meyhane.png"
+      ],
+      "image_prompt": "Vertical medium shot from across the table of KENAN in the instant he springs up from his chair, half-standing, both hands gripping the edge of the set table, mouth open mid-shout, eyes wide and alert toward the camera side; the short shaved line is above his RIGHT ear (screen left). The set table with glasses, raki bottle and meze plates fills the lower third; behind him the dark wooden panelling and upturned chairs, the entrance door at his right back in shadow; harsh white headlight now hits him from the shattered window behind the camera. KENAN, a 34-year-old Turkish man, lean and athletic; short black hair slicked straight back, a short black two-to-three-day stubble beard, sharp high cheekbones, light brown eyes, a single short shaved line cut into the hair just above his right ear; alert, controlled expression; wearing a black leather jacket over a black fitted turtleneck sweater; the interior of an old closed-for-the-night Istanbul meyhane tavern, dark carved wooden wall panelling, wooden shelves on the back wall lined with empty raki and wine bottles, other tables in the background with chairs turned upside down on them; a single set table in the centre with a white linen tablecloth, two tall slim raki glasses, an open raki bottle with no label text, small meze plates, a glass ashtray with a thin curl of cigarette smoke; a large fogged shop window behind the table glowing with diffuse red and blue neon light from outside, no visible sign and no lettering; night, harsh cold white car headlight beams cutting through the broken front window into thick smoke and dust, the tungsten lamp above swinging and flickering, red and blue neon glow at the edges, sharp light-and-shadow contrast. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "KENAN (the 34-year-old man with slicked-back black hair, short shaved line above his RIGHT ear) springs up from his chair, shouts, and with both hands heaves the table up and tips it over on its side toward the camera; raki glasses, the bottle and small plates fly off and smash. The handheld camera shakes slightly and stays on him at eye level. Dust and smoke swirl in the white headlight beams, the tungsten lamp above starts to swing. Sound: his shout, the heavy wooden thud of the table toppling, glass and bottle smashing, the first sharp pops of gunfire off-screen. No music. The younger man (KENAN) shouts in Turkish, sharp and urgent: \"Yere yat!\" Avoid: no blood, no wounds, no gore, no bodies.",
+      "video_model": "omni",
+      "omni_duration": 6,
+      "dialogue": "KENAN: \"Yere yat!\"",
+      "voiceover": null,
+      "clip_volume": 1.0,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2), kurguda 5 sn. Bağırış kısa, senkron hatası tolere edilir. Risk (fizik): masa/bardaklar bozulabilir -> yedek: Kenan bağırarak öne atılır, devrilme yalnızca sesle (kesme masa kalkmadan)."
+    },
+    {
+      "id": "S04",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_type": "medium-wide two-shot, low angle",
+      "camera": "low handheld near floor level, small jolts",
+      "description_tr": "Yere yakın alçak kamera; devrilmiş masanın arkasında Rıza ve Kenan sırtları masaya dayalı, yan yana çömelmiş. Üstlerinde arka duvar rafındaki şişeler art arda patlar, cam ve tahta kıymıkları yağar. Kenan yerden kaptığı tabancayı göğsüne bastırmış, nefes nefese; duvarda namlu alevlerinin beyaz yansımaları. İkisinin de saçında/omzunda toz ve cam kırıntısı. Yara izi Rıza'da SOL kaş, traş çizgisi Kenan'da SAĞ kulak üstü.",
+      "characters": [
+        "CHAR_RIZA",
+        "CHAR_KENAN"
+      ],
+      "location": "LOC_MEYHANE_AFTER",
+      "refs": [
+        "refs/riza.png",
+        "refs/kenan.png",
+        "refs/meyhane.png"
+      ],
+      "image_prompt": "Vertical low-angle two-shot from near floor level: RIZA and KENAN crouched side by side with their backs pressed against the underside of the overturned table, Kenan in front, nearer the camera, clutching the pistol flat against his chest, breathing hard; Rıza behind him, jaw set, eyes narrowed; Rıza's scar is on his LEFT eyebrow, Kenan's shaved line is above his RIGHT ear. Above them on the back wall, bottles on the shelves frozen mid-burst, glass fragments and wood splinters hanging in the air, flickering white flashes reflected on the wooden panelling. RIZA, a 66-year-old Turkish man, broad-shouldered and slightly heavy-set; short fully silver-white hair, a neatly trimmed short white beard, deep horizontal forehead lines, heavy hooded eyelids, dark brown eyes, a thin old pale scar cutting vertically through his left eyebrow; calm, cold, unreadable expression; wearing a charcoal grey wool three-piece suit with matching waistcoat, a crisp white dress shirt with no tie and the top button open, a dark burgundy pocket square in the breast pocket, fine dust and tiny glass shards on his hair and shoulders; KENAN, a 34-year-old Turkish man, lean and athletic; short black hair slicked straight back, a short black two-to-three-day stubble beard, sharp high cheekbones, light brown eyes, a single short shaved line cut into the hair just above his right ear; alert, controlled expression; wearing a black leather jacket over a black fitted turtleneck sweater, fine dust and tiny glass shards on his hair and shoulders; the interior of an old Istanbul meyhane tavern after a raid, dark carved wooden wall panelling, shattered bottles on the back wall shelves, the central table knocked over on its side, the white linen tablecloth on the floor, broken glass and wood splinters scattered across the floor, the large front window shattered, gunpowder smoke and dust hanging in the air, no visible sign and no lettering; a black matte semi-automatic pistol, plain and unbranded, no engravings, no markings held in Kenan's right hand; night, harsh cold white car headlight beams cutting through the broken front window into thick smoke and dust, the tungsten lamp above swinging and flickering, red and blue neon glow at the edges, sharp light-and-shadow contrast. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "RIZA (the 66-year-old silver-haired man, thin pale scar through his LEFT eyebrow) and KENAN (the 34-year-old man with slicked-back black hair, short shaved line above his RIGHT ear) stay crouched side by side behind the overturned table, flinching and ducking their heads as the bottles on the shelves above them burst one after another, glass shards and wood splinters raining down onto their hair and shoulders; Kenan keeps the pistol pressed to his chest and breathes hard. Firecracker-bright white muzzle-flash reflections flicker across the wooden wall. The low handheld camera stays near the floor with small jolts. Sound design: rapid bursts of gunfire, bottles exploding, glass raining down, dull thuds of impacts into wood. No speech, no music. Avoid: no blood, no wounds, no gore, no bodies.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.9,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Veo (1 kredi). Süreklilik: masa devrik, toz/cam iki karakterde, tabanca Kenan'ın sağ elinde. Risk (orta): silah tutan el bozulabilir -> yedek: silahı göstermeden, ikisi çömelmiş + namlu alevi yansımaları."
+    },
+    {
+      "id": "S05",
+      "scene": 1,
+      "duration_s": 5,
+      "shot_type": "medium close-up, side profile",
+      "camera": "handheld, tight on profile, slight recoil shake",
+      "description_tr": "Kenan yakın-orta plan, SAĞ profilden (traş çizgisi kameraya dönük). Masanın kenarından doğrulur, kolu kadraj dışına (kapıya doğru) uzanır; tabanca kadrajda görünmez. İki beyaz namlu alevi çakması yüzünü ve arkadaki duvarı aydınlatır. Siluet görünmez; dışarıdan bağırış ve ağır düşme sesi, ardından ani sessizlik ve kulak çınlaması. (Senaristin yedeği: namlu alevi yansıması + düşme yalnızca sesle.)",
+      "characters": [
+        "CHAR_KENAN"
+      ],
+      "location": "LOC_MEYHANE_AFTER",
+      "refs": [
+        "refs/kenan.png",
+        "refs/meyhane.png"
+      ],
+      "image_prompt": "Vertical medium close-up in right-side profile of KENAN rising from behind the edge of the overturned table, his right arm extended forward out of the frame edge so the pistol itself is not visible, eyes narrowed and focused off-screen toward the entrance door; the short shaved line above his RIGHT ear faces the camera. His face is lit by a single cold white flash from out of frame, the wall behind him catching the same white glare, smoke and dust in the air. KENAN, a 34-year-old Turkish man, lean and athletic; short black hair slicked straight back, a short black two-to-three-day stubble beard, sharp high cheekbones, light brown eyes, a single short shaved line cut into the hair just above his right ear; alert, controlled expression; wearing a black leather jacket over a black fitted turtleneck sweater, fine dust and tiny glass shards on his hair and shoulders; the interior of an old Istanbul meyhane tavern after a raid, dark carved wooden wall panelling, shattered bottles on the back wall shelves, the central table knocked over on its side, the white linen tablecloth on the floor, broken glass and wood splinters scattered across the floor, the large front window shattered, gunpowder smoke and dust hanging in the air, no visible sign and no lettering; night, harsh cold white car headlight beams cutting through the broken front window into thick smoke and dust, the tungsten lamp above swinging and flickering, red and blue neon glow at the edges, sharp light-and-shadow contrast. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "KENAN (the 34-year-old man with slicked-back black hair, short shaved line above his RIGHT ear), seen in right-side profile, rises from behind the edge of the overturned table, his right arm extended forward out of frame; two bright white firecracker-like muzzle-flash glows from just off-frame light up his face and the wall behind him, his shoulder jolting slightly with each flash; then he freezes, holding still in the smoke. No other person is visible. The handheld camera stays tight on his profile with slight shake. Sound design: two loud close gunshots, a distant shout from outside, a heavy thud of something falling, then sudden silence with a high-pitched ear ringing. No speech, no music. Avoid: no blood, no wounds, no gore, no bodies.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 1.0,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Veo (1 kredi). EN RİSKLİ çekim; doğrudan yedek kadraj kullanıldı: silah ve siluet kadraj dışı, yalnızca namlu alevi ışığı yüzde ve duvarda, düşme sesle. Hâlâ reddedilirse son çare: duvardaki gölgesinde namlu alevi. Ses: kulak çınlaması kurguda S06 başına taşınabilir."
+    },
+    {
+      "id": "S06",
+      "scene": 1,
+      "duration_s": 6,
+      "shot_type": "close-up, low angle (Rıza's POV)",
+      "camera": "low angle from floor level, nearly static, very slow push-in",
+      "description_tr": "Alt açı, yerdeki Rıza'nın bakış açısı. Kenan yakın plan, ayakta, devrilmiş masanın üstünden aşağı bakıyor; yüzü net, sallanan lamba yüzünü bir aydınlatıp bir karartıyor. Arkasında kırık vitrinden giren far ışığı, duman ve toz. Tabanca sağ elinde, kadrajın alt kenarında aşağıya (kadraj dışındaki Rıza'ya) doğru eğik; kameraya DOĞRULTULMAZ. Sakin, neredeyse kibar: \"Hesap kapandı, Reis.\" Traş çizgisi SAĞ kulak üstünde. Son ~1 sn üzerine/sonrasına kurguda \"HESAP — Yakında\" kartı.",
+      "characters": [
+        "CHAR_KENAN"
+      ],
+      "location": "LOC_MEYHANE_AFTER",
+      "refs": [
+        "refs/kenan.png",
+        "refs/meyhane.png"
+      ],
+      "image_prompt": "Vertical low-angle close-up from floor level, from the point of view of someone lying on the floor: KENAN standing over the edge of the overturned table, looking calmly down toward the camera's lower edge, face sharp and fully visible in the upper third, a faint cold almost polite expression, lips closed; the short shaved line is above his RIGHT ear. His right hand holding the pistol is at the bottom-left edge of the frame, angled downward toward the floor, NOT pointed at the camera. Behind him white headlight beams through the shattered window, smoke and dust, the swinging tungsten lamp half-lighting his face. KENAN, a 34-year-old Turkish man, lean and athletic; short black hair slicked straight back, a short black two-to-three-day stubble beard, sharp high cheekbones, light brown eyes, a single short shaved line cut into the hair just above his right ear; alert, controlled expression; wearing a black leather jacket over a black fitted turtleneck sweater, fine dust and tiny glass shards on his hair and shoulders; the interior of an old Istanbul meyhane tavern after a raid, dark carved wooden wall panelling, shattered bottles on the back wall shelves, the central table knocked over on its side, the white linen tablecloth on the floor, broken glass and wood splinters scattered across the floor, the large front window shattered, gunpowder smoke and dust hanging in the air, no visible sign and no lettering; a black matte semi-automatic pistol, plain and unbranded, no engravings, no markings held in Kenan's right hand; night, harsh cold white car headlight beams cutting through the broken front window into thick smoke and dust, the tungsten lamp above swinging and flickering, red and blue neon glow at the edges, sharp light-and-shadow contrast. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "KENAN (the 34-year-old man with slicked-back black hair, short shaved line above his RIGHT ear) stands still above the overturned table, looking calmly down past the lower edge of the frame; the swinging tungsten lamp above alternately lights and darkens his face. His right hand holds the pistol low at the bottom edge of the frame, angled downward toward the floor, never pointed at the camera. Smoke and dust drift through the white headlight beams behind him. The camera, low near the floor, is nearly static with a very slow push-in on his face. Sound: the ear ringing fades out, the lamp creaks as it swings, a footstep crunches on broken glass, a quiet metallic click off-screen, a faint distant siren. No music. The younger man (KENAN) says in Turkish, calmly and almost politely, in a clear mid-range voice: \"Hesap kapandı, Reis.\" Avoid: no blood, no wounds, no gore, no bodies.",
+      "video_model": "omni",
+      "omni_duration": 6,
+      "dialogue": "KENAN: \"Hesap kapandı, Reis.\"",
+      "voiceover": null,
+      "clip_volume": 1.0,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2). Senaristin güvenli yedeği uygulandı: silah kameraya doğrultulmuyor, kadraj altında aşağı eğik; Kenan'ın yüzü net (dudak senkronu). Kurgu: çekimden sonra siyah ekran 'HESAP — Yakında' kartı (üretim gerektirmez). Hâlâ reddedilirse: silah tamamen kadraj dışı, horoz sesi ekran dışı."
+    }
+  ]
+}
