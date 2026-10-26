@@ -9,7 +9,7 @@
 | 5 | Kare denetimi | 11 onay; S05, S10, S11, S12, S13 yeniden üretildi → ikinci denetim | 05_denetim.md |
 | 6 | Klipler | bekliyor | |
 | 7 | Klip denetimi | bekliyor | |
-| 8 | Ses | V.O. hazır (David, multilingual_v2, speed 0.8 / stab 0.6); müzik eksik | 563 ses karakteri |
+| 8 | Ses | V.O. onaylandı (David, multilingual_v2, speed 0.8 / stab 0.6); müzik eksik | 563 ses karakteri |
 | 9 | Kurgu | bekliyor | |
 | 10 | Final denetim | bekliyor | |
 
