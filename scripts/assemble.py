@@ -91,6 +91,8 @@ def join_clips(clips, transitions, out, fps):
     # Tüm girişleri aynı zaman tabanına getir (xfade/concat bunu şart koşar)
     fparts = [f"[{i}:v]setpts=PTS-STARTPTS,fps={fps},settb=1/{fps}[vi{i}];[{i}:a]asetpts=PTS-STARTPTS[ai{i}]"
               for i in range(len(clips))]
+    if transitions[0] in ("fade", "dissolve"):  # ilk çekim siyahtan açılsın
+        fparts[0] = fparts[0].replace("[vi0]", f",fade=t=in:st=0:d={XFADE_S * 2}[vi0]", 1)
     vlast, alast, t = "vi0", "ai0", durs[0]
     for i in range(1, len(clips)):
         tr = transitions[i]
@@ -120,14 +122,22 @@ def srt_time(s):
     return f"{h:02}:{m:02}:{sec:02},{ms:03}"
 
 
-def write_srt(shots, starts, path):
+def write_srt(shots, starts, path, audio_dir=None):
+    """Altyazı: V.O. dosyası varsa konuşma süresi + 0.8 sn (en az 2 sn), her durumda bir sonraki
+    çekim başlamadan biter (geçişlerde iki satır üst üste binmesin)."""
     lines, n = [], 1
-    for shot, st in zip(shots, starts):
+    for i, (shot, st) in enumerate(zip(shots, starts)):
         text = shot.get("dialogue") or shot.get("voiceover")
         if not text:
             continue
+        a = st + 0.2
         end = st + float(shot.get("_dur", shot["duration_s"])) - 0.1
-        lines += [str(n), f"{srt_time(st + 0.1)} --> {srt_time(end)}", str(text), ""]
+        vo = audio_dir / f"vo_{shot['id']}.mp3" if audio_dir else None
+        if vo and vo.exists():
+            end = min(end, a + max(probe_duration(vo) + 0.8, 2.0))
+        if i + 1 < len(starts):
+            end = min(end, starts[i + 1] - 0.05)
+        lines += [str(n), f"{srt_time(a)} --> {srt_time(end)}", str(text), ""]
         n += 1
     path.write_text("\n".join(lines), encoding="utf-8")
     return n > 1
@@ -203,7 +213,7 @@ def main():
     fparts.append(f"{''.join(mix)}amix=inputs={len(mix)}:normalize=0,alimiter=limit=0.95[aout]")
 
     srt = final / f"{slug}.srt"
-    has_subs = write_srt(shots, starts, srt)
+    has_subs = write_srt(shots, starts, srt, audio)
     vmap = "0:v"
     if args.subs and has_subs:
         fparts.append(f"[0:v]subtitles={srt.as_posix()}:force_style='FontSize=22,Outline=2'[vout]")
