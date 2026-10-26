@@ -6,7 +6,8 @@ Kullanım:
 
 Beklenen yapı:
     projects/<slug>/03_cekim_listesi.json    (clip_file yerel yol, yoksa clip_url indirilir;
-                                             clip_volume: klibin kendi sesi, 0 = sessiz)
+                                             clip_volume: klibin kendi sesi, 0 = sessiz;
+                                             trim_start_s: klibin kullanılacağı başlangıç saniyesi)
     projects/<slug>/audio/vo_<SHOT_ID>.mp3   (opsiyonel, anlatıcı sesi)
     projects/<slug>/audio/music.mp3          (opsiyonel, müzik)
 Çıktı:
@@ -61,11 +62,11 @@ def download(url, dest):
         shutil.copyfileobj(r, f)
 
 
-def normalize(src, dst, dur, w, h, fps, volume=1.0):
-    """Kırp, ölçekle/pad'le, fps'i eşitle, sessizse boş ses izi ekle."""
+def normalize(src, dst, dur, w, h, fps, volume=1.0, start=0.0):
+    """start'tan itibaren dur kadar kırp, ölçekle/pad'le, fps'i eşitle, sessizse boş ses izi ekle."""
     vf = (f"scale={w}:{h}:force_original_aspect_ratio=decrease,"
           f"pad={w}:{h}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps={fps},format=yuv420p")
-    cmd = ["ffmpeg", "-y", "-i", str(src)]
+    cmd = ["ffmpeg", "-y", "-ss", f"{start}", "-i", str(src)]
     if has_audio(src):
         amap = ["-map", "0:v:0", "-map", "0:a:0", "-af", f"volume={volume}"]
     else:
@@ -112,7 +113,7 @@ def join_clips(clips, transitions, out, fps):
 
 
 def srt_time(s):
-    ms = int(round(s * 1000))
+    ms = round(s * 1000)
     h, ms = divmod(ms, 3600000)
     m, ms = divmod(ms, 60000)
     sec, ms = divmod(ms, 1000)
@@ -125,7 +126,7 @@ def write_srt(shots, starts, path):
         text = shot.get("dialogue") or shot.get("voiceover")
         if not text:
             continue
-        end = st + float(shot["duration_s"]) - 0.1
+        end = st + float(shot.get("_dur", shot["duration_s"])) - 0.1
         lines += [str(n), f"{srt_time(st + 0.1)} --> {srt_time(end)}", str(text), ""]
         n += 1
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -170,7 +171,11 @@ def main():
             raw = renders / f"{s['id']}_{tag}_raw.mp4"
             download(s["clip_url"], raw)
         out = renders / f"{s['id']}.mp4"
-        normalize(raw, out, float(s["duration_s"]), w, h, fps, s.get("clip_volume", 1.0))
+        start = float(s.get("trim_start_s") or 0)
+        # kırpma sonrası klipte kalan süre duration_s'ten kısaysa kalan kadarını kullan
+        dur = min(float(s["duration_s"]), probe_duration(raw) - start)
+        s["_dur"] = dur
+        normalize(raw, out, dur, w, h, fps, s.get("clip_volume", 1.0), start)
         norm.append(out)
 
     transitions = [s.get("transition_in", "cut") for s in shots]
@@ -185,7 +190,7 @@ def main():
         if vo.exists():
             inputs += ["-i", str(vo)]
             ms = int((st + 0.2) * 1000)
-            fparts.append(f"[{idx}:a]adelay={ms}|{ms},volume=1.0[vo{idx}]")
+            fparts.append(f"[{idx}:a]loudnorm=I=-18:TP=-2:LRA=7,aresample=48000,adelay={ms}|{ms}[vo{idx}]")
             mix.append(f"[vo{idx}]")
             idx += 1
     music = audio / "music.mp3"
