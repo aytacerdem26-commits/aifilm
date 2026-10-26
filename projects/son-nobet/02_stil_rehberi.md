@@ -146,13 +146,21 @@ Gece: `LIGHT_NIGHT` + `navy-black sea, moon between clouds, the lighthouse beam 
 
 ## 6. Referanslar
 
-| Blok | Dosya | İçerdiği ek bloklar |
-|---|---|---|
-| `CHAR_NURI` + `PROP_LANTERN` | `refs/nuri.png` | fener elinde, sönük |
-| `LOC_LAMP_ROOM` | `refs/lamp_room.png` | Fresnel, beyaz dolap + yeşil LED, kanca, galeri kapısı |
-| `LOC_CAPE` (gece) + `PROP_SEA_LIGHT` | `refs/cape_night.png` | denizdeki ışık küre, kule, huzme |
-| `LOC_STAIRWELL` | `refs/stairwell.png` | — |
-| `LOC_CAPE` (şafak) — opsiyonel | `refs/cape_dawn.png` | soğuk beyaz yeni ışık, patika |
+Tüm referanslar onaylı plana göre üretildi (model `nano_banana_pro`, istek başına 4 varyant).
+Seçilmeyen varyantlar `refs/alts/` altında; görev kayıtları `refs/genaipro_tasks.jsonl`'da.
+
+| Blok | Dosya | Seçilen varyant | Görev ID | Not |
+|---|---|---|---|---|
+| `CHAR_NURI` + `PROP_LANTERN` | `refs/nuri.png` | v1 | `38c4a1de…` | Nötr gri fon, palto açık, pirinç düğmeler ve sönük fener net; yüz/sakal bloğa birebir. |
+| `LOC_LAMP_ROOM` | `refs/lamp_room.png` | v2 | `95b31035…` | Sekizgen cam oda, bal rengi Fresnel, beyaz dolap + yeşil LED (yazısız), merdiven ağzı yanında kancada fener, cam kapı + galeri parmaklığı. |
+| `LOC_CAPE` (gece) + `PROP_SEA_LIGHT` | `refs/cape_night.png` | v2 | `7d028f94…` | Küre doğru ölçekte (kafa boyu), kayalıklara yakın, altın yansıma; kule solda, kemerli kapı, patika, sıcak huzme. Sağ altta filigran (bkz. not). |
+| `LOC_STAIRWELL` | `refs/stairwell.png` | v2 | `c4ebc205…` | Tam tepe kabuk spirali, yarık pencereden mavi huzme, ek lamba yok (v1/v3 duvar lambası içeriyordu). Sağ altta filigran. |
+| `LOC_CAPE` (şafak) | `refs/cape_dawn.png` | v3 | `f6596fc3…` | Gece referansıyla en tutarlı kule/kapı/patika; soğuk beyaz ışık, ince pembe ufuk. S16 için daha geniş alternatif: `alts/cape_dawn_v2.png`. Sağ altta filigran. |
+
+**Not — filigran:** `cape_night`, `stairwell`, `cape_dawn` görsellerinin sağ alt köşesinde
+(~x 1280, y 670) küçük bir Gemini yıldız filigranı var. Referans olarak verildiğinde anahtar
+karelere sızabilir; anahtar kare prompt'larına `no watermark, no logo` eklenmeli ve
+denetimde bu köşe kontrol edilmeli.
 
 `PROP_LANTERN` → `refs/nuri.png`, `PROP_SEA_LIGHT` → `refs/cape_night.png` üzerinden referanslanır
 (ayrı prop isteği yok).
@@ -161,10 +169,8 @@ Gece: `LIGHT_NIGHT` + `navy-black sea, moon between clouds, the lighthouse beam 
 
 ## 7. Referans üretim planı
 
-> **Bu turda çalıştırılmadı** — genaipro.io bu ortamdan erişilemiyor. Komutlar erişim
-> sağlandığında `/home/user/aifilm` kökünden sırayla çalıştırılmak üzere hazırdır.
-> Her istek 1 kredi (4 varyant dahil). Her adımdan sonra `_v1…_v4` Read ile incelenir,
-> en iyisi `refs/<ad>.png` olarak kopyalanır; sonraki adım ancak bu dosya varken başlar.
+> Uygulandı (2026-10-26): 5 istek, 5 kredi, yeniden üretim gerekmedi. Komutlar
+> `/home/user/aifilm` kökünden çalıştırıldı; seçimler için bkz. §6.
 
 **Toplam:** zorunlu 4 istek = **4 kredi**; opsiyonel şafak ile **5 kredi**.
 Film üretimi ~32–33 kredi → toplam **37–38 / ~40**. Referans yeniden üretimi için pay ~2 kredi;
