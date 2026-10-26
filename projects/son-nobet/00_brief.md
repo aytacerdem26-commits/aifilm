@@ -8,6 +8,6 @@
 - **En-boy oranı:** 16:9
 - **Hedef platform:** YouTube / festival
 - **Dil:** İngilizce — hikâye, senaryo, V.O. ve altyazı İngilizce (kullanıcı revizyonu)
-- **Kredi bütçesi:** ~40 Veo kredisi (görsel/video isteği başına 1). Bu yüzden az sayıda, uzun
+- **Kredi bütçesi:** ~70 Veo kredisi (kullanıcı onayı; aktif 100 kredi 28 Ekim 14:12 TR saatinde sona eriyor — üretim o tarihten önce bitmeli).
   (6–8 sn) çekim hedeflenir: ~15–16 çekim.
 - **Olmazsa olmazlar / kaçınılacaklar:** Tek ana karakter; diyalog yerine iç ses/anlatıcı tercih edilir.
