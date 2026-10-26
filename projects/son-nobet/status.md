@@ -2,8 +2,8 @@
 
 | # | Aşama | Durum | Not |
 |---|---|---|---|
-| 1 | Senaryo | onay bekliyor (rev. 2, İngilizce) | 16 çekim, 118 sn, 3 mekân, V.O. ağırlıklı |
-| 2 | Stil rehberi + referanslar | bekliyor | |
+| 1 | Senaryo | onaylandı (rev. 2, İngilizce) | 16 çekim, 118 sn, 3 mekân, V.O. ağırlıklı |
+| 2 | Stil rehberi + referanslar | rehber yazıldı; referanslar bekliyor (ağ engeli) | 4–5 referans isteği planlandı (refs/nuri, lamp_room, cape_night, stairwell, ops. cape_dawn) |
 | 3 | Çekim listesi | bekliyor | |
 | 4 | Anahtar kareler | bekliyor | |
 | 5 | Kare denetimi | bekliyor | |
@@ -14,6 +14,6 @@
 | 10 | Final denetim | bekliyor | |
 
 **Harcanan kredi:** 0
-**Sıradaki adım:** Senaryo onayı → Stil rehberi + referanslar
+**Sıradaki adım:** genaipro.io erişimi açılınca referans görselleri üret (02_stil_rehberi.md §7), sonra kullanıcı onayı
 
 **Engel:** genaipro.io bu bulut ortamının ağ politikasında engelli (aşama 2'den itibaren gerekli).
