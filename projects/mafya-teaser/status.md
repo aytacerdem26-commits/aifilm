@@ -2,7 +2,7 @@
 
 | # | Aşama | Durum | Not |
 |---|---|---|---|
-| 1 | Senaryo | onay bekliyor | HESAP — 5 çekim, 30 sn, 4 replik |
+| 1 | Senaryo | onaylandı (rev. 2, çatışmalı) | HESAP — 6 çekim, 30 sn, 3 replik |
 | 2 | Stil rehberi + referanslar | bekliyor | |
 | 3 | Çekim listesi | bekliyor | |
 | 4 | Anahtar kareler | bekliyor | |
