@@ -34,6 +34,8 @@ from pathlib import Path
 
 BASE = os.environ.get("GENAIPRO_BASE_URL", "https://genaipro.io/api")
 ROOT = Path(__file__).resolve().parent.parent
+# urllib'in varsayılan "Python-urllib/x.y" kimliği yerine istemciyi açıkça tanıtan User-Agent
+USER_AGENT = "aifilm-genaipro-client/1.0 (+https://github.com/aytacerdem26-commits/aifilm)"
 
 IMAGE_AR = {
     "16:9": "IMAGE_ASPECT_RATIO_LANDSCAPE",
@@ -81,7 +83,8 @@ def request(method, path, *, json_body=None, fields=None, files=None, params=Non
     url = BASE + path
     if params:
         url += "?" + urllib.parse.urlencode({k: v for k, v in params.items() if v is not None})
-    headers = {"Authorization": f"Bearer {api_key()}", "Accept": "application/json"}
+    headers = {"Authorization": f"Bearer {api_key()}", "Accept": "application/json",
+               "User-Agent": USER_AGENT}
     data = None
     if json_body is not None:
         data = json.dumps(json_body).encode()
@@ -114,7 +117,7 @@ def request(method, path, *, json_body=None, fields=None, files=None, params=Non
 def download(url, dest):
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url)
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
         r = urllib.request.urlopen(req, timeout=300)
     except urllib.error.HTTPError as e:
