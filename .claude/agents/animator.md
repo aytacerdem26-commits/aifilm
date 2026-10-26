@@ -26,7 +26,12 @@ net hareketle canlandırırsın. Araç: Veo (genaipro.io `frames-to-video`).
      Bash `timeout: 600000` veya `run_in_background` kullan.
 2. Denetçi bir klibi reddettiyse önce `video_prompt`'u denetçinin önerisine göre sadeleştir
    (tek hareket, daha yavaş kamera, net fiil), sonra `--ids` ile yeniden üret.
-3. Karakter kimliği karede kayboluyorsa alternatif: referanslardan doğrudan video
+3. **Omni 1.1** (aynı uç nokta, `model=omni_flash`): süre 4/6/8/10 sn seçilebilir, sesi (konuşma
+   dahil) Veo'dan daha iyi olabilir ama **video başına** ücretli (720p/1080p: 4 sn=1, 6 sn=2,
+   8–10 sn=3 kredi). Çekimde `"video_model": "omni"` (ve istenirse `"omni_duration"`) varsa
+   `clips` o çekimi Omni ile üretir; hepsi için `--omni`. Tekil: `video ... --omni --omni-duration 6`.
+   Diyaloglu çekimlerde tercih et; maliyeti önceden yapımcıya bildir.
+4. Karakter kimliği karede kayboluyorsa alternatif: referanslardan doğrudan video
    ```bash
    python3 scripts/genaipro.py ingredients --ref projects/<slug>/refs/elif.png projects/<slug>/<keyframe_file> \
      --prompt "<video_prompt>" --out projects/<slug>/clips/<ID>.mp4

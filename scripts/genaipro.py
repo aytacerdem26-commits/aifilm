@@ -10,6 +10,8 @@ Tekil komutlar (sonucu indirir, JSON özet basar):
   image  --prompt P [--ref a.png ...] --out x.png   Görsel (Nano Banana Pro / Imagen / GPT)
   video  --start k.png [--end e.png] --prompt P --out x.mp4    Veo frames-to-video
   ingredients --ref a.png [...] --prompt P --out x.mp4         Veo, referanslardan video
+  video/ingredients ... --omni [--omni-duration 4|6|8|10] [--omni-resolution 720p]
+                                                    Omni 1.1 (omni_flash), video başına ücretli
   voices [--search S] [--language tr] [--gender female]        ElevenLabs ses kataloğu
   voice-design --instructions "..."                 Sirius ses tasarımı önizlemesi (ücretsiz)
   voice-design-save ID --name AD                    Önizlemeyi kaydet → voice_design_id
@@ -46,6 +48,13 @@ IMAGE_AR = {
     "9:16": "IMAGE_ASPECT_RATIO_PORTRAIT",
 }
 VIDEO_AR = {"16:9": "VIDEO_ASPECT_RATIO_LANDSCAPE", "9:16": "VIDEO_ASPECT_RATIO_PORTRAIT"}
+
+# Omni 1.1 (model=omni_flash): aynı Veo uç noktalarında; süre ve çözünürlük seçilebilir, sesli.
+# Fiyat video başına (genaipro.io site tablosu / /api/config OMNI_GOOGLE_RATIO, 2026-10 itibarıyla 4).
+OMNI_DURATIONS = (4, 6, 8, 10)
+OMNI_RESOLUTIONS = ("360p", "720p", "1080p")
+OMNI_PRICE_TABLE = {"360p": {4: 4, 6: 5, 8: 6, 10: 7}, "720p": {4: 7, 6: 10, 8: 12, 10: 15},
+                    "1080p": {4: 7, 6: 10, 8: 12, 10: 15}}
 
 
 # ─── HTTP ───────────────────────────────────────────────────────────────────
@@ -185,18 +194,34 @@ def submit_image(prompt, refs=(), aspect="16:9", n=1, model="nano_banana_pro", e
                            files=[("reference_images", r) for r in refs[:5]])), "veo"
 
 
-def submit_video(prompt, start, end=None, aspect="16:9", n=1, upscale=""):
+def omni_duration(seconds):
+    """İstenen süreyi kapsayan en kısa Omni süresi (4/6/8/10)."""
+    return next((d for d in OMNI_DURATIONS if d >= seconds), OMNI_DURATIONS[-1])
+
+
+def omni_cost(duration, resolution, n=1, ratio=4):
+    return max(1, OMNI_PRICE_TABLE[resolution][duration] // ratio) * n
+
+
+def video_fields(prompt, aspect, n, upscale, omni):
+    """omni: None (Veo, istek başına 1 kredi) ya da {"duration": 4-10, "resolution": "720p"}."""
     fields = [("prompt", prompt), ("aspect_ratio", VIDEO_AR[aspect]), ("number_of_videos", str(n))]
-    if upscale:
+    if omni:
+        fields += [("model", "omni_flash"), ("duration", str(omni["duration"])),
+                   ("resolution", omni.get("resolution", "720p"))]
+    elif upscale:
         fields.append(("upscale_resolution", upscale))
+    return fields
+
+
+def submit_video(prompt, start, end=None, aspect="16:9", n=1, upscale="", omni=None):
+    fields = video_fields(prompt, aspect, n, upscale, omni)
     files = [("start_image", start)] + ([("end_image", end)] if end else [])
     return task_id(request("POST", "/v2/veo/frames-to-video", fields=fields, files=files))
 
 
-def submit_ingredients(prompt, refs, aspect="16:9", n=1, upscale=""):
-    fields = [("prompt", prompt), ("aspect_ratio", VIDEO_AR[aspect]), ("number_of_videos", str(n))]
-    if upscale:
-        fields.append(("upscale_resolution", upscale))
+def submit_ingredients(prompt, refs, aspect="16:9", n=1, upscale="", omni=None):
+    fields = video_fields(prompt, aspect, n, upscale, omni)
     return task_id(request("POST", "/v2/veo/ingredients-to-video", fields=fields,
                            files=[("reference_images", r) for r in refs[:3]]))
 
@@ -252,8 +277,16 @@ def cmd_image(a):
           "files": save_outputs(t, a.out) if t["status"] == "completed" else []})
 
 
+def cli_omni(a):
+    if not a.omni:
+        return None
+    print(f"  Omni: {a.omni_duration} sn {a.omni_resolution}, tahmini "
+          f"{omni_cost(a.omni_duration, a.omni_resolution, a.n)} kredi", file=sys.stderr)
+    return {"duration": a.omni_duration, "resolution": a.omni_resolution}
+
+
 def cmd_video(a):
-    tid = submit_video(a.prompt, a.start, a.end, a.aspect, a.n, a.upscale)
+    tid = submit_video(a.prompt, a.start, a.end, a.aspect, a.n, a.upscale, cli_omni(a))
     t = wait_tasks([tid])[tid]
     emit({"task_id": tid, "status": t["status"], "error": t.get("error"),
           "file_urls": t.get("file_urls", []),
@@ -261,7 +294,7 @@ def cmd_video(a):
 
 
 def cmd_ingredients(a):
-    tid = submit_ingredients(a.prompt, a.ref, a.aspect, a.n, a.upscale)
+    tid = submit_ingredients(a.prompt, a.ref, a.aspect, a.n, a.upscale, cli_omni(a))
     t = wait_tasks([tid])[tid]
     emit({"task_id": tid, "status": t["status"], "error": t.get("error"),
           "file_urls": t.get("file_urls", []),
@@ -402,10 +435,23 @@ def cmd_clips(a):
     shots = select(data["shots"], a.ids, {"keyframe_approved", "clip_failed"})
     upscale = "1080p" if data.get("resolution") == "1080p" else ""
 
+    res = data.get("resolution", "720p") if data.get("resolution") in OMNI_RESOLUTIONS else "720p"
+
+    def shot_omni(s):
+        # --omni hepsini, çekimdeki "video_model": "omni" yalnız o çekimi Omni ile üretir
+        if not (a.omni or s.get("video_model") == "omni"):
+            return None
+        d = s.get("omni_duration") or omni_duration(float(s.get("duration_s", 8)))
+        return {"duration": int(d), "resolution": res}
+
+    total = sum(omni_cost(o["duration"], o["resolution"], a.variants) if (o := shot_omni(s)) else 1
+                for s in shots)
+    print(f"{len(shots)} çekim, tahmini {total} Veo kredisi", file=sys.stderr)
+
     def submit(s):
         start = proj / s["keyframe_file"]
         end = proj / s["end_keyframe_file"] if s.get("end_keyframe_file") else None
-        return submit_video(s["video_prompt"], start, end, ar, a.variants, upscale)
+        return submit_video(s["video_prompt"], start, end, ar, a.variants, upscale, shot_omni(s))
 
     batch((p, data), shots, submit, "veo", "clips", "mp4",
           "clip_url", "clip_file", "clip_done", "clip_failed")
@@ -443,6 +489,9 @@ def main():
     s.add_argument("--aspect", default="16:9", choices=list(VIDEO_AR))
     s.add_argument("--n", type=int, default=1)
     s.add_argument("--upscale", default="", choices=["", "1080p"])
+    s.add_argument("--omni", action="store_true", help="Omni 1.1 (omni_flash): süre seçilebilir, video başına ücretli")
+    s.add_argument("--omni-duration", type=int, default=8, choices=OMNI_DURATIONS)
+    s.add_argument("--omni-resolution", default="720p", choices=OMNI_RESOLUTIONS)
     s.add_argument("--out", required=True)
     s.set_defaults(fn=cmd_video)
 
@@ -452,6 +501,9 @@ def main():
     s.add_argument("--aspect", default="16:9", choices=list(VIDEO_AR))
     s.add_argument("--n", type=int, default=1)
     s.add_argument("--upscale", default="", choices=["", "1080p"])
+    s.add_argument("--omni", action="store_true", help="Omni 1.1 (omni_flash): süre seçilebilir, video başına ücretli")
+    s.add_argument("--omni-duration", type=int, default=8, choices=OMNI_DURATIONS)
+    s.add_argument("--omni-resolution", default="720p", choices=OMNI_RESOLUTIONS)
     s.add_argument("--out", required=True)
     s.set_defaults(fn=cmd_ingredients)
 
@@ -492,6 +544,9 @@ def main():
         s.add_argument("--ids", help="virgülle ayrılmış çekim ID'leri")
         s.add_argument("--variants", type=int, default=1, choices=[1, 2, 3, 4],
                        help="çekim başına varyant (istek başına 1 kredi, varyant sayısından bağımsız)")
+        if name == "clips":
+            s.add_argument("--omni", action="store_true",
+                           help="tüm çekimleri Omni ile üret (yoksa yalnızca video_model=omni olanlar)")
         if name == "keyframes":
             s.add_argument("--model", default="nano_banana_pro", choices=["nano_banana_pro", "nano_banana_2", "imagen_4"])
         s.set_defaults(fn=fn)
