@@ -90,16 +90,20 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S03_v1.png",
-      "clip_file": "clips/S03.mp4",
+      "clip_file": "clips/S03_v2.mp4",
       "status": "clip_approved",
-      "notes": "Dolapta yazı/etiket/sayı çıkmamalı (denetimde kontrol). Yeşil LED ortamı aydınlatmamalı. [QA kare 2026-10-26: ONAY v1 (ön planda dolap, arkada flu Nuri; kancada fener görünür). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.] [QA klip 2026-10-26: DÜZELT. Dolap ön planda, LED düzenli yanıp sönüyor, dolapta yazı yok. SORUN: arkadaki Fresnel kovan biçimini koruyamıyor — 2.5–6 sn spot lambası/bullseye, 6.5 sn sonrası ayna-pul kafes (disko topu) görünümü. Dönen mercek gibi okunabilir ama 6.5 sn sonrası belirgin. Kurgu: 0–6.5 sn kullan (6.5 sn, hedef 7). Kredi kalırsa isteğe bağlı yeniden üretim (05_denetim.md). ✦ filigran → delogo=x=1740:y=898:w=86:h=84.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: LED yanıp sönme + 'warm Fresnel light keeps turning behind him'; mercek biçimi sabitlenmemişti → spot/disko topu kayması. Eski klip: clips/old/S03.mp4, eski trim_start_s=0.]",
+      "notes": "Dolapta yazı/etiket/sayı çıkmamalı (denetimde kontrol). Yeşil LED ortamı aydınlatmamalı. [QA kare 2026-10-26: ONAY v1 (ön planda dolap, arkada flu Nuri; kancada fener görünür). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.] [QA klip 2026-10-26: DÜZELT. Dolap ön planda, LED düzenli yanıp sönüyor, dolapta yazı yok. SORUN: arkadaki Fresnel kovan biçimini koruyamıyor — 2.5–6 sn spot lambası/bullseye, 6.5 sn sonrası ayna-pul kafes (disko topu) görünümü. Dönen mercek gibi okunabilir ama 6.5 sn sonrası belirgin. Kurgu: 0–6.5 sn kullan (6.5 sn, hedef 7). Kredi kalırsa isteğe bağlı yeniden üretim (05_denetim.md). ✦ filigran → delogo=x=1740:y=898:w=86:h=84.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: LED yanıp sönme + 'warm Fresnel light keeps turning behind him'; mercek biçimi sabitlenmemişti → spot/disko topu kayması. Eski klip: clips/old/S03.mp4, eski trim_start_s=0.] [Yapımcı klip QA 2. tur: v2 seçildi, ONAY]",
       "keyframe_url": "https://files.genaipro.io/image_5728df90-6c50-4eed-9877-5dd3f1453237_0.png",
       "keyframe_file_variants": [
         "keyframes/S03_v1.png",
         "keyframes/S03_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_8f34396e-efa8-41a3-8e38-ee2618586e3c_video_resolution_1080p.mp4",
-      "trim_start_s": 0
+      "clip_url": "https://files.genaipro.io/video_1fbaa207-9ee7-4e94-a257-9ad458e8bdca_video_resolution_1080p.mp4",
+      "trim_start_s": 0,
+      "clip_file_variants": [
+        "clips/S03_v1.mp4",
+        "clips/S03_v2.mp4"
+      ]
     },
     {
       "id": "S04",
@@ -190,16 +194,20 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S06_v2.png",
-      "clip_file": "clips/S06.mp4",
-      "status": "clip_done",
-      "notes": "Göz yansıması küçük kalmalı; abartılı parlama olmamalı. [QA kare 2026-10-26: ONAY v2 (gözlerde minik altın yansıma var, sağa bakıyor → S04 v2 ile yön tutarlı).] [QA klip 2026-10-26: YENİDEN ÜRET. 1.4–4.95 sn arası Nuri'nin başının yanında İKİNCİ BİR DENİZ FENERİ belirip kadrajda soldan sağa kayıyor (o zaten fenerin galerisinde) — izleyici net fark eder. Temiz bölümler: 0–1.3 ve 5.0–8.0 (gözlerde altın yansıma 6–8 sn, iyi). Yedek (kredisiz): 5.0–8.0 = 3.0 sn. Önerilen video_prompt 05_denetim.md'de.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: 'warm lighthouse beam sweeps across his face', static + very slow push-in; arka plan tarifi yok → ikinci fener kulesi belirdi. Eski klip: clips/old/S06.mp4, eski trim_start_s=5.0.]",
+      "clip_file": "clips/S06_v2.mp4",
+      "status": "clip_approved",
+      "notes": "Göz yansıması küçük kalmalı; abartılı parlama olmamalı. [QA kare 2026-10-26: ONAY v2 (gözlerde minik altın yansıma var, sağa bakıyor → S04 v2 ile yön tutarlı).] [QA klip 2026-10-26: YENİDEN ÜRET. 1.4–4.95 sn arası Nuri'nin başının yanında İKİNCİ BİR DENİZ FENERİ belirip kadrajda soldan sağa kayıyor (o zaten fenerin galerisinde) — izleyici net fark eder. Temiz bölümler: 0–1.3 ve 5.0–8.0 (gözlerde altın yansıma 6–8 sn, iyi). Yedek (kredisiz): 5.0–8.0 = 3.0 sn. Önerilen video_prompt 05_denetim.md'de.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: 'warm lighthouse beam sweeps across his face', static + very slow push-in; arka plan tarifi yok → ikinci fener kulesi belirdi. Eski klip: clips/old/S06.mp4, eski trim_start_s=5.0.] [Yapımcı klip QA 2. tur: v2 seçildi, ONAY]",
       "keyframe_url": "https://files.genaipro.io/image_2e23e139-9623-4ebd-938f-c2938cf72de6_1.png",
       "keyframe_file_variants": [
         "keyframes/S06_v1.png",
         "keyframes/S06_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_bbe1e8b9-fac2-4379-8990-76e0b69a2515_video_resolution_1080p.mp4",
-      "trim_start_s": 0
+      "clip_url": "https://files.genaipro.io/video_e2f23d73-be00-4aff-8b61-d7f8cb11fb10_video_resolution_1080p.mp4",
+      "trim_start_s": 0,
+      "clip_file_variants": [
+        "clips/S06_v1.mp4",
+        "clips/S06_v2.mp4"
+      ]
     },
     {
       "id": "S07",
@@ -261,16 +269,20 @@
       "clip_volume": 0.5,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S08_v1.png",
-      "clip_file": "clips/S08.mp4",
-      "status": "clip_done",
-      "notes": "lamp_room referansına göre kanca merdiven kapağının yanındaki direkte; fener o kancada asılı başlar. Sönük fener (PROP_LANTERN unlit). [QA kare 2026-10-26: ONAY v1 (Nuri kancadaki fenere uzanıyor, aksiyona en uygun).] [QA klip 2026-10-26: YENİDEN ÜRET. Hikâye hatası: Nuri feneri kancadan alıyor (1.5 sn) ama 3 sn civarı Fresnel kaidesinin üstüne BIRAKIP merdivene fenersiz iniyor; fener 4–8 sn kaidede kalıyor (S10–S13 fener elinde). Yedek (kredisiz): 0–2.2 sn (feneri alış). Önerilen video_prompt 05_denetim.md'de. Filigran yok.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: feneri kancadan alıp kapağa yönelme, 'slight pan following him'; fenerin elde kalacağı belirtilmemişti → kaideye bıraktı. Eski klip: clips/old/S08.mp4, eski trim_start_s=0.]",
+      "clip_file": "clips/S08_v1.mp4",
+      "status": "clip_approved",
+      "notes": "lamp_room referansına göre kanca merdiven kapağının yanındaki direkte; fener o kancada asılı başlar. Sönük fener (PROP_LANTERN unlit). [QA kare 2026-10-26: ONAY v1 (Nuri kancadaki fenere uzanıyor, aksiyona en uygun).] [QA klip 2026-10-26: YENİDEN ÜRET. Hikâye hatası: Nuri feneri kancadan alıyor (1.5 sn) ama 3 sn civarı Fresnel kaidesinin üstüne BIRAKIP merdivene fenersiz iniyor; fener 4–8 sn kaidede kalıyor (S10–S13 fener elinde). Yedek (kredisiz): 0–2.2 sn (feneri alış). Önerilen video_prompt 05_denetim.md'de. Filigran yok.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: feneri kancadan alıp kapağa yönelme, 'slight pan following him'; fenerin elde kalacağı belirtilmemişti → kaideye bıraktı. Eski klip: clips/old/S08.mp4, eski trim_start_s=0.] [Yapımcı klip QA 2. tur: v1 seçildi, ONAY]",
       "keyframe_url": "https://files.genaipro.io/image_498d6ced-1451-46ef-a8da-40e6739dfb02_0.png",
       "keyframe_file_variants": [
         "keyframes/S08_v1.png",
         "keyframes/S08_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_431c3b6e-14f4-4123-a746-fc2167d24bfb_video_resolution_1080p.mp4",
-      "trim_start_s": 0
+      "clip_url": "https://files.genaipro.io/video_9ea088d2-80ed-46bb-abf5-c9ae9fac1252_video_resolution_1080p.mp4",
+      "trim_start_s": 0,
+      "clip_file_variants": [
+        "clips/S08_v1.mp4",
+        "clips/S08_v2.mp4"
+      ]
     },
     {
       "id": "S09",
@@ -331,16 +343,20 @@
       "clip_volume": 0.6,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S10_v2.png",
-      "clip_file": "clips/S10.mp4",
+      "clip_file": "clips/S10_v1.mp4",
       "status": "clip_approved",
-      "notes": "cape_night referansındaki küre bu kareye sızmamalı ('no glowing sphere in frame'). Senaryoya göre dalga sesi yükselir: kurgucu 0.6'dan yukarı çıkarabilir. [QA kare 2026-10-26: YENİDEN ÜRET. v2'de iki Nuri (kapıda + ön planda) — tek karakter kuralı ihlali; v1'de Nuri kameraya poz veren, kuleyle aynı boyda 'kolaj' figür (ölçek bozuk, aksiyon yok: kapıdan çıkıp kayalarda ilerleme yok). Yedek: v1.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: Nuri kapıdan 'just stepping out', ölçek/poz tarifi yok, tek kişi vurgusu yok; refs nuri+cape_night (aynen). refs: nuri + cape_night korundu (kadrajda küre yok; kule/kapı/patika sürekliliği için mekân referansı gerekli). Eski varyantlar: keyframes/old/S10_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Tek Nuri, arkadan 3/4, başı eğik kayalarda denize iniyor; kule + kemerli kapı solda, huzme sıcak amber. Nuri ~%55-60 yükseklikte ama kuleden daha yakın olduğu için perspektif doğru okunuyor (kolaj hissi yok). v1: Nuri kuleden büyük (ölçek bozuk), gözlük benzeri çizgi. Not: S11 ile benzer arkadan kadraj — S11'de Nuri ~1.4x büyük, kurgu atlama gibi durmaz; klipte Nuri yürümeye devam etmeli.] [QA klip 2026-10-26: DÜZELT. Tek Nuri, arkadan, kayalarda denize iniyor; amber huzme, kemerli kapı. SORUN: 2.0–3.4 sn eliyle feneri YAKIYOR (fener içinde alev + elde alev) — fener S13'e kadar sönük olmalı. Ayrıca 3.5 sn sonrası büyük dalga üstüne vuruyor, köpükte yürüyor (dramatik, kabul). Kurgu: 3.6–8.0 = 4.4 sn (hedef 7). Kredi kalırsa isteğe bağlı yeniden üretim. Filigran yok.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: kapıdan çıkış + kayalarda iniş, 'the unlit lantern in his hand', dalga sıçraması; yakmama yasağı yoktu → feneri elle yaktı. Eski klip: clips/old/S10.mp4, eski trim_start_s=3.6.]",
+      "notes": "cape_night referansındaki küre bu kareye sızmamalı ('no glowing sphere in frame'). Senaryoya göre dalga sesi yükselir: kurgucu 0.6'dan yukarı çıkarabilir. [QA kare 2026-10-26: YENİDEN ÜRET. v2'de iki Nuri (kapıda + ön planda) — tek karakter kuralı ihlali; v1'de Nuri kameraya poz veren, kuleyle aynı boyda 'kolaj' figür (ölçek bozuk, aksiyon yok: kapıdan çıkıp kayalarda ilerleme yok). Yedek: v1.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: Nuri kapıdan 'just stepping out', ölçek/poz tarifi yok, tek kişi vurgusu yok; refs nuri+cape_night (aynen). refs: nuri + cape_night korundu (kadrajda küre yok; kule/kapı/patika sürekliliği için mekân referansı gerekli). Eski varyantlar: keyframes/old/S10_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Tek Nuri, arkadan 3/4, başı eğik kayalarda denize iniyor; kule + kemerli kapı solda, huzme sıcak amber. Nuri ~%55-60 yükseklikte ama kuleden daha yakın olduğu için perspektif doğru okunuyor (kolaj hissi yok). v1: Nuri kuleden büyük (ölçek bozuk), gözlük benzeri çizgi. Not: S11 ile benzer arkadan kadraj — S11'de Nuri ~1.4x büyük, kurgu atlama gibi durmaz; klipte Nuri yürümeye devam etmeli.] [QA klip 2026-10-26: DÜZELT. Tek Nuri, arkadan, kayalarda denize iniyor; amber huzme, kemerli kapı. SORUN: 2.0–3.4 sn eliyle feneri YAKIYOR (fener içinde alev + elde alev) — fener S13'e kadar sönük olmalı. Ayrıca 3.5 sn sonrası büyük dalga üstüne vuruyor, köpükte yürüyor (dramatik, kabul). Kurgu: 3.6–8.0 = 4.4 sn (hedef 7). Kredi kalırsa isteğe bağlı yeniden üretim. Filigran yok.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: kapıdan çıkış + kayalarda iniş, 'the unlit lantern in his hand', dalga sıçraması; yakmama yasağı yoktu → feneri elle yaktı. Eski klip: clips/old/S10.mp4, eski trim_start_s=3.6.] [Yapımcı klip QA 2. tur: v1 seçildi, ONAY]",
       "keyframe_url": "https://files.genaipro.io/image_d8de641e-9001-41eb-8e22-b87ece42f02a_1.png",
       "keyframe_file_variants": [
         "keyframes/S10_v1.png",
         "keyframes/S10_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_d15dc5d1-769f-4759-8940-555c00fdc229_video_resolution_1080p.mp4",
-      "trim_start_s": 0
+      "clip_url": "https://files.genaipro.io/video_dbdd1841-f806-4d48-8fdf-bfcd6005378c_video_resolution_1080p.mp4",
+      "trim_start_s": 0,
+      "clip_file_variants": [
+        "clips/S10_v1.mp4",
+        "clips/S10_v2.mp4"
+      ]
     },
     {
       "id": "S11",
@@ -474,16 +490,20 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S14_v1.png",
-      "clip_file": "clips/S14.mp4",
+      "clip_file": "clips/S14_v2.mp4",
       "status": "clip_approved",
-      "notes": "Gülümseme küçük kalmalı; dudak hareketi konuşma gibi okunmamalı (V.O. çekimi). [QA kare 2026-10-26: ONAY v1 (alttan sıcak ışık, nemli gözler, sağa bakıyor → S13 ile yön tutarlı).] [QA klip 2026-10-26: DÜZELT. Alttan sıcak ışık, nemli gözler, küçük gülümseme (5–7.5 sn) çok iyi. SORUN: 1.0–4.8 sn kadrajın sol altında açık ALEV dilleri (kamp ateşi gibi) yükseliyor. Kurgu: 4.9–8.0 = 3.1 sn (V.O. \"To take me home.\" sığar; hedef 6). Kredi kalırsa isteğe bağlı yeniden üretim. Filigran yok.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: 'warm flame light flickers ... from below', imperceptible push-in; alev yasağı yoktu → sol altta açık alev. Eski klip: clips/old/S14.mp4, eski trim_start_s=4.9.]",
+      "notes": "Gülümseme küçük kalmalı; dudak hareketi konuşma gibi okunmamalı (V.O. çekimi). [QA kare 2026-10-26: ONAY v1 (alttan sıcak ışık, nemli gözler, sağa bakıyor → S13 ile yön tutarlı).] [QA klip 2026-10-26: DÜZELT. Alttan sıcak ışık, nemli gözler, küçük gülümseme (5–7.5 sn) çok iyi. SORUN: 1.0–4.8 sn kadrajın sol altında açık ALEV dilleri (kamp ateşi gibi) yükseliyor. Kurgu: 4.9–8.0 = 3.1 sn (V.O. \"To take me home.\" sığar; hedef 6). Kredi kalırsa isteğe bağlı yeniden üretim. Filigran yok.] [Klip yeniden üretim 2026-10-26 (denetçi önerisi, --variants 2): eski prompt: 'warm flame light flickers ... from below', imperceptible push-in; alev yasağı yoktu → sol altta açık alev. Eski klip: clips/old/S14.mp4, eski trim_start_s=4.9.] [Yapımcı klip QA 2. tur: v2 seçildi, ONAY]",
       "keyframe_url": "https://files.genaipro.io/image_47162a21-6c5f-4fe6-8131-a3d5199e6e0e_0.png",
       "keyframe_file_variants": [
         "keyframes/S14_v1.png",
         "keyframes/S14_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_2a91ed75-16c1-4a7a-ba07-371735a33bc5_video_resolution_1080p.mp4",
-      "trim_start_s": 0
+      "clip_url": "https://files.genaipro.io/video_b74a950d-e295-435c-b0dc-b16fbc4b9d8a_video_resolution_1080p.mp4",
+      "trim_start_s": 0,
+      "clip_file_variants": [
+        "clips/S14_v1.mp4",
+        "clips/S14_v2.mp4"
+      ]
     },
     {
       "id": "S15",
