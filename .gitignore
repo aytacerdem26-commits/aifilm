@@ -7,3 +7,10 @@ __pycache__/
 projects/*/keyframes/
 projects/*/clips/
 .env
+# görev kayıtları küçük ve değerli: konteyner sıfırlanırsa çıktılar `fetch` ile geri indirilir
+!projects/*/*/
+projects/*/refs/*
+projects/*/keyframes/*
+projects/*/clips/*
+projects/*/audio/*
+!projects/*/*/genaipro_tasks.jsonl
