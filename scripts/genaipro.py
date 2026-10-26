@@ -6,6 +6,7 @@ API anahtarı: GENAIPRO_API_KEY ortam değişkeni ya da repo kökündeki .env do
 
 Tekil komutlar (sonucu indirir, JSON özet basar):
   credits                                           Veo + Voice AI kredi durumu
+  fetch TASK_ID --out x.png                         Tamamlanmış görevi yeniden indir (kredisiz)
   image  --prompt P [--ref a.png ...] --out x.png   Görsel (Nano Banana Pro / Imagen / GPT)
   video  --start k.png [--end e.png] --prompt P --out x.mp4    Veo frames-to-video
   ingredients --ref a.png [...] --prompt P --out x.mp4         Veo, referanslardan video
@@ -200,10 +201,21 @@ def submit_ingredients(prompt, refs, aspect="16:9", n=1, upscale=""):
                            files=[("reference_images", r) for r in refs[:3]]))
 
 
+def log_task(task, out):
+    """Tamamlanan görevi indirmeden önce kaydeder; indirme düşerse `fetch` ile kurtarılır."""
+    log = Path(out).parent / "genaipro_tasks.jsonl"
+    log.parent.mkdir(parents=True, exist_ok=True)
+    with open(log, "a", encoding="utf-8") as f:
+        f.write(json.dumps({"task_id": task.get("id"), "out": str(out),
+                            "file_urls": task.get("file_urls") or []}, ensure_ascii=False) + "\n")
+    print(f"  görev {task.get('id')} → {log}", file=sys.stderr)
+
+
 def save_outputs(task, out):
     """Görev çıktılarını indirir: tek dosya → out, birden çok → out_v1, out_v2…"""
     out = Path(out)
     urls = task.get("file_urls") or []
+    log_task(task, out)
     paths = []
     for i, url in enumerate(urls, 1):
         dest = out if len(urls) == 1 else out.with_name(f"{out.stem}_v{i}{out.suffix}")
@@ -216,6 +228,15 @@ def emit(obj):
 
 
 # ─── Tekil komutlar ─────────────────────────────────────────────────────────
+
+def cmd_fetch(a):
+    """Tamamlanmış bir görevin çıktılarını yeniden indirir (kredi harcamaz)."""
+    kind = "gt-mage" if a.gpt else "veo"
+    t = request("GET", f"/v2/{kind}/tasks/{a.task_id}")
+    if t.get("status") != "completed":
+        sys.exit(f"görev durumu: {t.get('status')} {t.get('error', '')}")
+    emit({"task_id": a.task_id, "file_urls": t.get("file_urls", []), "files": save_outputs(t, a.out)})
+
 
 def cmd_credits(a):
     emit({"user": request("GET", "/v2/me"),
@@ -397,6 +418,12 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     sub.add_parser("credits").set_defaults(fn=cmd_credits)
+
+    s = sub.add_parser("fetch", help="tamamlanmış görevi yeniden indir (kredi harcamaz)")
+    s.add_argument("task_id")
+    s.add_argument("--out", required=True)
+    s.add_argument("--gpt", action="store_true", help="gt-mage (ChatGPT Image) görevi")
+    s.set_defaults(fn=cmd_fetch)
 
     s = sub.add_parser("image")
     s.add_argument("--prompt", required=True)

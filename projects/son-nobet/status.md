@@ -13,7 +13,9 @@
 | 9 | Kurgu | bekliyor | |
 | 10 | Final denetim | bekliyor | |
 
-**Harcanan kredi:** 0
+**Harcanan kredi:** 1 (Veo)
 **Sıradaki adım:** genaipro.io erişimi açılınca referans görselleri üret (02_stil_rehberi.md §7), sonra kullanıcı onayı
 
-**Engel:** genaipro.io bu bulut ortamının ağ politikasında engelli (aşama 2'den itibaren gerekli).
+**Kurtarılacak görev:** refs/nuri — genaipro görev `38c4a1de-a261-47f3-8ae2-298c1c1f0f95` (4 varyant, 1 kredi harcandı). `python3 scripts/genaipro.py fetch 38c4a1de-a261-47f3-8ae2-298c1c1f0f95 --out projects/son-nobet/refs/nuri.png`
+
+**Engel:** API (genaipro.io) açık; dosya hostu files.genaipro.io ağ politikasında engelli — indirmeler başarısız.
