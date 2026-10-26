@@ -288,7 +288,7 @@
       "keyframe_file": "keyframes/S09_v2.png",
       "clip_file": null,
       "status": "clip_failed",
-      "notes": "RİSK: tepe kadrajda inişin perspektifi ve figürün tutarlılığı (Veo sarmalda yönü şaşırabilir). stairwell.png filigranı: sağ alt köşe kontrol. Klip 2 varyant önerilir. [QA kare 2026-10-26: ONAY v2 (tam kadraj; v1'de sağ/sol siyah pillarbox bantları var).] [clip_failed: Generation failed, please try again] [Yapımcı: 2. deneme, prompt sadeleştirildi]",
+      "notes": "RİSK: tepe kadrajda inişin perspektifi ve figürün tutarlılığı (Veo sarmalda yönü şaşırabilir). stairwell.png filigranı: sağ alt köşe kontrol. Klip 2 varyant önerilir. [QA kare 2026-10-26: ONAY v2 (tam kadraj; v1'de sağ/sol siyah pillarbox bantları var).] [clip_failed: Generation failed, please try again] [Yapımcı: 2. deneme, prompt sadeleştirildi] [clip_failed: Generation failed, please try again]",
       "keyframe_url": "https://files.genaipro.io/image_f4f8b708-d90d-49b6-8230-65e64329445f_1.png",
       "keyframe_file_variants": [
         "keyframes/S09_v1.png",
