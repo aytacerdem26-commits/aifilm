@@ -4,7 +4,7 @@
 |---|---|---|---|
 | 1 | Senaryo | onaylandı (rev. 2, İngilizce) | 16 çekim, 118 sn, 3 mekân, V.O. ağırlıklı |
 | 2 | Stil rehberi + referanslar | onaylandı | 5 referans (dosyalar konteyner sıfırlanınca silindi; görev ID'leriyle `fetch` ile kredisiz geri indirilecek) |
-| 3 | Çekim listesi | onay bekliyor | 16 çekim, 118 sn; tahmin ~44 kredi (34 + ~%30 pay) |
+| 3 | Çekim listesi | onaylandı | 16 çekim, 118 sn; tahmin ~44 kredi (34 + ~%30 pay) |
 | 4 | Anahtar kareler | bekliyor | |
 | 5 | Kare denetimi | bekliyor | |
 | 6 | Klipler | bekliyor | |
