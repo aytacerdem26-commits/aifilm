@@ -25,14 +25,15 @@
       "transition_in": "fade",
       "keyframe_file": "keyframes/S01_v1.png",
       "clip_file": "clips/S01.mp4",
-      "status": "clip_done",
-      "notes": "Fade-in from black. cape_night referansında küre var: prompt'ta 'no glowing sphere' korunmalı. Huzme kameraya dönünce aşırı patlama (tam beyaz kare) olursa kurgucu o anı kısa tutar. [QA kare 2026-10-26: ONAY v1. Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo/kırpma.]",
+      "status": "clip_approved",
+      "notes": "Fade-in from black. cape_night referansında küre var: prompt'ta 'no glowing sphere' korunmalı. Huzme kameraya dönünce aşırı patlama (tam beyaz kare) olursa kurgucu o anı kısa tutar. [QA kare 2026-10-26: ONAY v1. Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo/kırpma.] [QA klip 2026-10-26: ONAY. Huzme kameraya dönüp kadrajı altına boğuyor (3–4.5 sn), kule ay altında silüet; artefakt yok. 8 sn temiz. ✦ filigran tüm klipte → delogo=x=1740:y=898:w=86:h=84.]",
       "keyframe_url": "https://files.genaipro.io/image_9b1030a3-0c04-4182-a6f2-2c06b7f419b7_0.png",
       "keyframe_file_variants": [
         "keyframes/S01_v1.png",
         "keyframes/S01_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_a4d01605-e364-4bf8-8ad0-06160f693bb0_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_a4d01605-e364-4bf8-8ad0-06160f693bb0_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S02",
@@ -57,14 +58,15 @@
       "transition_in": "dissolve",
       "keyframe_file": "keyframes/S02_v2.png",
       "clip_file": "clips/S02.mp4",
-      "status": "clip_done",
-      "notes": "El anatomisi riski: eller küçük ve bezle kısmen örtülü kalmalı. [QA kare 2026-10-26: ONAY v2 (dolap+yeşil LED kadrajda, filigransız).]",
+      "status": "clip_approved",
+      "notes": "El anatomisi riski: eller küçük ve bezle kısmen örtülü kalmalı. [QA kare 2026-10-26: ONAY v2 (dolap+yeşil LED kadrajda, filigransız).] [QA klip 2026-10-26: ONAY. Silme hareketi doğal, eller küçük, dolap+LED kadrajda. 6.5 sn sonrası sağ önde mercek çerçevesinin pirinç kolu kadraja giriyor ve yüz hafif değişiyor (dönen mercek olarak okunuyor, kabul). Kurgu: mümkünse 0–6.5 sn kullan. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_7624254a-e54d-408d-a5e8-f827e7dab2d9_1.png",
       "keyframe_file_variants": [
         "keyframes/S02_v1.png",
         "keyframes/S02_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_491bf454-a260-4ddf-b35f-e0beaa32bea6_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_491bf454-a260-4ddf-b35f-e0beaa32bea6_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S03",
@@ -89,14 +91,15 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S03_v1.png",
       "clip_file": "clips/S03.mp4",
-      "status": "clip_done",
-      "notes": "Dolapta yazı/etiket/sayı çıkmamalı (denetimde kontrol). Yeşil LED ortamı aydınlatmamalı. [QA kare 2026-10-26: ONAY v1 (ön planda dolap, arkada flu Nuri; kancada fener görünür). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.]",
+      "status": "clip_approved",
+      "notes": "Dolapta yazı/etiket/sayı çıkmamalı (denetimde kontrol). Yeşil LED ortamı aydınlatmamalı. [QA kare 2026-10-26: ONAY v1 (ön planda dolap, arkada flu Nuri; kancada fener görünür). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.] [QA klip 2026-10-26: DÜZELT. Dolap ön planda, LED düzenli yanıp sönüyor, dolapta yazı yok. SORUN: arkadaki Fresnel kovan biçimini koruyamıyor — 2.5–6 sn spot lambası/bullseye, 6.5 sn sonrası ayna-pul kafes (disko topu) görünümü. Dönen mercek gibi okunabilir ama 6.5 sn sonrası belirgin. Kurgu: 0–6.5 sn kullan (6.5 sn, hedef 7). Kredi kalırsa isteğe bağlı yeniden üretim (05_denetim.md). ✦ filigran → delogo=x=1740:y=898:w=86:h=84.]",
       "keyframe_url": "https://files.genaipro.io/image_5728df90-6c50-4eed-9877-5dd3f1453237_0.png",
       "keyframe_file_variants": [
         "keyframes/S03_v1.png",
         "keyframes/S03_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_8f34396e-efa8-41a3-8e38-ee2618586e3c_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_8f34396e-efa8-41a3-8e38-ee2618586e3c_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S04",
@@ -121,14 +124,15 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S04_v2.png",
       "clip_file": "clips/S04.mp4",
-      "status": "clip_done",
-      "notes": "Galeri çekimi: LOC_LAMP_ROOM bloğu başına 'outside on the narrow gallery of' eklendi. [QA kare 2026-10-26: ONAY v2. Yön: lamba odası solda, Nuri sağa (denize) bakıyor; S06/S07 bu yöne göre seçildi.]",
+      "status": "clip_approved",
+      "notes": "Galeri çekimi: LOC_LAMP_ROOM bloğu başına 'outside on the narrow gallery of' eklendi. [QA kare 2026-10-26: ONAY v2. Yön: lamba odası solda, Nuri sağa (denize) bakıyor; S06/S07 bu yöne göre seçildi.] [QA klip 2026-10-26: ONAY. Korkuluğa yaslanmış, palto eteği rüzgârda, amber huzme başının üstünden denize. 8 sn temiz, 0–7 kullan. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_1ea3825e-1a3c-45ff-bd4e-553b9f5e2602_1.png",
       "keyframe_file_variants": [
         "keyframes/S04_v1.png",
         "keyframes/S04_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_85d802ed-c8f7-4554-99c0-94e68fe54541_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_85d802ed-c8f7-4554-99c0-94e68fe54541_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S05",
@@ -149,19 +153,20 @@
       "clip_volume": 0.5,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S05_v2.png",
-      "clip_file": "clips/S05_v1.mp4",
-      "status": "clip_done",
-      "notes": "RİSK: ışığın ölçeği (ay boyutunda çizilme eğilimi). Anahtar kare ışığı çok sönük ama mevcut gösterir; klipte 'belirme' parlaklaşma ile sağlanır. Klip 2 varyant önerilir. [QA kare 2026-10-26: YENİDEN ÜRET. İki varyantta da küre ufukta ay boyunda turuncu disk (gökte ikinci bir ay gibi okunuyor; S07'deki minik noktayla tutarsız); v1'de lamba odası iki kez/aynalanmış (mimari artefakt); prompt'taki 'no lighthouse tower visible' uygulanmamış. Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: galeriden POV, 'moon between clouds', küre 'very faint ... star-sized dot'; refs lamp_room+cape_night. refs: yalnızca lamp_room (cape_night'taki küre ölçeği/ay sızıntısını önlemek için). Eski varyantlar: keyframes/old/S05_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Küre ufukta küçük sıcak nokta + suda altın iz; ay diski yok, kule/lamba odası yok, korkuluk temiz. v1 daha da küçük ama korkuluk hizasında anlamsız köpük bandı (artefakt). ✦ filigran sağ altta (iki varyantta da) → kurgucu delogo.]",
+      "clip_file": "clips/S05_v2.mp4",
+      "status": "clip_approved",
+      "notes": "RİSK: ışığın ölçeği (ay boyutunda çizilme eğilimi). Anahtar kare ışığı çok sönük ama mevcut gösterir; klipte 'belirme' parlaklaşma ile sağlanır. Klip 2 varyant önerilir. [QA kare 2026-10-26: YENİDEN ÜRET. İki varyantta da küre ufukta ay boyunda turuncu disk (gökte ikinci bir ay gibi okunuyor; S07'deki minik noktayla tutarsız); v1'de lamba odası iki kez/aynalanmış (mimari artefakt); prompt'taki 'no lighthouse tower visible' uygulanmamış. Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: galeriden POV, 'moon between clouds', küre 'very faint ... star-sized dot'; refs lamp_room+cape_night. refs: yalnızca lamp_room (cape_night'taki küre ölçeği/ay sızıntısını önlemek için). Eski varyantlar: keyframes/old/S05_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Küre ufukta küçük sıcak nokta + suda altın iz; ay diski yok, kule/lamba odası yok, korkuluk temiz. v1 daha da küçük ama korkuluk hizasında anlamsız köpük bandı (artefakt). ✦ filigran sağ altta (iki varyantta da) → kurgucu delogo.] [QA klip 2026-10-26: ONAY. [S05_v2.mp4] Seçilen v2: ufukta minik altın nokta yavaşça parlıyor (senaryodaki \"belirme\"), suda altın iz büyüyor, ay diski yok. Kamera hafifçe yukarı kayıyor, korkuluk 5 sn civarı kadrajdan çıkıyor — kabul. v1: ışık sabit (belirme yok), gökte uçuşan kuş/döküntü lekeleri. 1.0–8.0 kullan. ✦ filigran → delogo=x=1740:y=898:w=86:h=84.]",
       "keyframe_url": "https://files.genaipro.io/image_ddd26508-1738-445c-999e-2a7e89545f1f_1.png",
       "keyframe_file_variants": [
         "keyframes/S05_v1.png",
         "keyframes/S05_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_332d5cb1-995e-4666-b597-11067552297e_video_resolution_1080p.mp4",
+      "clip_url": "https://files.genaipro.io/video_c4b1b61b-8523-48f5-b276-08c09bb48294_video_resolution_1080p.mp4",
       "clip_file_variants": [
         "clips/S05_v1.mp4",
         "clips/S05_v2.mp4"
-      ]
+      ],
+      "trim_start_s": 1.0
     },
     {
       "id": "S06",
@@ -187,13 +192,14 @@
       "keyframe_file": "keyframes/S06_v2.png",
       "clip_file": "clips/S06.mp4",
       "status": "clip_done",
-      "notes": "Göz yansıması küçük kalmalı; abartılı parlama olmamalı. [QA kare 2026-10-26: ONAY v2 (gözlerde minik altın yansıma var, sağa bakıyor → S04 v2 ile yön tutarlı).]",
+      "notes": "Göz yansıması küçük kalmalı; abartılı parlama olmamalı. [QA kare 2026-10-26: ONAY v2 (gözlerde minik altın yansıma var, sağa bakıyor → S04 v2 ile yön tutarlı).] [QA klip 2026-10-26: YENİDEN ÜRET. 1.4–4.95 sn arası Nuri'nin başının yanında İKİNCİ BİR DENİZ FENERİ belirip kadrajda soldan sağa kayıyor (o zaten fenerin galerisinde) — izleyici net fark eder. Temiz bölümler: 0–1.3 ve 5.0–8.0 (gözlerde altın yansıma 6–8 sn, iyi). Yedek (kredisiz): 5.0–8.0 = 3.0 sn. Önerilen video_prompt 05_denetim.md'de.]",
       "keyframe_url": "https://files.genaipro.io/image_2e23e139-9623-4ebd-938f-c2938cf72de6_1.png",
       "keyframe_file_variants": [
         "keyframes/S06_v1.png",
         "keyframes/S06_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_bbe1e8b9-fac2-4379-8990-76e0b69a2515_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_bbe1e8b9-fac2-4379-8990-76e0b69a2515_video_resolution_1080p.mp4",
+      "trim_start_s": 5.0
     },
     {
       "id": "S07",
@@ -218,19 +224,20 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S07_v1.png",
-      "clip_file": "clips/S07_v1.mp4",
-      "status": "clip_done",
-      "notes": "Ritim kurguda desteklenecek (Veo 'two short, one long' ritmini güvenilir üretmeyebilir; kurgucu gerekirse parlaklık/hız düzenlemesi veya kare tekrarıyla ritmi kurar). Işık uzak, küçük net altın nokta kalmalı. Klip 2 varyant önerilir. [QA kare 2026-10-26: ONAY v1 (küre küçük net nokta; lamba odası solda, Nuri sağa bakıyor → S04 v2 ile tutarlı). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.]",
+      "clip_file": "clips/S07_v2.mp4",
+      "status": "clip_approved",
+      "notes": "Ritim kurguda desteklenecek (Veo 'two short, one long' ritmini güvenilir üretmeyebilir; kurgucu gerekirse parlaklık/hız düzenlemesi veya kare tekrarıyla ritmi kurar). Işık uzak, küçük net altın nokta kalmalı. Klip 2 varyant önerilir. [QA kare 2026-10-26: ONAY v1 (küre küçük net nokta; lamba odası solda, Nuri sağa bakıyor → S04 v2 ile tutarlı). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.] [QA klip 2026-10-26: ONAY. [S07_v2.mp4] Seçilen v2: denizde TEK küçük altın ışık, büyüyüp küçülerek yanıp sönüyor (ritim kurguda kurulacak); amber huzme, lamba odası solda. v1: ışık iki-üç nokta (gemi/UFO feneri gibi) + palto eteği pelerin gibi havalanıyor. 8 sn temiz. ✦ filigran → delogo=x=1740:y=898:w=86:h=84.]",
       "keyframe_url": "https://files.genaipro.io/image_724f97fb-b370-4b06-8c06-25ca2896f671_0.png",
       "keyframe_file_variants": [
         "keyframes/S07_v1.png",
         "keyframes/S07_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_4ca54875-fdc0-4bc3-9f83-a988b583552a_video_resolution_1080p.mp4",
+      "clip_url": "https://files.genaipro.io/video_67cc7973-191a-4672-8232-d7184efc34ff_video_resolution_1080p.mp4",
       "clip_file_variants": [
         "clips/S07_v1.mp4",
         "clips/S07_v2.mp4"
-      ]
+      ],
+      "trim_start_s": 0
     },
     {
       "id": "S08",
@@ -256,19 +263,20 @@
       "keyframe_file": "keyframes/S08_v1.png",
       "clip_file": "clips/S08.mp4",
       "status": "clip_done",
-      "notes": "lamp_room referansına göre kanca merdiven kapağının yanındaki direkte; fener o kancada asılı başlar. Sönük fener (PROP_LANTERN unlit). [QA kare 2026-10-26: ONAY v1 (Nuri kancadaki fenere uzanıyor, aksiyona en uygun).]",
+      "notes": "lamp_room referansına göre kanca merdiven kapağının yanındaki direkte; fener o kancada asılı başlar. Sönük fener (PROP_LANTERN unlit). [QA kare 2026-10-26: ONAY v1 (Nuri kancadaki fenere uzanıyor, aksiyona en uygun).] [QA klip 2026-10-26: YENİDEN ÜRET. Hikâye hatası: Nuri feneri kancadan alıyor (1.5 sn) ama 3 sn civarı Fresnel kaidesinin üstüne BIRAKIP merdivene fenersiz iniyor; fener 4–8 sn kaidede kalıyor (S10–S13 fener elinde). Yedek (kredisiz): 0–2.2 sn (feneri alış). Önerilen video_prompt 05_denetim.md'de. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_498d6ced-1451-46ef-a8da-40e6739dfb02_0.png",
       "keyframe_file_variants": [
         "keyframes/S08_v1.png",
         "keyframes/S08_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_431c3b6e-14f4-4123-a746-fc2167d24bfb_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_431c3b6e-14f4-4123-a746-fc2167d24bfb_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S09",
       "scene": 4,
       "duration_s": 8,
-      "shot_type": "overhead top shot",
+      "shot_type": "high-angle three-quarter from behind",
       "camera": "locked-off straight-down top shot",
       "description_tr": "Tam tepeden: spiral merdiven bir kabuk gibi aşağı daralır. Nuri sarmal boyunca yavaşça iner, kadrajda küçülür; yarık pencereden mavi ay ışığı basamaklara düşer.",
       "characters": [
@@ -285,15 +293,21 @@
       "voiceover": "Forty-one years looking down. Tonight, I go down.",
       "clip_volume": 0.35,
       "transition_in": "cut",
-      "keyframe_file": "keyframes/S09_v2.png",
-      "clip_file": null,
-      "status": "clip_failed",
-      "notes": "RİSK: tepe kadrajda inişin perspektifi ve figürün tutarlılığı (Veo sarmalda yönü şaşırabilir). stairwell.png filigranı: sağ alt köşe kontrol. Klip 2 varyant önerilir. [QA kare 2026-10-26: ONAY v2 (tam kadraj; v1'de sağ/sol siyah pillarbox bantları var).] [clip_failed: Generation failed, please try again] [Yapımcı: 2. deneme, prompt sadeleştirildi] [clip_failed: Generation failed, please try again]",
+      "keyframe_file": "keyframes/S09_alt_v1.png",
+      "clip_file": "clips/S09_v2.mp4",
+      "status": "clip_approved",
+      "notes": "RİSK: tepe kadrajda inişin perspektifi ve figürün tutarlılığı (Veo sarmalda yönü şaşırabilir). stairwell.png filigranı: sağ alt köşe kontrol. Klip 2 varyant önerilir. [QA kare 2026-10-26: ONAY v2 (tam kadraj; v1'de sağ/sol siyah pillarbox bantları var).] [clip_failed: Generation failed, please try again] [Yapımcı: 2. deneme, prompt sadeleştirildi] [clip_failed: Generation failed, please try again] [Yapımcı: tam tepe kadraj Veo'da 2 kez failed; 3/4 yüksek açı alternatif kare (S09_alt_v1) + klip v2 seçildi — Nuri spiralde kayboluyor, morph yok]",
       "keyframe_url": "https://files.genaipro.io/image_f4f8b708-d90d-49b6-8230-65e64329445f_1.png",
       "keyframe_file_variants": [
         "keyframes/S09_v1.png",
         "keyframes/S09_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_e6974aa7-28fd-4dbf-a581-f88bbea352ed_video_resolution_1080p.mp4",
+      "clip_file_variants": [
+        "clips/S09_v1.mp4",
+        "clips/S09_v2.mp4"
+      ],
+      "trim_start_s": 0
     },
     {
       "id": "S10",
@@ -318,14 +332,15 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S10_v2.png",
       "clip_file": "clips/S10.mp4",
-      "status": "clip_done",
-      "notes": "cape_night referansındaki küre bu kareye sızmamalı ('no glowing sphere in frame'). Senaryoya göre dalga sesi yükselir: kurgucu 0.6'dan yukarı çıkarabilir. [QA kare 2026-10-26: YENİDEN ÜRET. v2'de iki Nuri (kapıda + ön planda) — tek karakter kuralı ihlali; v1'de Nuri kameraya poz veren, kuleyle aynı boyda 'kolaj' figür (ölçek bozuk, aksiyon yok: kapıdan çıkıp kayalarda ilerleme yok). Yedek: v1.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: Nuri kapıdan 'just stepping out', ölçek/poz tarifi yok, tek kişi vurgusu yok; refs nuri+cape_night (aynen). refs: nuri + cape_night korundu (kadrajda küre yok; kule/kapı/patika sürekliliği için mekân referansı gerekli). Eski varyantlar: keyframes/old/S10_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Tek Nuri, arkadan 3/4, başı eğik kayalarda denize iniyor; kule + kemerli kapı solda, huzme sıcak amber. Nuri ~%55-60 yükseklikte ama kuleden daha yakın olduğu için perspektif doğru okunuyor (kolaj hissi yok). v1: Nuri kuleden büyük (ölçek bozuk), gözlük benzeri çizgi. Not: S11 ile benzer arkadan kadraj — S11'de Nuri ~1.4x büyük, kurgu atlama gibi durmaz; klipte Nuri yürümeye devam etmeli.]",
+      "status": "clip_approved",
+      "notes": "cape_night referansındaki küre bu kareye sızmamalı ('no glowing sphere in frame'). Senaryoya göre dalga sesi yükselir: kurgucu 0.6'dan yukarı çıkarabilir. [QA kare 2026-10-26: YENİDEN ÜRET. v2'de iki Nuri (kapıda + ön planda) — tek karakter kuralı ihlali; v1'de Nuri kameraya poz veren, kuleyle aynı boyda 'kolaj' figür (ölçek bozuk, aksiyon yok: kapıdan çıkıp kayalarda ilerleme yok). Yedek: v1.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: Nuri kapıdan 'just stepping out', ölçek/poz tarifi yok, tek kişi vurgusu yok; refs nuri+cape_night (aynen). refs: nuri + cape_night korundu (kadrajda küre yok; kule/kapı/patika sürekliliği için mekân referansı gerekli). Eski varyantlar: keyframes/old/S10_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Tek Nuri, arkadan 3/4, başı eğik kayalarda denize iniyor; kule + kemerli kapı solda, huzme sıcak amber. Nuri ~%55-60 yükseklikte ama kuleden daha yakın olduğu için perspektif doğru okunuyor (kolaj hissi yok). v1: Nuri kuleden büyük (ölçek bozuk), gözlük benzeri çizgi. Not: S11 ile benzer arkadan kadraj — S11'de Nuri ~1.4x büyük, kurgu atlama gibi durmaz; klipte Nuri yürümeye devam etmeli.] [QA klip 2026-10-26: DÜZELT. Tek Nuri, arkadan, kayalarda denize iniyor; amber huzme, kemerli kapı. SORUN: 2.0–3.4 sn eliyle feneri YAKIYOR (fener içinde alev + elde alev) — fener S13'e kadar sönük olmalı. Ayrıca 3.5 sn sonrası büyük dalga üstüne vuruyor, köpükte yürüyor (dramatik, kabul). Kurgu: 3.6–8.0 = 4.4 sn (hedef 7). Kredi kalırsa isteğe bağlı yeniden üretim. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_d8de641e-9001-41eb-8e22-b87ece42f02a_1.png",
       "keyframe_file_variants": [
         "keyframes/S10_v1.png",
         "keyframes/S10_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_d15dc5d1-769f-4759-8940-555c00fdc229_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_d15dc5d1-769f-4759-8940-555c00fdc229_video_resolution_1080p.mp4",
+      "trim_start_s": 3.6
     },
     {
       "id": "S11",
@@ -348,19 +363,20 @@
       "clip_volume": 0.7,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S11_v2_warm.png",
-      "clip_file": "clips/S11_v1.mp4",
-      "status": "clip_done",
-      "notes": "Senaryoda 'wide'; S10 ile ardışık iki geniş olmaması için medium-wide (tam figür) yapıldı. RİSK: küre yaklaşırken büyüyüp ay/güneş boyuna çıkma eğilimi. Klip 2 varyant önerilir. [QA kare 2026-10-26: YENİDEN ÜRET. v1'de iki Nuri (biri önden biri arkadan). v2 kullanılabilir ama küre ufuk çizgisinde, ay büyüklüğünde turuncu disk (ay doğuşu gibi okunuyor, 'yirmi metre açıkta, kafa boyu' değil; gökte gerçek ay da var). Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: arkadan tam figür, küre 'twenty metres out' ama ufuk/ay ölçeği tarifi yok, 'moon between clouds'; refs nuri+cape_night. refs: yalnızca nuri — cape_night çıkarıldı (ufukta ay boyu küre sızıntısının muhtemel kaynağı); lamp_room iç mekân olduğu için eklenmedi. Gece eki 'moon between clouds' -> 'moon hidden behind thick cloud' (ay diski olmasın; LOC_CAPE bloğu aynen). Eski varyantlar: keyframes/old/S11_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2 — KLİPTEN ÖNCE KREDİSİZ DÜZELTME ŞART. Tek Nuri arkadan tam figür, kule solda (S10/S13 ile aynı geografi), küre ufkun altında suyun üstünde, Nuri'nin kafasından küçük (20 m açıkta okunuyor), dalgalarda altın iz. SORUN: fener huzmesi ve lamba soğuk beyaz-mavi (hue ~205°) — stil rehberi S01–S14 sıcak amber; S10 (amber) → S11 (beyaz) kesmesinde fark ediliyor ve S15'teki 'sıcak→soğuk' dönüşümünü erkenden harcıyor. Düzeltme: scripts/warm_beam.py ile huzme kutusu (x180 y30 w820 h170) amber'e çekilip keyframes/S11_v2_warm.png yazılmalı, keyframe_file ona çevrilmeli; video_prompt'a 'the lighthouse beam behind him glows warm amber (#F2A541) as it turns, never white' eklenmeli. v1: kule sağda (S10/S13 ile ters), küre ufukta ay gibi. ✦ filigran → delogo.] [Yapımcı: huzme kredisiz amber renk düzeltmesi (qa/warm_beam.py), keyframe_file → _v2_warm]",
+      "clip_file": "clips/S11_v2.mp4",
+      "status": "clip_approved",
+      "notes": "Senaryoda 'wide'; S10 ile ardışık iki geniş olmaması için medium-wide (tam figür) yapıldı. RİSK: küre yaklaşırken büyüyüp ay/güneş boyuna çıkma eğilimi. Klip 2 varyant önerilir. [QA kare 2026-10-26: YENİDEN ÜRET. v1'de iki Nuri (biri önden biri arkadan). v2 kullanılabilir ama küre ufuk çizgisinde, ay büyüklüğünde turuncu disk (ay doğuşu gibi okunuyor, 'yirmi metre açıkta, kafa boyu' değil; gökte gerçek ay da var). Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: arkadan tam figür, küre 'twenty metres out' ama ufuk/ay ölçeği tarifi yok, 'moon between clouds'; refs nuri+cape_night. refs: yalnızca nuri — cape_night çıkarıldı (ufukta ay boyu küre sızıntısının muhtemel kaynağı); lamp_room iç mekân olduğu için eklenmedi. Gece eki 'moon between clouds' -> 'moon hidden behind thick cloud' (ay diski olmasın; LOC_CAPE bloğu aynen). Eski varyantlar: keyframes/old/S11_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2 — KLİPTEN ÖNCE KREDİSİZ DÜZELTME ŞART. Tek Nuri arkadan tam figür, kule solda (S10/S13 ile aynı geografi), küre ufkun altında suyun üstünde, Nuri'nin kafasından küçük (20 m açıkta okunuyor), dalgalarda altın iz. SORUN: fener huzmesi ve lamba soğuk beyaz-mavi (hue ~205°) — stil rehberi S01–S14 sıcak amber; S10 (amber) → S11 (beyaz) kesmesinde fark ediliyor ve S15'teki 'sıcak→soğuk' dönüşümünü erkenden harcıyor. Düzeltme: scripts/warm_beam.py ile huzme kutusu (x180 y30 w820 h170) amber'e çekilip keyframes/S11_v2_warm.png yazılmalı, keyframe_file ona çevrilmeli; video_prompt'a 'the lighthouse beam behind him glows warm amber (#F2A541) as it turns, never white' eklenmeli. v1: kule sağda (S10/S13 ile ters), küre ufukta ay gibi. ✦ filigran → delogo.] [Yapımcı: huzme kredisiz amber renk düzeltmesi (qa/warm_beam.py), keyframe_file → _v2_warm] [QA klip 2026-10-26: ONAY. [S11_v2.mp4] Seçilen v2: küre ufkun altından yaklaşıyor, dalga tepeleri altın; huzme baştan sona AMBER (warm_beam düzeltmesi tuttu). Küre yaklaştıkça büyüyor, sonda ~kafanın 1.5 katı — perspektif olarak kabul. v1: küre sonda kafanın ~3 katı, ay gibi; büyük dalga patlaması. 8 sn temiz. ✦ filigran → delogo=x=1740:y=898:w=86:h=84.]",
       "keyframe_url": "https://files.genaipro.io/image_172c13be-8721-4afb-8de9-625e49c834ac_1.png",
       "keyframe_file_variants": [
         "keyframes/S11_v1.png",
         "keyframes/S11_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_4df3d2be-bd41-47b3-9602-f04fcf540509_video_resolution_1080p.mp4",
+      "clip_url": "https://files.genaipro.io/video_27cfe0a4-ca18-4ce0-b72c-7ddffd4a4d73_video_resolution_1080p.mp4",
       "clip_file_variants": [
         "clips/S11_v1.mp4",
         "clips/S11_v2.mp4"
-      ]
+      ],
+      "trim_start_s": 0
     },
     {
       "id": "S12",
@@ -384,14 +400,15 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S12_v2_warm.png",
       "clip_file": "clips/S12.mp4",
-      "status": "clip_done",
-      "notes": "Yüz sabit, alttan sıcak aydınlatma (stil rehberi S12–S14). [QA kare 2026-10-26: YENİDEN ÜRET. Kilit duygu karesi tutmuyor: iki varyantta da yüz alttan sıcak aydınlanmıyor (soğuk/düz), Nuri kameraya poz veriyor (tam boy, 'medium' değil), küre kafasının ~2 katı (plaj topu/balon gibi). v1'de ✦ filigran. Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: 'medium frontal ... looking down toward camera-low', küre 'lower foreground', alttan ışık tek cümle, 'moon between clouds'; refs nuri+cape_night. refs: yalnızca nuri — cape_night çıkarıldı (küre ölçeği); lamp_room iç mekân, eklenmedi. Gece eki 'moon between clouds' -> 'moon hidden behind thick cloud'. Eski varyantlar: keyframes/old/S12_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2 — KLİPTEN ÖNCE KREDİSİZ DÜZELTME ŞART. Önden bel üstü, aşağı bakıyor; sakal altı, yanaklar ve kazak yakası sıcak altın (alttan ışık yeterince okunuyor, klip prompt'u titreşimi güçlendiriyor). Küre sol altta, dalgaların üstünde, kafadan biraz büyük (kameraya daha yakın; S11→S13 ölçeğiyle uyumlu). Ters açı yönü S11 ile tutarlı (kule sağda, küre solda). Palto açık. Filigran yok. SORUN: arka plandaki huzme/lamba soğuk beyaz (S11 ile aynı) → scripts/warm_beam.py kutusu x740 y40 w636 h120 → keyframes/S12_v2_warm.png; video_prompt'a 'the distant lighthouse beam glows warm amber (#F2A541), never white' ekle. v1: Nuri profilde yana dönük, küre büyük, yüz önden aydınlık.] [Yapımcı: huzme kredisiz amber renk düzeltmesi (qa/warm_beam.py), keyframe_file → _v2_warm]",
+      "status": "clip_approved",
+      "notes": "Yüz sabit, alttan sıcak aydınlatma (stil rehberi S12–S14). [QA kare 2026-10-26: YENİDEN ÜRET. Kilit duygu karesi tutmuyor: iki varyantta da yüz alttan sıcak aydınlanmıyor (soğuk/düz), Nuri kameraya poz veriyor (tam boy, 'medium' değil), küre kafasının ~2 katı (plaj topu/balon gibi). v1'de ✦ filigran. Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: 'medium frontal ... looking down toward camera-low', küre 'lower foreground', alttan ışık tek cümle, 'moon between clouds'; refs nuri+cape_night. refs: yalnızca nuri — cape_night çıkarıldı (küre ölçeği); lamp_room iç mekân, eklenmedi. Gece eki 'moon between clouds' -> 'moon hidden behind thick cloud'. Eski varyantlar: keyframes/old/S12_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2 — KLİPTEN ÖNCE KREDİSİZ DÜZELTME ŞART. Önden bel üstü, aşağı bakıyor; sakal altı, yanaklar ve kazak yakası sıcak altın (alttan ışık yeterince okunuyor, klip prompt'u titreşimi güçlendiriyor). Küre sol altta, dalgaların üstünde, kafadan biraz büyük (kameraya daha yakın; S11→S13 ölçeğiyle uyumlu). Ters açı yönü S11 ile tutarlı (kule sağda, küre solda). Palto açık. Filigran yok. SORUN: arka plandaki huzme/lamba soğuk beyaz (S11 ile aynı) → scripts/warm_beam.py kutusu x740 y40 w636 h120 → keyframes/S12_v2_warm.png; video_prompt'a 'the distant lighthouse beam glows warm amber (#F2A541), never white' ekle. v1: Nuri profilde yana dönük, küre büyük, yüz önden aydınlık.] [Yapımcı: huzme kredisiz amber renk düzeltmesi (qa/warm_beam.py), keyframe_file → _v2_warm] [QA klip 2026-10-26: ONAY. Önden bel üstü, aşağı bakıyor; yüz alttan sıcak altın (6–8 sn en güçlü) — kilit an tuttu. Arka huzme AMBER. Küre suyun üstünden Nuri'nin bel hizasına yükselip yanında duruyor; 4 sn sonrası yüzeyi ince ışık noktalı (pırıltılı) doku alıyor — stil rehberindeki \"pürüzsüz çekirdek\"ten küçük sapma, kabul. 1.0–8.0 kullan. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_17ef4a07-f89b-4dd1-a7af-c2d2aa47b833_1.png",
       "keyframe_file_variants": [
         "keyframes/S12_v1.png",
         "keyframes/S12_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_1c5b6ab2-485c-4935-bfd5-aba7b1a0a0e5_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_1c5b6ab2-485c-4935-bfd5-aba7b1a0a0e5_video_resolution_1080p.mp4",
+      "trim_start_s": 1.0
     },
     {
       "id": "S13",
@@ -416,8 +433,8 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S13_edit_v1.png",
       "clip_file": "clips/S13_v1.mp4",
-      "status": "clip_done",
-      "notes": "END_FRAME: Medium-wide side-angle shot, the same old keeper in profile on the dark rocks holding at chest height an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, lit from within by a small warm flickering flame, soft amber glow; no sphere of light anywhere over the water, the lantern is now the only warm source, gold light on his face, cold blue night around, same framing as the start frame. || RİSK: filmin en zor çekimi (küre→fener geçişi, el sabit). Klip 2 varyant önerilir. YEDEK PLAN (yönetmen; senaryoda ayrı yedek plan yazılı değil, senaryonun 'dokunma yok, minimum el hareketi' kısıtına uyar): (1) END_FRAME'li klip başarısızsa END_FRAME olmadan, küre camın içine girip parlak bir sıcak ışık 'bloom'u ile kapanacak şekilde üret; kurgucu parlamanın tepe noktasında S14'e keser, S14'teki alttan sıcak fener ışığı yanmayı tamamlar. (2) O da olmazsa çekim ikiye bölünür: S13a küre yükselip cama yaklaşır (4 sn), S13b yanan fenerin insert'i (END_FRAME karesinden kısa hareketli klip, 3–4 sn) — +1 klip kredisi. [QA kare 2026-10-26: YENİDEN ÜRET (yalnız başlangıç karesi). Seçilen v1 + end_v2 (SSIM 0.95, aynı poz). Küre ufukta ay boyunda (S12'deki 'kayaların dibinde' konumla ve 'fenerin bir metre önünde' tarifle çelişiyor; Veo'da ufuktan uçup gelir). Fener göğüs/omuz hizasında — kabul. Öneri: S13_v1'i referans verip yalnız küreyi yakına taşıyan düzenleme; böylece end_v2 geçerli kalır. Bütün S13 kareleri ✦ filigranlı.] [Düzenleme 2026-10-26: S13_base.png (= eski S13_v1) + refs/nuri.png referansıyla yalnız küre taşındı (görev 1efd66db…). Kadraj/poz/kule/fener base ve end_v2 ile görsel olarak birebir; end_keyframe_file = S13_end_v2 korunur, bitiş karesi yeniden üretilmedi. Küre ufkun altında, kayaların dibinde suyun üstünde; v1 ~fener boyu, v2 belirgin büyük. Filigran yok. Eski kareler: keyframes/old/S13_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY edit_v1 + end_v2. Kadraj/poz/kule/fener end_v2 ile birebir; küre ufkun altında, ~2 m açıkta suyun üstünde, fener/kafa boyunda; huzme amber; ufukta disk yok. edit_v2'de küre fenerin ~2 katı (fazla büyük). Gökte küçük ay bulut arkasında — end_v2'de de var, tutarlı. Başlangıç filigransız, end_v2 filigranlı → kurgucu delogo (klip boyunca).]",
+      "status": "clip_approved",
+      "notes": "END_FRAME: Medium-wide side-angle shot, the same old keeper in profile on the dark rocks holding at chest height an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, lit from within by a small warm flickering flame, soft amber glow; no sphere of light anywhere over the water, the lantern is now the only warm source, gold light on his face, cold blue night around, same framing as the start frame. || RİSK: filmin en zor çekimi (küre→fener geçişi, el sabit). Klip 2 varyant önerilir. YEDEK PLAN (yönetmen; senaryoda ayrı yedek plan yazılı değil, senaryonun 'dokunma yok, minimum el hareketi' kısıtına uyar): (1) END_FRAME'li klip başarısızsa END_FRAME olmadan, küre camın içine girip parlak bir sıcak ışık 'bloom'u ile kapanacak şekilde üret; kurgucu parlamanın tepe noktasında S14'e keser, S14'teki alttan sıcak fener ışığı yanmayı tamamlar. (2) O da olmazsa çekim ikiye bölünür: S13a küre yükselip cama yaklaşır (4 sn), S13b yanan fenerin insert'i (END_FRAME karesinden kısa hareketli klip, 3–4 sn) — +1 klip kredisi. [QA kare 2026-10-26: YENİDEN ÜRET (yalnız başlangıç karesi). Seçilen v1 + end_v2 (SSIM 0.95, aynı poz). Küre ufukta ay boyunda (S12'deki 'kayaların dibinde' konumla ve 'fenerin bir metre önünde' tarifle çelişiyor; Veo'da ufuktan uçup gelir). Fener göğüs/omuz hizasında — kabul. Öneri: S13_v1'i referans verip yalnız küreyi yakına taşıyan düzenleme; böylece end_v2 geçerli kalır. Bütün S13 kareleri ✦ filigranlı.] [Düzenleme 2026-10-26: S13_base.png (= eski S13_v1) + refs/nuri.png referansıyla yalnız küre taşındı (görev 1efd66db…). Kadraj/poz/kule/fener base ve end_v2 ile görsel olarak birebir; end_keyframe_file = S13_end_v2 korunur, bitiş karesi yeniden üretilmedi. Küre ufkun altında, kayaların dibinde suyun üstünde; v1 ~fener boyu, v2 belirgin büyük. Filigran yok. Eski kareler: keyframes/old/S13_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY edit_v1 + end_v2. Kadraj/poz/kule/fener end_v2 ile birebir; küre ufkun altında, ~2 m açıkta suyun üstünde, fener/kafa boyunda; huzme amber; ufukta disk yok. edit_v2'de küre fenerin ~2 katı (fazla büyük). Gökte küçük ay bulut arkasında — end_v2'de de var, tutarlı. Başlangıç filigransız, end_v2 filigranlı → kurgucu delogo (klip boyunca).] [QA klip 2026-10-26: ONAY. [S13_v1.mp4] Seçilen v1: küre sudan yükselip yay çizerek fenere iniyor, 4.0–5.0 sn feneri sarıp içinde küçülüyor, 5.0 sn'den itibaren fener sıcak alevle yanıyor; el sabit. Huzme amber. v2 aynı koreografi ama yanma daha sönük/zayıf. Küre 2–3.5 sn gökte ay hizasına kadar çıkıyor (hareketli, kabul). 8 sn temiz. ✦ filigran yalnız 7.67–7.75 sn (3 kare, bitiş karesinden) → kurgu ya 7.6'da kesmeli ya da delogo=x=1740:y=898:w=86:h=84.]",
       "keyframe_url": "https://files.genaipro.io/image_1efd66db-bda2-4b81-b5eb-d36942d292e4_0.png",
       "keyframe_file_variants": [
         "keyframes/S13_edit_v1.png",
@@ -432,7 +449,8 @@
       "clip_file_variants": [
         "clips/S13_v1.mp4",
         "clips/S13_v2.mp4"
-      ]
+      ],
+      "trim_start_s": 0
     },
     {
       "id": "S14",
@@ -457,14 +475,15 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S14_v1.png",
       "clip_file": "clips/S14.mp4",
-      "status": "clip_done",
-      "notes": "Gülümseme küçük kalmalı; dudak hareketi konuşma gibi okunmamalı (V.O. çekimi). [QA kare 2026-10-26: ONAY v1 (alttan sıcak ışık, nemli gözler, sağa bakıyor → S13 ile yön tutarlı).]",
+      "status": "clip_approved",
+      "notes": "Gülümseme küçük kalmalı; dudak hareketi konuşma gibi okunmamalı (V.O. çekimi). [QA kare 2026-10-26: ONAY v1 (alttan sıcak ışık, nemli gözler, sağa bakıyor → S13 ile yön tutarlı).] [QA klip 2026-10-26: DÜZELT. Alttan sıcak ışık, nemli gözler, küçük gülümseme (5–7.5 sn) çok iyi. SORUN: 1.0–4.8 sn kadrajın sol altında açık ALEV dilleri (kamp ateşi gibi) yükseliyor. Kurgu: 4.9–8.0 = 3.1 sn (V.O. \"To take me home.\" sığar; hedef 6). Kredi kalırsa isteğe bağlı yeniden üretim. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_47162a21-6c5f-4fe6-8131-a3d5199e6e0e_0.png",
       "keyframe_file_variants": [
         "keyframes/S14_v1.png",
         "keyframes/S14_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_2a91ed75-16c1-4a7a-ba07-371735a33bc5_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_2a91ed75-16c1-4a7a-ba07-371735a33bc5_video_resolution_1080p.mp4",
+      "trim_start_s": 4.9
     },
     {
       "id": "S15",
@@ -485,9 +504,9 @@
       "clip_volume": 0.7,
       "transition_in": "dissolve",
       "keyframe_file": "keyframes/S15_v1.png",
-      "clip_file": "clips/S15_v1.mp4",
-      "status": "clip_done",
-      "notes": "END_FRAME: Wide low-angle shot looking up at the same white stone lighthouse with a black iron cupola at early dawn, soft flat pale blue-grey light, the glass lantern room at the top now shining with a sharp cold white electric light (#E6F0FF), no warm orange light anywhere, same framing as the start frame. || RİSK: cape_dawn referansı zaten soğuk beyaz ışık gösteriyor; başlangıç karesinde sıcak turuncu ışığın baskın kalması prompt'a bağlı (denetimde kontrol). Geceden şafağa dissolve. Klip 2 varyant önerilir. Yedek: geçiş Veo'da olmazsa kurgucu sıcak (başlangıç karesi) ve soğuk (END_FRAME) hâllerini kısa siyah/karanlık ara ile çapraz geçişle kurar. [QA kare 2026-10-26: ONAY v1 + end_v2 (SSIM 0.96, aynı kadraj; başlangıçta sıcak turuncu, bitişte soğuk beyaz). Kubbe v1'de yeşilimsi gri (siyah değil) — şafakta küçük, kabul.]",
+      "clip_file": "clips/S15_v2.mp4",
+      "status": "clip_approved",
+      "notes": "END_FRAME: Wide low-angle shot looking up at the same white stone lighthouse with a black iron cupola at early dawn, soft flat pale blue-grey light, the glass lantern room at the top now shining with a sharp cold white electric light (#E6F0FF), no warm orange light anywhere, same framing as the start frame. || RİSK: cape_dawn referansı zaten soğuk beyaz ışık gösteriyor; başlangıç karesinde sıcak turuncu ışığın baskın kalması prompt'a bağlı (denetimde kontrol). Geceden şafağa dissolve. Klip 2 varyant önerilir. Yedek: geçiş Veo'da olmazsa kurgucu sıcak (başlangıç karesi) ve soğuk (END_FRAME) hâllerini kısa siyah/karanlık ara ile çapraz geçişle kurar. [QA kare 2026-10-26: ONAY v1 + end_v2 (SSIM 0.96, aynı kadraj; başlangıçta sıcak turuncu, bitişte soğuk beyaz). Kubbe v1'de yeşilimsi gri (siyah değil) — şafakta küçük, kabul.] [QA klip 2026-10-26: ONAY. [S15_v2.mp4] Seçilen v2: sıcak turuncu (0–0.8 sn) → sönüp karanlık (1.2–3.2 sn) → soğuk beyaz ışık yanıp dönmeye başlıyor (3.3 sn+); kadraj sabit — senaryoya birebir. v1: 4.5–6.8 sn tüm kadraja dev lamba mekanizması bindiriliyor (ağır artefakt). Ses tepe −0.4 dBFS → kurgucu normalize etsin. 8 sn temiz. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_78985055-e5a0-4893-9b82-cbdea63129f9_0.png",
       "keyframe_file_variants": [
         "keyframes/S15_v1.png",
@@ -498,11 +517,12 @@
         "keyframes/S15_end_v1.png",
         "keyframes/S15_end_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_a09ea586-4b55-4ab2-8a1c-593183beb3c7_video_resolution_1080p.mp4",
+      "clip_url": "https://files.genaipro.io/video_5ca073fd-aa23-43dc-b30b-9238afcfa4e3_video_resolution_1080p.mp4",
       "clip_file_variants": [
         "clips/S15_v1.mp4",
         "clips/S15_v2.mp4"
-      ]
+      ],
+      "trim_start_s": 0
     },
     {
       "id": "S16",
@@ -527,14 +547,15 @@
       "transition_in": "cut",
       "keyframe_file": "keyframes/S16_v2.png",
       "clip_file": "clips/S16.mp4",
-      "status": "clip_done",
-      "notes": "Kurguda sonrasında ~2 sn siyah + başlık/jenerik (üretim gerekmez). Gerekirse daha geniş alternatif referans: refs/alts/cape_dawn_v2.png. Not: LIGHT_DAWN sonrasına stil rehberindeki 'the lighthouse now shows a cold white electric light' eklendi. [QA kare 2026-10-26: ONAY v2 (sırtı dönük, patikada uzaklaşıyor, tek sıcak nokta fener; v1 kameraya doğru yürüyor).]",
+      "status": "clip_approved",
+      "notes": "Kurguda sonrasında ~2 sn siyah + başlık/jenerik (üretim gerekmez). Gerekirse daha geniş alternatif referans: refs/alts/cape_dawn_v2.png. Not: LIGHT_DAWN sonrasına stil rehberindeki 'the lighthouse now shows a cold white electric light' eklendi. [QA kare 2026-10-26: ONAY v2 (sırtı dönük, patikada uzaklaşıyor, tek sıcak nokta fener; v1 kameraya doğru yürüyor).] [QA klip 2026-10-26: ONAY. Sırtı dönük patikada uzaklaşıyor, fener tek sıcak nokta, kule soğuk beyaz huzmeyle dönüyor, pembe ufuk çizgisi. 8 sn temiz. Filigran yok.]",
       "keyframe_url": "https://files.genaipro.io/image_679ad8c8-a9b0-40e3-9f54-c173ce3e1af0_1.png",
       "keyframe_file_variants": [
         "keyframes/S16_v1.png",
         "keyframes/S16_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_a17732bb-8b3f-4bb1-9788-13104884bbf7_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_a17732bb-8b3f-4bb1-9788-13104884bbf7_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     }
   ]
 }

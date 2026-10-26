@@ -149,3 +149,125 @@ S12 ters açıda kule sağda) S10–S13 boyunca tutarlı.
 
 - Onaylanan: S01–S16 (16/16). Reddedilen: yok. Ek kredi: 0.
 - Klip üretiminden önce S11/S12 için iki `warm_beam.py` komutu + `keyframe_file` değişikliği + iki `video_prompt` eki yapılmalı.
+
+---
+
+## Klip denetimi (2026-10-26)
+
+Kapsam: 15 çekim / 20 klip (S01–S08, S10–S16; S05, S07, S11, S13, S15 iki varyantlı). S09 başarısız, kapsam dışı
+(JSON kaydına dokunulmadı). Her klipten 2 fps kare çıkarıldı (`qa/clips/<ID>_NN.jpg`, 640 px) ve sırayla incelendi;
+zaman damgalı kontakt tabakaları `qa/clips/sheets/<ID>_sheet.jpg` (4x4, 0.5 sn aralık), filigran köşe ızgarası
+`qa/clips/sheets/wm_grid.png`, ses spektrogramları `qa/clips/sheets/spec_grid.png`.
+Hepsi 1920x1080, 8.00 sn, ses izli.
+
+### Özet
+
+- **ONAY (10):** S01, S02, S04, S05 (v2), S07 (v2), S11 (v2), S12, S13 (v1), S15 (v2), S16
+- **DÜZELT — kurgu kırpması, kredisiz (3):** S03 (0–6.5 sn), S10 (3.6–8.0 sn), S14 (4.9–8.0 sn) → `clip_approved`,
+  `trim_start_s` yazıldı. Temiz bölüm `duration_s`'ten kısa; kurgucu bu üç çekimi kısaltmalı.
+- **YENİDEN ÜRET (2 istek ≈ 2 kredi):** S06, S08 → `clip_done` kaldı, gerekçe `notes`'ta. Kredisiz yedek kırpma
+  `trim_start_s`'te (S06: 5.0–8.0, S08: 0–2.2).
+- **İsteğe bağlı yeniden üretim (kredi/süre kalırsa, öncelik sırasıyla):** S14, S10, S03 (+3 kredi).
+- JSON: varyantlılarda `clip_file` / `clip_url` seçilene çekildi; 15 kayda `trim_start_s` eklendi; JSON geçerli, tüm
+  `clip_file` yolları mevcut, S09 değişmedi.
+
+### En kritik 3 sorun
+
+1. **S08 — fener merdivende yok (hikâye kırılıyor).** Nuri feneri kancadan alıyor, sonra Fresnel kaidesine bırakıp
+   merdivenden fenersiz iniyor; fener klibin sonuna kadar kaidede duruyor. S10–S16'da fener elinde → süreklilik hatası.
+2. **S06 — ikinci deniz feneri.** 1.4–4.95 sn Nuri'nin başının yanında yanan bir fener kulesi belirip kadrajda kayıyor;
+   o anda zaten kulenin galerisinde. Yakın çekimde net görünüyor.
+3. **Fener/alev erken yanıyor (S10, S14).** S10'da 2.0–3.4 sn Nuri feneri elle yakıyor (S13'teki büyünün önüne geçiyor);
+   S14'te 1.0–4.8 sn kadrajın sol altında açık alev dilleri. İkisi de kırpmayla temizleniyor ama çekimler kısalıyor
+   (S10: 7 → 4.4 sn, S14: 6 → 3.1 sn).
+
+### Özel kontroller
+
+- **Karakter (morph/yüz/uzuv):** Bere, krem balıkçı yaka, açık lacivert palto + pirinç düğmeler, kısa beyaz sakal
+  bütün kliplerde korunuyor. Yüz erimesi, fazla uzuv, bozuk el yok. S02'de 7.5 sn'de yüz hafif zayıflıyor (kırpılabilir).
+- **S11 → S12 → S13 küre sürekliliği:** S11 v2'de ufkun altından yaklaşıp sonda kafanın ~1.5 katı; S12'de ters açıda
+  Nuri'nin solunda, sudan bel hizasına yükseliyor (4 sn sonrası pırıltılı doku — hafif sapma, kabul); S13 v1 başında
+  ~2 m açıkta suyun üstünde. S12 sonu (yanında, bel hizası) → S13 başı (2 m açıkta) küçük bir konum sıçraması var,
+  izleyici için zayıf; kabul. **S13'te küre fenere giriyor ve fener yanıyor: EVET** — v1'de 4.0–5.0 sn küre feneri
+  sarıp içinde küçülüyor, 5.0 sn'den sonra fener sıcak alevle yanık, el sabit. v2'de yanma daha sönük.
+- **S15 sıcak → soğuk:** v2 kusursuz: 0–0.8 sn sıcak turuncu, 1.2–3.2 sn karanlık, 3.3 sn'den itibaren soğuk beyaz ışık
+  yanıp huzme dönüyor. v1'de 4.5–6.8 sn dev lamba mekanizması tüm kadraja bindiriliyor (red).
+- **S11/S12 huzme rengi:** İki klipte de baştan sona **amber**; beyaz/mavi huzme yok. `warm_beam` düzeltmesi tuttu.
+  (S13, S14 de amber; S15–S16 soğuk beyaz — doğru.)
+- **Ses:** Ortalama −22 … −37 dB, tepe −0.4 … −18 dB (S15 v2 −0.4 dBFS, S14 −2.2 dBFS → kurgucu normalize/limit etsin).
+  Spektrogramlarda konuşma deseni (100–300 Hz temelli formant yığınları) ve müzik yok. Harmonikli bölümler: S03 elektrik
+  vınlaması, S06 4.6–5.6 sn rüzgâr ıslığı (~1.6 kHz harmonik), S07 v2 saat mekanizması tıkırtıları, S13 v1 3.7–4.7 sn
+  ışığın yükselen uğultusu, S15 v2 3.3 sn sonrası ince elektrik vızıltısı — hepsi prompt'taki ambiyansla uyumlu.
+  ASR olmadığından kesin değil; kurgucu S06 4.6–5.6 sn'yi bir kez dinlemeli.
+- **Yön (180°):** Galeri sahnesi (S04, S07) lamba odası solda, Nuri sağa bakıyor; S06 yakın planda da sağa. Burun
+  sahnesinde (S10, S11, S13) kule solda, deniz sağda; S12 ters açı (kule sağda). S16 kule solda, Nuri sağda. Tutarlı.
+
+### ✦ Filigran
+
+Seçilen kliplerde: **S01, S03, S05 (v2), S07 (v2), S11 (v2)** — klip boyunca sağ altta; **S13 (v1)** yalnız
+7.67–7.75 sn (3 kare). Filigransız: S02, S04, S06, S08, S10, S12, S14, S15 (v2), S16.
+(Seçilmeyenlerden S07 v1, S11 v1 filigranlı; S05 v1, S13 v2, S15 v1 filigransız.)
+1080p'de yıldız ~x 1750–1820, y 905–975 → kurgucu: `delogo=x=1740:y=898:w=86:h=84` (S13 için 7.6 sn'de kesmek de yeter).
+
+### Çekim başına karar
+
+| ID | Seçilen | Karar | trim_start_s | Kullanılabilir | Gerekçe |
+|---|---|---|---|---|---|
+| S01 | S01 | ONAY | 0 | 0–8 | Huzme kameraya dönüp kadrajı altına boğuyor, kule silüeti. ✦ |
+| S02 | S02 | ONAY | 0 | 0–8 (tercihen 0–6.5) | 6.5 sn sonrası mercek çerçevesinin pirinç kolu kadraja giriyor; dönen mercek gibi okunuyor. |
+| S03 | S03 | DÜZELT | 0 | 0–6.5 | Fresnel biçimi kayıyor (spot lamba → 6.5 sn sonrası ayna-pul kafes). LED ve dolap doğru. ✦ |
+| S04 | S04 | ONAY | 0 | 0–8 | Palto eteği rüzgârda, amber huzme başının üstünden. |
+| S05 | v2 | ONAY | 1.0 | 1–8 | Minik altın nokta yavaşça parlıyor ("belirme"). v1: ışık sabit, gökte kuş/döküntü lekeleri. ✦ |
+| S06 | S06 | YENİDEN ÜRET | 5.0 (yedek) | 0–1.3, 5.0–8.0 | 1.4–4.95 sn ikinci bir fener kulesi kadrajda beliriyor/kayıyor. |
+| S07 | v2 | ONAY | 0 | 0–8 | Tek küçük ışık, büyüyüp küçülerek yanıp sönüyor. v1: iki-üç nokta (gemi feneri gibi). ✦ |
+| S08 | S08 | YENİDEN ÜRET | 0 (yedek) | 0–2.2 | Feneri kaideye bırakıp merdivenden fenersiz iniyor. |
+| S10 | S10 | DÜZELT | 3.6 | 3.6–8.0 | 2.0–3.4 sn feneri elle yakıyor. Sonrası temiz (dalga vuruşu dramatik, kabul). |
+| S11 | v2 | ONAY | 0 | 0–8 | Küre yaklaşıyor, dalgalar altın, huzme amber. v1: küre sonda ay boyu. ✦ |
+| S12 | S12 | ONAY | 1.0 | 1–8 | Yüz alttan sıcak altın, huzme amber; küre pırıltılı dokuya dönüyor (küçük sapma). |
+| S13 | v1 | ONAY | 0 | 0–8 (✦ 7.67–7.75) | Küre fenere giriyor, fener 5.0 sn'den itibaren yanık. v2: yanma sönük. |
+| S14 | S14 | DÜZELT | 4.9 | 4.9–8.0 | Gülümseme çok iyi; 1.0–4.8 sn sol altta açık alev dilleri. |
+| S15 | v2 | ONAY | 0 | 0–8 | Sıcak → karanlık → soğuk beyaz, birebir. v1: dev mekanizma bindirmesi. |
+| S16 | S16 | ONAY | 0 | 0–8 | Patikada uzaklaşıyor, tek sıcak nokta fener, soğuk beyaz huzme. |
+
+### Yeniden üretim önerileri (İngilizce `video_prompt`; başlangıç karesi aynı kalır, sadeleştirildi)
+
+**S06** (zorunlu; keyframe `S06_v2.png` aynen):
+> Close-up of the old keeper's face at night, looking out to sea toward the right of frame. His eyes slowly narrow and
+> he leans very slightly forward. A soft band of warm amber light passes once across his face from left to right and
+> fades away, leaving him in cold blue moonlight, with a tiny golden glint remaining in his eyes. The background is only
+> dark night sky and black sea, softly out of focus. No lighthouse, no tower, no lamp anywhere in frame. Camera static.
+> Sound: wind gusting, his quiet breath. No speech, no voices, no music.
+
+**S08** (zorunlu; keyframe `S08_v1.png` aynen):
+> The old keeper lifts the unlit brass lantern off the wall hook by its wire handle and, holding it in his right hand at
+> his side the whole time, walks slowly to the open stairwell hatch and starts down the steps, the lantern still in his
+> hand. He never puts the lantern down. The large glass lens keeps turning slowly; the small green light on the white
+> cabinet blinks. Camera static. Sound: boots on the iron floor, the lantern handle creaking, wind on the glass, a faint
+> electric hum. No speech, no voices, no music.
+
+**S14** (isteğe bağlı; keyframe `S14_v1.png`):
+> Close-up of the old man's face, softly lit from below by warm flickering lantern light; the lantern stays below the
+> bottom edge of frame. His wet eyes glisten and his lips slowly curve into a small, quiet smile. No visible fire or
+> flames anywhere in frame. Camera static. Sound: the gentle flutter of a lantern flame, soft waves, distant wind.
+> No speech, no voices, no music.
+
+**S10** (isteğe bağlı; keyframe `S10_v2.png`):
+> The old keeper carefully picks his way down across the wet, weed-covered rocks toward the sea, the dark, unlit lantern
+> hanging from one hand the whole time; he does not light it, no flame, no matches. The warm amber beam turns slowly
+> above the tower. Waves wash over the rocks. Camera static, low. Sound: waves swelling louder, wind.
+> No speech, no voices, no music.
+
+**S03** (isteğe bağlı, en düşük öncelik; keyframe `S03_v1.png`):
+> The small green light on the white cabinet blinks slowly on and off. Behind it, the large honey-coloured glass lens
+> keeps exactly the same shape and only the warm light inside it turns slowly; the keeper stands still in the soft
+> background, watching. Camera completely static. Sound: faint electric hum, slow creak of clockwork, wind on glass.
+> No speech, no voices, no music.
+
+### Yapımcıya
+
+- Onaylanan (`clip_approved`, 13): S01, S02, S03*, S04, S05, S07, S10*, S11, S12, S13, S14*, S15, S16
+  (*kurgu kırpmasıyla). Reddedilen (yeniden üret, 2): S06, S08. S09 ayrı.
+- Ek kredi: zorunlu 2 (S06, S08); isteğe bağlı +3 (S14 > S10 > S03).
+- Kırpmalarla süre etkisi: S03 −0.5, S10 −2.6, S14 −2.9 sn; yedekler kullanılırsa S06 −3.0, S08 −4.8 sn.
+- **Not (S09):** `clips/genaipro_tasks.jsonl` 16. satırda S09 için `file_urls` içeren bir görev (`d70c6bd6…`, 2 video)
+  var, ama dosya indirilmemiş. Krediye dokunmadan `fetch` ile indirilip denetlenebilir.
