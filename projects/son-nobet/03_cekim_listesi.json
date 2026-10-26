@@ -1,0 +1,418 @@
+{
+  "title": "The Last Watch",
+  "slug": "son-nobet",
+  "aspect_ratio": "16:9",
+  "resolution": "1080p",
+  "fps": 24,
+  "shots": [
+    {
+      "id": "S01",
+      "scene": 1,
+      "duration_s": 8,
+      "shot_type": "extreme wide",
+      "camera": "locked-off, near-static, very slight drift",
+      "description_tr": "Açılış. Kapkara, huzursuz deniz; fener huzmesi karanlıktan kameraya doğru süzülür, kadrajı bir an altına boğar; geçince burnun ucunda ay altında beyaz kule silueti belirir.",
+      "characters": [],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Opening frame, extreme wide shot from far out at sea looking back at the shore, low horizon, vast negative space of pitch-black restless water in the foreground; the white lighthouse stands as a small silhouette at the tip of the headland under the moon, its warm beam pointing off to the side, about to swing toward camera; no people, no glowing sphere over the water, no boats. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon; navy-black sea, moon between clouds, the lighthouse beam sweeping across the water. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The warm amber lighthouse beam slowly rotates and sweeps across the dark water toward the camera, briefly flooding the whole frame with golden light, then passes on, revealing the white tower in silhouette under the moon. Restless black waves heave and roll, clouds drift slowly past the moon. Camera almost static. Sound: deep rolling sea, low wind, distant waves breaking on rocks. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "Forty-one years. The same light. The same sea.",
+      "clip_volume": 0.35,
+      "transition_in": "fade",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Fade-in from black. cape_night referansında küre var: prompt'ta 'no glowing sphere' korunmalı. Huzme kameraya dönünce aşırı patlama (tam beyaz kare) olursa kurgucu o anı kısa tutar."
+    },
+    {
+      "id": "S02",
+      "scene": 2,
+      "duration_s": 8,
+      "shot_type": "medium-wide",
+      "camera": "static tripod, imperceptible push-in",
+      "description_tr": "Nuri dönen Fresnel merceğinin yanında, camı bezle yavaş ve özenli silikliyor; ışık düzenli ritimle yüzünden ve paltosundan geçiyor.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/nuri.png",
+        "refs/lamp_room.png"
+      ],
+      "image_prompt": "Medium-wide interior shot, Nuri standing beside the large turning Fresnel lens, wiping its glass with a soft cloth, his face in three-quarter profile and the lens filling the right of frame, hands small in frame and partly hidden by the cloth, focus on his face and the glowing prisms; warm light passing across his face and coat. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The old keeper slowly and carefully wipes the glass of the turning Fresnel lens with a cloth in long, gentle strokes; the warm light inside the lens rotates, passing across his face and coat in a steady rhythm. Camera static with an imperceptibly slow push-in. Sound: the soft creak and tick of old clockwork turning the lens, cloth on glass, muffled wind against the windows. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "Tomorrow, a machine keeps the watch.",
+      "clip_volume": 0.35,
+      "transition_in": "dissolve",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "El anatomisi riski: eller küçük ve bezle kısmen örtülü kalmalı."
+    },
+    {
+      "id": "S03",
+      "scene": 2,
+      "duration_s": 7,
+      "shot_type": "wide",
+      "camera": "static, rack focus not required (foreground sharp)",
+      "description_tr": "Odanın karşı ucundan geniş: ön planda köşede beyaz dolap, küçük yeşil ışık sakince yanıp sönüyor; arkada flu Nuri durmuş ona bakıyor.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/nuri.png",
+        "refs/lamp_room.png"
+      ],
+      "image_prompt": "Wide shot from the far side of the lantern room, the plain white metal electrical cabinet sharp in the foreground corner, completely blank surfaces, its one small green LED dot glowing; behind it, out of focus in the soft background beside the warm Fresnel lens, Nuri stands still looking at the cabinet; shallow depth of field. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The small green LED on the white cabinet blinks calmly on and off at a slow, regular pace; in the soft background the keeper stands motionless, watching it, while the warm Fresnel light keeps turning behind him. Camera completely static. Sound: a faint electric hum from the cabinet, the slow creak of the lens clockwork, wind on the glass. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "The light can turn itself now, they said.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Dolapta yazı/etiket/sayı çıkmamalı (denetimde kontrol). Yeşil LED ortamı aydınlatmamalı."
+    },
+    {
+      "id": "S04",
+      "scene": 3,
+      "duration_s": 7,
+      "shot_type": "medium",
+      "camera": "static side angle",
+      "description_tr": "Galeri, yan açı: Nuri iki koluyla demir korkuluğa yaslanmış, kara denize bakıyor; rüzgâr palto eteğini kaldırıyor, huzme başının üstünden geçiyor.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/nuri.png",
+        "refs/lamp_room.png"
+      ],
+      "image_prompt": "Medium shot from a side angle, Nuri leaning on the black iron railing with both forearms, looking out at the black sea, profile to camera, sitting on the left third of frame with dark empty sea and sky to the right; the warm beam passing just above his head; no glowing sphere on the sea yet. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. outside on the narrow gallery of the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The keeper leans on the railing, still, gazing out to sea; the wind lifts and flutters the hem of his open coat; the warm lighthouse beam sweeps slowly over his head and out across the water. Camera static. Sound: strong steady wind, flapping wool, the sea far below. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "I never knew who my light reached.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Galeri çekimi: LOC_LAMP_ROOM bloğu başına 'outside on the narrow gallery of' eklendi."
+    },
+    {
+      "id": "S05",
+      "scene": 3,
+      "duration_s": 7,
+      "shot_type": "POV wide",
+      "camera": "static POV, locked-off",
+      "description_tr": "Nuri'nin bakış açısı: boş denizin üstünde karanlık ufuk. Tam ortada, çok uzakta, küçük sıcak altın bir ışık suyun hemen üstünde yavaşça belirir.",
+      "characters": [],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/lamp_room.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Point-of-view wide shot from the lighthouse gallery looking straight out to sea, the top edge of the black iron railing soft and dark across the bottom of frame, a dark low horizon over an empty navy-black sea, moon between clouds; dead centre on the horizon, very faint: far away on the horizon, tiny: a single softly glowing warm golden sphere of light hovering just above the sea surface, about the size of a human head, no flame, no object inside, smooth round glowing core with a soft diffuse halo, colour #FFD27A fading to amber #F2A541, reflected as a golden shimmer on the water below; at this distance it reads only as a small but clear, sharp golden point of light, never larger than a distant star-sized dot, not a moon; no lighthouse tower visible, no boats, no people. outside on the narrow gallery of the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "Locked-off view of the empty dark sea. Dead centre on the far horizon, the tiny golden point of light slowly brightens and becomes clearly visible, hovering just above the water, staying the same tiny size and in the same place. Gentle swell moves across the black water, clouds drift past the moon. Camera completely still. Sound: wind and distant waves only. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.5,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "RİSK: ışığın ölçeği (ay boyutunda çizilme eğilimi). Anahtar kare ışığı çok sönük ama mevcut gösterir; klipte 'belirme' parlaklaşma ile sağlanır. Klip 2 varyant önerilir."
+    },
+    {
+      "id": "S06",
+      "scene": 3,
+      "duration_s": 6,
+      "shot_type": "close-up",
+      "camera": "static, very slow push-in",
+      "description_tr": "Nuri'nin yüzüne yakın: gözleri kısılır, hafifçe öne eğilir. Huzme yüzünden geçip gider; karanlıkta gözlerinde uzak ışığın minik yansıması kalır.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/nuri.png",
+        "refs/lamp_room.png"
+      ],
+      "image_prompt": "Close-up of Nuri's face in cold blue moonlight, slightly turned toward camera-right, eyes narrowed in concentration, a tiny warm golden pinpoint reflection glinting in each pale grey eye, black sky behind, shallow depth of field, 85mm. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. outside on the narrow gallery of the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The old man's eyes slowly narrow and he leans very slightly forward; the warm lighthouse beam sweeps across his face and moves on, leaving him in cold blue darkness where a tiny golden reflection of the distant light remains glinting in his eyes. Camera static with a very slow push-in. Sound: wind gusting past the gallery, his quiet breath. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "No ship ever sailed out there. Nothing ever did.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Göz yansıması küçük kalmalı; abartılı parlama olmamalı."
+    },
+    {
+      "id": "S07",
+      "scene": 3,
+      "duration_s": 8,
+      "shot_type": "wide over-the-shoulder",
+      "camera": "static from behind",
+      "description_tr": "Galeride arkadan geniş: ön planda Nuri'nin sırtı ve omzu, ötede denizdeki ışık. Işık 'iki kısa, bir uzun' ritmiyle yanıp söner; fenerin kendi huzmesi de aynı ritimle geçer.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/nuri.png",
+        "refs/lamp_room.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Wide shot from behind on the gallery, Nuri's back, beanie and right shoulder dark and soft in the left foreground, looking out over the railing at the vast black sea; far out, centred on the low horizon: far away on the horizon, tiny: a single softly glowing warm golden sphere of light hovering just above the sea surface, about the size of a human head, no flame, no object inside, smooth round glowing core with a soft diffuse halo, colour #FFD27A fading to amber #F2A541, reflected as a golden shimmer on the water below; at this distance it reads only as a small but clear, sharp golden point of light, never larger than a distant star-sized dot, not a moon; the warm lighthouse beam reaching out over the water. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. outside on the narrow gallery of the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "Far out on the horizon the tiny golden point of light flashes in a clear rhythm: two short flashes, then one long flash, pause, and again two short, one long; at the same time the lighthouse's own warm beam sweeps past overhead in the same rhythm. The keeper stands motionless with his back to us, his coat stirring in the wind. Camera static. Sound: wind, distant sea, the soft creak of the lens machinery. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "That was my signal. Two short... one long.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Ritim kurguda desteklenecek (Veo 'two short, one long' ritmini güvenilir üretmeyebilir; kurgucu gerekirse parlaklık/hız düzenlemesi veya kare tekrarıyla ritmi kurar). Işık uzak, küçük net altın nokta kalmalı. Klip 2 varyant önerilir."
+    },
+    {
+      "id": "S08",
+      "scene": 4,
+      "duration_s": 7,
+      "shot_type": "medium-wide",
+      "camera": "static, slight pan following him",
+      "description_tr": "Lamba odası: Nuri içeri döner, merdiven kapağının yanındaki direkteki kancadan sönük pirinç feneri alır ve merdiven ağzına yürür. Arkasında yeşil ışık yanıp sönmeye devam eder.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_LAMP_ROOM",
+      "refs": [
+        "refs/nuri.png",
+        "refs/lamp_room.png"
+      ],
+      "image_prompt": "Medium-wide interior shot, Nuri just back inside the lantern room, the glass door to the gallery behind him, stepping toward the iron post beside the open stairwell hatch in the floor; hanging on the iron hook on that post is an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, unlit; his hand rising toward its wire handle, hand small in frame; the warm Fresnel lens glowing at frame centre-left and the white cabinet with its small green LED in the background corner. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. the lantern room at the top of an old white stone lighthouse with a black-painted iron cupola: an octagonal room walled in tall salt-streaked glass panes with black iron frames; at the centre a large honey-coloured Fresnel lens of stacked concentric glass prisms with a warm yellow-orange light turning inside it; brass fittings and rails, an iron floor with peeling grey-green paint; in one corner a brand-new plain white metal electrical cabinet with no labels and no text, one small green LED indicator light; an iron wall hook beside the stairwell hatch; a glass door opening onto a narrow circular outer gallery with a black iron railing, black sea far below, wind. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The keeper reaches up, lifts the unlit brass lantern by its wire handle off the hook on the iron post beside the stairwell hatch, and turns to walk toward the open hatch; behind him the small green LED on the white cabinet keeps blinking and the warm lens keeps turning. Camera static with a slight pan following him. Sound: boots on the iron floor, the lantern's handle creaking, wind against the glass, faint electric hum. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.5,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "lamp_room referansına göre kanca merdiven kapağının yanındaki direkte; fener o kancada asılı başlar. Sönük fener (PROP_LANTERN unlit)."
+    },
+    {
+      "id": "S09",
+      "scene": 4,
+      "duration_s": 8,
+      "shot_type": "overhead top shot",
+      "camera": "locked-off straight-down top shot",
+      "description_tr": "Tam tepeden: spiral merdiven bir kabuk gibi aşağı daralır. Nuri sarmal boyunca yavaşça iner, kadrajda küçülür; yarık pencereden mavi ay ışığı basamaklara düşer.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_STAIRWELL",
+      "refs": [
+        "refs/nuri.png",
+        "refs/stairwell.png"
+      ],
+      "image_prompt": "Straight-down top shot looking down the spiral staircase, Nuri seen from directly above on the upper turn of the spiral, beanie and shoulders of his navy coat visible, carrying an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, unlit at his side; the spiral narrowing below him like a seashell; a shaft of cold blue moonlight from the slit window falling across the iron steps. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a narrow cast-iron spiral staircase winding down inside an old stone lighthouse tower, curved stone walls with flaking whitewash, one small vertical slit window letting in a shaft of cold blue moonlight across the iron steps, otherwise dark; seen from above the spiral narrows downward like the inside of a seashell. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "Seen from directly above, the old keeper slowly descends the iron spiral staircase, following the curve around and down, growing smaller in frame as he goes deeper into the narrowing shell-like spiral, the unlit lantern swinging gently at his side; a shaft of cold blue moonlight lies across the steps. Camera locked off. Sound: slow boot steps ringing on cast iron, echo in the stone tower, faint wind from the slit window. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "Forty-one years looking down. Tonight, I go down.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "RİSK: tepe kadrajda inişin perspektifi ve figürün tutarlılığı (Veo sarmalda yönü şaşırabilir). stairwell.png filigranı: sağ alt köşe kontrol. Klip 2 varyant önerilir."
+    },
+    {
+      "id": "S10",
+      "scene": 5,
+      "duration_s": 7,
+      "shot_type": "wide low angle",
+      "camera": "static low angle, slight tilt up",
+      "description_tr": "Alçak açı geniş: Nuri kule dibindeki kapıdan çıkar, ıslak kayaların üstünden denize doğru dikkatle ilerler. Arkada kule yükselir, huzme döner.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/nuri.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Wide low-angle shot from the rocks near the waterline looking back up at the tower, Nuri just stepping out of the small arched wooden door at the base of the lighthouse, holding an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, unlit at his side; the white tower rising tall behind him into the night sky with its warm beam turning; no glowing sphere in frame. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon; navy-black sea, moon between clouds, the lighthouse beam sweeping across the water. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The keeper steps out of the arched door at the base of the tower and carefully picks his way down across the wet, weed-covered rocks toward the sea and the camera, the unlit lantern in his hand; the warm beam turns slowly above; waves surge and spray over the rocks in the foreground. Camera static, low. Sound: waves swelling louder, crashing and hissing over the rocks, wind. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.6,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "cape_night referansındaki küre bu kareye sızmamalı ('no glowing sphere in frame'). Senaryoya göre dalga sesi yükselir: kurgucu 0.6'dan yukarı çıkarabilir."
+    },
+    {
+      "id": "S11",
+      "scene": 5,
+      "duration_s": 8,
+      "shot_type": "medium-wide from behind",
+      "camera": "static from behind",
+      "description_tr": "Nuri'nin arkasından: kayaların kenarında duruyor, sönük fener yanında asılı. Sıcak ışık küresi suyun hemen üstünden ona doğru süzülür, dalga tepelerini altına boyar.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/nuri.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Shot from behind Nuri, full figure, standing at the very edge of the wet rocks facing the open sea, the unlit lantern hanging at his side: an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, unlit; some twenty metres out over the water, approaching: a single softly glowing warm golden sphere of light hovering just above the sea surface, about the size of a human head, no flame, no object inside, smooth round glowing core with a soft diffuse halo, colour #FFD27A fading to amber #F2A541, reflected as a golden shimmer on the water below; the sphere small in frame relative to the sea, the crests of the waves between them catching gold. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon; navy-black sea, moon between clouds, the lighthouse beam sweeping across the water. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The golden sphere of light glides slowly across the water toward the keeper, hovering just above the surface, staying the same size as a human head, turning the crests of the waves beneath it gold as it passes; the keeper stands still at the edge of the rocks, coat moving in the wind. Camera static. Sound: waves breaking on rocks, wind, and a very soft, warm low hum rising as the light comes closer. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.7,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Senaryoda 'wide'; S10 ile ardışık iki geniş olmaması için medium-wide (tam figür) yapıldı. RİSK: küre yaklaşırken büyüyüp ay/güneş boyuna çıkma eğilimi. Klip 2 varyant önerilir."
+    },
+    {
+      "id": "S12",
+      "scene": 5,
+      "duration_s": 7,
+      "shot_type": "medium",
+      "camera": "static frontal, very slow push-in",
+      "description_tr": "Önden orta: ışık kayaların dibinde dalgaların hemen üstünde asılı. Nuri'nin yüzü ilk kez alttan sıcak altınla aydınlanır; soğuk mavi gecede tek sıcak yüz.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/nuri.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Medium frontal shot of Nuri standing on the rocks looking down toward camera-low, his face lit from below in steady warm gold for the first time, everything around him cold blue; in the lower foreground, just above the waves at the foot of the rocks and partly in frame: a single softly glowing warm golden sphere of light hovering just above the sea surface, about the size of a human head, no flame, no object inside, smooth round glowing core with a soft diffuse halo, colour #FFD27A fading to amber #F2A541, reflected as a golden shimmer on the water below; the unlit lantern hanging at his side: an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, unlit; the dark tower soft in the background. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon; navy-black sea, moon between clouds, the lighthouse beam sweeping across the water. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The golden sphere hovers gently just above the waves, softly pulsing; its warm light flickers subtly over the keeper's face from below as he looks down at it in quiet wonder, barely moving. Waves wash over the rocks below. Camera static with a very slow push-in. Sound: waves lapping the rocks, wind, a soft warm hum. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "All the light I ever gave away... came back.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Yüz sabit, alttan sıcak aydınlatma (stil rehberi S12–S14)."
+    },
+    {
+      "id": "S13",
+      "scene": 5,
+      "duration_s": 8,
+      "shot_type": "medium-wide side angle",
+      "camera": "static side angle",
+      "description_tr": "Yandan orta-geniş: Nuri sönük feneri yavaşça göğüs hizasına kaldırır. Küre sudan yükselir, fenerin cam şişesine kendiliğinden süzülür ve fener sıcak, titrek bir alevle canlanır. (Dokunma yok.)",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/nuri.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Medium-wide side-angle shot, Nuri in profile on the rocks holding up at chest height by its wire handle an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, unlit, arm close to his body, hand small in frame; just in front of the lantern, a little lower and about one metre away over the water: a single softly glowing warm golden sphere of light hovering just above the sea surface, about the size of a human head, no flame, no object inside, smooth round glowing core with a soft diffuse halo, colour #FFD27A fading to amber #F2A541, reflected as a golden shimmer on the water below; warm gold light on his face and coat from the sphere, cold blue night around. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon; navy-black sea, moon between clouds, the lighthouse beam sweeping across the water. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The golden sphere rises slowly from just above the water, drifts through the air on its own and glides into the lantern's glass chimney, shrinking softly as it enters; the lantern comes alive with a small warm flickering flame and a soft amber glow. The keeper holds the lantern perfectly still, his hand barely moving, warm light blooming over his face. Camera static. Sound: the hum of the light rising, then settling into the gentle flutter of a flame, waves below. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.7,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "END_FRAME: Medium-wide side-angle shot, the same old keeper in profile on the dark rocks holding at chest height an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, lit from within by a small warm flickering flame, soft amber glow; no sphere of light anywhere over the water, the lantern is now the only warm source, gold light on his face, cold blue night around, same framing as the start frame. || RİSK: filmin en zor çekimi (küre→fener geçişi, el sabit). Klip 2 varyant önerilir. YEDEK PLAN (yönetmen; senaryoda ayrı yedek plan yazılı değil, senaryonun 'dokunma yok, minimum el hareketi' kısıtına uyar): (1) END_FRAME'li klip başarısızsa END_FRAME olmadan, küre camın içine girip parlak bir sıcak ışık 'bloom'u ile kapanacak şekilde üret; kurgucu parlamanın tepe noktasında S14'e keser, S14'teki alttan sıcak fener ışığı yanmayı tamamlar. (2) O da olmazsa çekim ikiye bölünür: S13a küre yükselip cama yaklaşır (4 sn), S13b yanan fenerin insert'i (END_FRAME karesinden kısa hareketli klip, 3–4 sn) — +1 klip kredisi."
+    },
+    {
+      "id": "S14",
+      "scene": 5,
+      "duration_s": 6,
+      "shot_type": "close-up",
+      "camera": "static, imperceptible push-in",
+      "description_tr": "Nuri'nin yüzüne yakın; kadrajın hemen altındaki yanan fener yüzünü alttan sıcak aydınlatıyor. Gözleri nemli, dudakları küçük bir gülümsemeye kıvrılıyor.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/nuri.png",
+        "refs/cape_night.png"
+      ],
+      "image_prompt": "Close-up of Nuri's face, lit from below by the warm flickering amber glow of a lit lantern held just below the bottom edge of frame (lantern itself out of frame), eyes wet and glistening, a hint of emotion, cold blue night and soft dark sea behind, shallow depth of field, 85mm. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon; navy-black sea, moon between clouds, the lighthouse beam sweeping across the water. night, cold steel-blue moonlight and deep navy shadows, the only warm light is amber-gold (#F2A541), strong warm-cold contrast. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The warm flame light flickers softly over the old man's face from below; his wet eyes glisten and his lips slowly curve into a small, quiet smile. Camera static with an imperceptible push-in. Sound: the gentle flutter of the lantern flame, soft waves, distant wind. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "To take me home.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Gülümseme küçük kalmalı; dudak hareketi konuşma gibi okunmamalı (V.O. çekimi)."
+    },
+    {
+      "id": "S15",
+      "scene": 6,
+      "duration_s": 8,
+      "shot_type": "wide low angle",
+      "camera": "locked-off, looking up at the tower",
+      "description_tr": "Şafak, kuleye aşağıdan geniş: soluk mavi. Lamba odasındaki eski sıcak turuncu ışık yavaşça söner; bir an karanlık kalır, sonra keskin, soğuk beyaz yeni ışık yanar ve dönmeye başlar.",
+      "characters": [],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/cape_dawn.png"
+      ],
+      "image_prompt": "Wide low-angle shot looking up at the white lighthouse tower from the rocks at dawn, the tower filling the centre of frame against a pale overcast sky; the glass lantern room at the top still glowing with the old warm orange Fresnel light, the only warm light in the cold scene; no people, no glowing sphere. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon. early dawn, soft flat pale blue-grey light, overcast sky with a thin pale pink line on the horizon, no direct sun, quiet and cold. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "At the top of the tower the old warm orange light in the lantern room slowly fades out and goes dark; for a beat the glass room stays dark against the pale sky; then a sharp, cold white electric light switches on and begins to turn. Clouds drift slowly. Camera completely static. Sound: the slow creak of old clockwork winding down and stopping, a moment of silence with soft waves, then a thin electric hum. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": null,
+      "clip_volume": 0.7,
+      "transition_in": "dissolve",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "END_FRAME: Wide low-angle shot looking up at the same white stone lighthouse with a black iron cupola at early dawn, soft flat pale blue-grey light, the glass lantern room at the top now shining with a sharp cold white electric light (#E6F0FF), no warm orange light anywhere, same framing as the start frame. || RİSK: cape_dawn referansı zaten soğuk beyaz ışık gösteriyor; başlangıç karesinde sıcak turuncu ışığın baskın kalması prompt'a bağlı (denetimde kontrol). Geceden şafağa dissolve. Klip 2 varyant önerilir. Yedek: geçiş Veo'da olmazsa kurgucu sıcak (başlangıç karesi) ve soğuk (END_FRAME) hâllerini kısa siyah/karanlık ara ile çapraz geçişle kurar."
+    },
+    {
+      "id": "S16",
+      "scene": 6,
+      "duration_s": 8,
+      "shot_type": "extreme wide",
+      "camera": "locked-off, near-static",
+      "description_tr": "Son görüntü, şafak, çok geniş: solda kule soğuk beyaz huzmesini döndürüyor; sağda Nuri sırtı bize dönük kıyı patikasında yavaşça uzaklaşıyor. Feneri, mavi-gri manzaradaki tek sıcak nokta. Ufukta ince pembe çizgi.",
+      "characters": [
+        "CHAR_NURI"
+      ],
+      "location": "LOC_CAPE",
+      "refs": [
+        "refs/nuri.png",
+        "refs/cape_dawn.png"
+      ],
+      "image_prompt": "Final image, extreme wide shot at dawn, low horizon: frame left the white lighthouse tower on its headland turning a cold white beam; frame right, small in the landscape, Nuri seen from behind walking away along the narrow dirt coastal path through the dry pale grass, carrying an old brass hurricane lantern with a clear glass chimney and a wire carrying handle, tarnished and worn brass, lit from within by a small warm flickering flame, soft amber glow; the lantern's small warm glow is the only warm point in the whole blue-grey landscape. NURI, a 72-year-old man of North Aegean Mediterranean appearance, tall but slightly stooped, lean build; deeply lined weathered face with wind-reddened cheeks, short fully white-grey beard neatly trimmed close to the jaw, pale grey eyes, tired but warm expression; wearing a dark grey knitted wool beanie covering his hair, a thick cream cable-knit fisherman's sweater with a roll neck, a knee-length navy wool pea coat with two rows of brass buttons worn open, dark grey wool trousers, black knee-high rubber boots. a rocky North Aegean headland: dark grey wet rocks covered in seaweed running from the foot of a tall white stone lighthouse with a black iron cupola down into the sea, waves breaking over the rocks in white foam; a small arched wooden door at the base of the tower; a narrow dirt coastal path lined with dry pale grass curving inland away from the tower; open sea to the horizon. early dawn, soft flat pale blue-grey light, overcast sky with a thin pale pink line on the horizon, no direct sun, quiet and cold, the lighthouse now shows a cold white electric light. cinematic still, shot on 35mm film with anamorphic lens, soft organic film grain, subtle halation, oval bokeh, low-key naturalistic lighting, muted colour grade, photorealistic, highly detailed textures, 16:9, no text, no watermark, no logo",
+      "video_prompt": "The old keeper walks slowly away from camera along the coastal path, getting smaller, the small warm glow of the lantern swinging gently at his side; on the left the lighthouse's cold white beam keeps turning; dry grass stirs in a light wind, waves break softly on the rocks below. Camera locked off. Sound: soft wind through dry grass, distant waves, a faint electric hum from the tower fading. No speech, no voices, no music.",
+      "dialogue": null,
+      "voiceover": "Let the sea keep its own light now.",
+      "clip_volume": 0.35,
+      "transition_in": "cut",
+      "keyframe_file": null,
+      "clip_file": null,
+      "status": "planned",
+      "notes": "Kurguda sonrasında ~2 sn siyah + başlık/jenerik (üretim gerekmez). Gerekirse daha geniş alternatif referans: refs/alts/cape_dawn_v2.png. Not: LIGHT_DAWN sonrasına stil rehberindeki 'the lighthouse now shows a cold white electric light' eklendi."
+    }
+  ]
+}
