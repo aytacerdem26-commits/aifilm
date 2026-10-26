@@ -24,14 +24,15 @@
       "clip_volume": 0.35,
       "transition_in": "fade",
       "keyframe_file": "keyframes/S01_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S01.mp4",
+      "status": "clip_done",
       "notes": "Fade-in from black. cape_night referansında küre var: prompt'ta 'no glowing sphere' korunmalı. Huzme kameraya dönünce aşırı patlama (tam beyaz kare) olursa kurgucu o anı kısa tutar. [QA kare 2026-10-26: ONAY v1. Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo/kırpma.]",
       "keyframe_url": "https://files.genaipro.io/image_9b1030a3-0c04-4182-a6f2-2c06b7f419b7_0.png",
       "keyframe_file_variants": [
         "keyframes/S01_v1.png",
         "keyframes/S01_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_a4d01605-e364-4bf8-8ad0-06160f693bb0_video_resolution_1080p.mp4"
     },
     {
       "id": "S02",
@@ -55,14 +56,15 @@
       "clip_volume": 0.35,
       "transition_in": "dissolve",
       "keyframe_file": "keyframes/S02_v2.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S02.mp4",
+      "status": "clip_done",
       "notes": "El anatomisi riski: eller küçük ve bezle kısmen örtülü kalmalı. [QA kare 2026-10-26: ONAY v2 (dolap+yeşil LED kadrajda, filigransız).]",
       "keyframe_url": "https://files.genaipro.io/image_7624254a-e54d-408d-a5e8-f827e7dab2d9_1.png",
       "keyframe_file_variants": [
         "keyframes/S02_v1.png",
         "keyframes/S02_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_491bf454-a260-4ddf-b35f-e0beaa32bea6_video_resolution_1080p.mp4"
     },
     {
       "id": "S03",
@@ -86,14 +88,15 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S03_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S03.mp4",
+      "status": "clip_done",
       "notes": "Dolapta yazı/etiket/sayı çıkmamalı (denetimde kontrol). Yeşil LED ortamı aydınlatmamalı. [QA kare 2026-10-26: ONAY v1 (ön planda dolap, arkada flu Nuri; kancada fener görünür). Sağ altta ✦ filigran (iki varyantta da) → kurgucu delogo.]",
       "keyframe_url": "https://files.genaipro.io/image_5728df90-6c50-4eed-9877-5dd3f1453237_0.png",
       "keyframe_file_variants": [
         "keyframes/S03_v1.png",
         "keyframes/S03_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_8f34396e-efa8-41a3-8e38-ee2618586e3c_video_resolution_1080p.mp4"
     },
     {
       "id": "S04",
@@ -117,14 +120,15 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S04_v2.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S04.mp4",
+      "status": "clip_done",
       "notes": "Galeri çekimi: LOC_LAMP_ROOM bloğu başına 'outside on the narrow gallery of' eklendi. [QA kare 2026-10-26: ONAY v2. Yön: lamba odası solda, Nuri sağa (denize) bakıyor; S06/S07 bu yöne göre seçildi.]",
       "keyframe_url": "https://files.genaipro.io/image_1ea3825e-1a3c-45ff-bd4e-553b9f5e2602_1.png",
       "keyframe_file_variants": [
         "keyframes/S04_v1.png",
         "keyframes/S04_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_85d802ed-c8f7-4554-99c0-94e68fe54541_video_resolution_1080p.mp4"
     },
     {
       "id": "S05",
@@ -176,14 +180,15 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S06_v2.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S06.mp4",
+      "status": "clip_done",
       "notes": "Göz yansıması küçük kalmalı; abartılı parlama olmamalı. [QA kare 2026-10-26: ONAY v2 (gözlerde minik altın yansıma var, sağa bakıyor → S04 v2 ile yön tutarlı).]",
       "keyframe_url": "https://files.genaipro.io/image_2e23e139-9623-4ebd-938f-c2938cf72de6_1.png",
       "keyframe_file_variants": [
         "keyframes/S06_v1.png",
         "keyframes/S06_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_bbe1e8b9-fac2-4379-8990-76e0b69a2515_video_resolution_1080p.mp4"
     },
     {
       "id": "S07",
@@ -239,14 +244,15 @@
       "clip_volume": 0.5,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S08_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S08.mp4",
+      "status": "clip_done",
       "notes": "lamp_room referansına göre kanca merdiven kapağının yanındaki direkte; fener o kancada asılı başlar. Sönük fener (PROP_LANTERN unlit). [QA kare 2026-10-26: ONAY v1 (Nuri kancadaki fenere uzanıyor, aksiyona en uygun).]",
       "keyframe_url": "https://files.genaipro.io/image_498d6ced-1451-46ef-a8da-40e6739dfb02_0.png",
       "keyframe_file_variants": [
         "keyframes/S08_v1.png",
         "keyframes/S08_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_431c3b6e-14f4-4123-a746-fc2167d24bfb_video_resolution_1080p.mp4"
     },
     {
       "id": "S09",
@@ -301,14 +307,15 @@
       "clip_volume": 0.6,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S10_v2.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S10.mp4",
+      "status": "clip_done",
       "notes": "cape_night referansındaki küre bu kareye sızmamalı ('no glowing sphere in frame'). Senaryoya göre dalga sesi yükselir: kurgucu 0.6'dan yukarı çıkarabilir. [QA kare 2026-10-26: YENİDEN ÜRET. v2'de iki Nuri (kapıda + ön planda) — tek karakter kuralı ihlali; v1'de Nuri kameraya poz veren, kuleyle aynı boyda 'kolaj' figür (ölçek bozuk, aksiyon yok: kapıdan çıkıp kayalarda ilerleme yok). Yedek: v1.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: Nuri kapıdan 'just stepping out', ölçek/poz tarifi yok, tek kişi vurgusu yok; refs nuri+cape_night (aynen). refs: nuri + cape_night korundu (kadrajda küre yok; kule/kapı/patika sürekliliği için mekân referansı gerekli). Eski varyantlar: keyframes/old/S10_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2. Tek Nuri, arkadan 3/4, başı eğik kayalarda denize iniyor; kule + kemerli kapı solda, huzme sıcak amber. Nuri ~%55-60 yükseklikte ama kuleden daha yakın olduğu için perspektif doğru okunuyor (kolaj hissi yok). v1: Nuri kuleden büyük (ölçek bozuk), gözlük benzeri çizgi. Not: S11 ile benzer arkadan kadraj — S11'de Nuri ~1.4x büyük, kurgu atlama gibi durmaz; klipte Nuri yürümeye devam etmeli.]",
       "keyframe_url": "https://files.genaipro.io/image_d8de641e-9001-41eb-8e22-b87ece42f02a_1.png",
       "keyframe_file_variants": [
         "keyframes/S10_v1.png",
         "keyframes/S10_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_d15dc5d1-769f-4759-8940-555c00fdc229_video_resolution_1080p.mp4"
     },
     {
       "id": "S11",
@@ -361,14 +368,15 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S12_v2_warm.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S12.mp4",
+      "status": "clip_done",
       "notes": "Yüz sabit, alttan sıcak aydınlatma (stil rehberi S12–S14). [QA kare 2026-10-26: YENİDEN ÜRET. Kilit duygu karesi tutmuyor: iki varyantta da yüz alttan sıcak aydınlanmıyor (soğuk/düz), Nuri kameraya poz veriyor (tam boy, 'medium' değil), küre kafasının ~2 katı (plaj topu/balon gibi). v1'de ✦ filigran. Yedek: v2.] [Yeniden üretim 2026-10-26 (denetçi önerisi): eski prompt: 'medium frontal ... looking down toward camera-low', küre 'lower foreground', alttan ışık tek cümle, 'moon between clouds'; refs nuri+cape_night. refs: yalnızca nuri — cape_night çıkarıldı (küre ölçeği); lamp_room iç mekân, eklenmedi. Gece eki 'moon between clouds' -> 'moon hidden behind thick cloud'. Eski varyantlar: keyframes/old/S12_v1.png, _v2.png.] [QA kare 2. tur 2026-10-26: ONAY v2 — KLİPTEN ÖNCE KREDİSİZ DÜZELTME ŞART. Önden bel üstü, aşağı bakıyor; sakal altı, yanaklar ve kazak yakası sıcak altın (alttan ışık yeterince okunuyor, klip prompt'u titreşimi güçlendiriyor). Küre sol altta, dalgaların üstünde, kafadan biraz büyük (kameraya daha yakın; S11→S13 ölçeğiyle uyumlu). Ters açı yönü S11 ile tutarlı (kule sağda, küre solda). Palto açık. Filigran yok. SORUN: arka plandaki huzme/lamba soğuk beyaz (S11 ile aynı) → scripts/warm_beam.py kutusu x740 y40 w636 h120 → keyframes/S12_v2_warm.png; video_prompt'a 'the distant lighthouse beam glows warm amber (#F2A541), never white' ekle. v1: Nuri profilde yana dönük, küre büyük, yüz önden aydınlık.] [Yapımcı: huzme kredisiz amber renk düzeltmesi (qa/warm_beam.py), keyframe_file → _v2_warm]",
       "keyframe_url": "https://files.genaipro.io/image_17ef4a07-f89b-4dd1-a7af-c2d2aa47b833_1.png",
       "keyframe_file_variants": [
         "keyframes/S12_v1.png",
         "keyframes/S12_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_1c5b6ab2-485c-4935-bfd5-aba7b1a0a0e5_video_resolution_1080p.mp4"
     },
     {
       "id": "S13",
@@ -428,14 +436,15 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S14_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S14.mp4",
+      "status": "clip_done",
       "notes": "Gülümseme küçük kalmalı; dudak hareketi konuşma gibi okunmamalı (V.O. çekimi). [QA kare 2026-10-26: ONAY v1 (alttan sıcak ışık, nemli gözler, sağa bakıyor → S13 ile yön tutarlı).]",
       "keyframe_url": "https://files.genaipro.io/image_47162a21-6c5f-4fe6-8131-a3d5199e6e0e_0.png",
       "keyframe_file_variants": [
         "keyframes/S14_v1.png",
         "keyframes/S14_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_2a91ed75-16c1-4a7a-ba07-371735a33bc5_video_resolution_1080p.mp4"
     },
     {
       "id": "S15",
@@ -492,14 +501,15 @@
       "clip_volume": 0.35,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S16_v2.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S16.mp4",
+      "status": "clip_done",
       "notes": "Kurguda sonrasında ~2 sn siyah + başlık/jenerik (üretim gerekmez). Gerekirse daha geniş alternatif referans: refs/alts/cape_dawn_v2.png. Not: LIGHT_DAWN sonrasına stil rehberindeki 'the lighthouse now shows a cold white electric light' eklendi. [QA kare 2026-10-26: ONAY v2 (sırtı dönük, patikada uzaklaşıyor, tek sıcak nokta fener; v1 kameraya doğru yürüyor).]",
       "keyframe_url": "https://files.genaipro.io/image_679ad8c8-a9b0-40e3-9f54-c173ce3e1af0_1.png",
       "keyframe_file_variants": [
         "keyframes/S16_v1.png",
         "keyframes/S16_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_a17732bb-8b3f-4bb1-9788-13104884bbf7_video_resolution_1080p.mp4"
     }
   ]
 }
