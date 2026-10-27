@@ -30,14 +30,15 @@
       "transition_in": "fade",
       "keyframe_file": "keyframes/S01_v1.png",
       "clip_file": "clips/S01.mp4",
-      "status": "clip_done",
+      "status": "clip_approved",
       "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2), kurguda 5 sn'ye kırpılır. Konuşan yüz yakın, dudak senkronu için ağız net. Yedek (silah filtreye takılırsa): tabancayı kadrajdan çıkar, ön planda yalnızca bardak + kül tablası.",
       "keyframe_url": "https://files.genaipro.io/image_363819f0-2e3b-435b-a484-99e3b6bdace5_0.png",
       "keyframe_file_variants": [
         "keyframes/S01_v1.png",
         "keyframes/S01_v2.png"
       ],
-      "clip_url": "https://files.genaipro.io/video_73c219bc-5d74-449b-b3b5-405179c6b442_video_resolution_1080p.mp4"
+      "clip_url": "https://files.genaipro.io/video_73c219bc-5d74-449b-b3b5-405179c6b442_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S02",
@@ -61,14 +62,16 @@
       "clip_volume": 0.9,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S02_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S02.mp4",
+      "status": "clip_approved",
       "notes": "Veo (1 kredi). Anahtar kare cam sağlamken (patlama klipte); bu yüzden LIGHT_RAID yerine LIGHT_CALM + far parıltısı kullanıldı (LIGHT_RAID 'broken front window' içerir). Risk: cam dışarı patlayabilir -> yedek: far ışığı + çatlaklar, patlama sesi kadraj dışı.",
       "keyframe_url": "https://files.genaipro.io/image_80db19d0-04e7-4c49-a32d-1ab99d327610_0.png",
       "keyframe_file_variants": [
         "keyframes/S02_v1.png",
         "keyframes/S02_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_f120241c-b13a-49aa-a2ea-855285b5d5ac_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S03",
@@ -94,14 +97,16 @@
       "clip_volume": 1.0,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S03_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S03.mp4",
+      "status": "clip_approved",
       "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2), kurguda 5 sn. Bağırış kısa, senkron hatası tolere edilir. Risk (fizik): masa/bardaklar bozulabilir -> yedek: Kenan bağırarak öne atılır, devrilme yalnızca sesle (kesme masa kalkmadan).",
       "keyframe_url": "https://files.genaipro.io/image_e33559f4-d1c2-4476-9f7e-f248ea7e4753_0.png",
       "keyframe_file_variants": [
         "keyframes/S03_v1.png",
         "keyframes/S03_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_acc886a3-1f35-4f89-b4dc-512975be6215_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S04",
@@ -127,14 +132,16 @@
       "clip_volume": 0.9,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S04_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S04.mp4",
+      "status": "clip_approved",
       "notes": "Veo (1 kredi). Süreklilik: masa devrik, toz/cam iki karakterde, tabanca Kenan'ın sağ elinde. Risk (orta): silah tutan el bozulabilir -> yedek: silahı göstermeden, ikisi çömelmiş + namlu alevi yansımaları.",
       "keyframe_url": "https://files.genaipro.io/image_e82e14ca-f9d0-4779-b985-822e8bb5515c_0.png",
       "keyframe_file_variants": [
         "keyframes/S04_v1.png",
         "keyframes/S04_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_785e401f-489a-4a70-ab82-411acc5e59ab_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S05",
@@ -158,20 +165,22 @@
       "clip_volume": 1.0,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S05_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
+      "clip_file": "clips/S05.mp4",
+      "status": "clip_approved",
       "notes": "Veo (1 kredi). EN RİSKLİ çekim; doğrudan yedek kadraj kullanıldı: silah ve siluet kadraj dışı, yalnızca namlu alevi ışığı yüzde ve duvarda, düşme sesle. Hâlâ reddedilirse son çare: duvardaki gölgesinde namlu alevi. Ses: kulak çınlaması kurguda S06 başına taşınabilir.",
       "keyframe_url": "https://files.genaipro.io/image_38c670b1-7dd5-450f-97ef-1e06cfc5cbef_0.png",
       "keyframe_file_variants": [
         "keyframes/S05_v1.png",
         "keyframes/S05_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_98442752-8dba-4d38-ad20-a2a04996f857_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     },
     {
       "id": "S06",
       "scene": 1,
       "duration_s": 6,
-      "shot_type": "close-up, low angle (Rıza's POV)",
+      "shot_type": "tight close-up, slightly low angle",
       "camera": "low angle from floor level, nearly static, very slow push-in",
       "description_tr": "Alt açı, yerdeki Rıza'nın bakış açısı. Kenan yakın plan, ayakta, devrilmiş masanın üstünden aşağı bakıyor; yüzü net, sallanan lamba yüzünü bir aydınlatıp bir karartıyor. Arkasında kırık vitrinden giren far ışığı, duman ve toz. Tabanca sağ elinde, kadrajın alt kenarında aşağıya (kadraj dışındaki Rıza'ya) doğru eğik; kameraya DOĞRULTULMAZ. Sakin, neredeyse kibar: \"Hesap kapandı, Reis.\" Traş çizgisi SAĞ kulak üstünde. Son ~1 sn üzerine/sonrasına kurguda \"HESAP — Yakında\" kartı.",
       "characters": [
@@ -182,8 +191,8 @@
         "refs/kenan.png",
         "refs/meyhane.png"
       ],
-      "image_prompt": "Vertical low-angle close-up from floor level, from the point of view of someone lying on the floor: KENAN standing over the edge of the overturned table, looking calmly down toward the camera's lower edge, face sharp and fully visible in the upper third, a faint cold almost polite expression, lips closed; the short shaved line is above his RIGHT ear. His right hand holding the pistol is at the bottom-left edge of the frame, angled downward toward the floor, NOT pointed at the camera. Behind him white headlight beams through the shattered window, smoke and dust, the swinging tungsten lamp half-lighting his face. KENAN, a 34-year-old Turkish man, lean and athletic; short black hair slicked straight back, a short black two-to-three-day stubble beard, sharp high cheekbones, light brown eyes, a single short shaved line cut into the hair just above his right ear; alert, controlled expression; wearing a black leather jacket over a black fitted turtleneck sweater, fine dust and tiny glass shards on his hair and shoulders; the interior of an old Istanbul meyhane tavern after a raid, dark carved wooden wall panelling, shattered bottles on the back wall shelves, the central table knocked over on its side, the white linen tablecloth on the floor, broken glass and wood splinters scattered across the floor, the large front window shattered, gunpowder smoke and dust hanging in the air, no visible sign and no lettering; a black matte semi-automatic pistol, plain and unbranded, no engravings, no markings held in Kenan's right hand; night, harsh cold white car headlight beams cutting through the broken front window into thick smoke and dust, the tungsten lamp above swinging and flickering, red and blue neon glow at the edges, sharp light-and-shadow contrast. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
-      "video_prompt": "KENAN (the 34-year-old man with slicked-back black hair, short shaved line above his RIGHT ear) stands still above the overturned table, looking calmly down past the lower edge of the frame; the swinging tungsten lamp above alternately lights and darkens his face. His right hand holds the pistol low at the bottom edge of the frame, angled downward toward the floor, never pointed at the camera. Smoke and dust drift through the white headlight beams behind him. The camera, low near the floor, is nearly static with a very slow push-in on his face. Sound: the ear ringing fades out, the lamp creaks as it swings, a footstep crunches on broken glass, a quiet metallic click off-screen, a faint distant siren. No music. The younger man (KENAN) says in Turkish, calmly and almost politely, in a clear mid-range voice: \"Hesap kapandı, Reis.\" Avoid: no blood, no wounds, no gore, no bodies.",
+      "image_prompt": "Vertical tight close-up, slightly low angle, head and shoulders only: KENAN standing over the edge of the overturned table, looking calmly down toward the camera's lower edge, face sharp and fully visible in the upper third, a faint cold almost polite expression, lips closed; the short shaved line is above his RIGHT ear. Both of his hands are out of frame; no weapon visible anywhere in the image. Behind him white headlight beams through the shattered window, smoke and dust, the swinging tungsten lamp half-lighting his face. KENAN, a 34-year-old Turkish man, lean and athletic; short black hair slicked straight back, a short black two-to-three-day stubble beard, sharp high cheekbones, light brown eyes, a single short shaved line cut into the hair just above his right ear; alert, controlled expression; wearing a black leather jacket over a black fitted turtleneck sweater, fine dust and tiny glass shards on his hair and shoulders; the interior of an old Istanbul meyhane tavern after a raid, dark carved wooden wall panelling, shattered bottles on the back wall shelves, the central table knocked over on its side, the white linen tablecloth on the floor, broken glass and wood splinters scattered across the floor, the large front window shattered, gunpowder smoke and dust hanging in the air, no visible sign and no lettering; night, harsh cold white car headlight beams cutting through the broken front window into thick smoke and dust, the tungsten lamp above swinging and flickering, red and blue neon glow at the edges, sharp light-and-shadow contrast. Avoid: no blood, no wounds, no gore, no bodies, no readable text, no signage letters, no logos, no brand names, no watermark, no anamorphic lens flare, no cartoon, no CGI look. cinematic crime drama still, shot on 35mm film with spherical prime lens, shallow depth of field, round bokeh, fine organic film grain, subtle halation, high contrast low-key lighting, warm tungsten amber key light with red and blue neon rim light, thin haze of smoke and dust in the air, deep blacks, photorealistic, realistic skin texture, vertical 9:16 composition, no text, no watermark, no logo",
+      "video_prompt": "KENAN (the 34-year-old man with slicked-back black hair, short shaved line above his RIGHT ear) stands still above the overturned table, looking calmly down past the lower edge of the frame; the swinging tungsten lamp above alternately lights and darkens his face. His hands stay out of frame; no weapon is visible. Smoke and dust drift through the white headlight beams behind him. The camera, low near the floor, is nearly static with a very slow push-in on his face. Sound: the ear ringing fades out, the lamp creaks as it swings, a footstep crunches on broken glass, a faint distant siren. No music. The younger man (KENAN) says in Turkish, calmly and almost politely, in a clear mid-range voice: \"Hesap kapandı, Reis.\" Avoid: no blood, no wounds, no gore, no bodies.",
       "video_model": "omni",
       "omni_duration": 6,
       "dialogue": "KENAN: \"Hesap kapandı, Reis.\"",
@@ -191,14 +200,16 @@
       "clip_volume": 1.0,
       "transition_in": "cut",
       "keyframe_file": "keyframes/S06_v1.png",
-      "clip_file": null,
-      "status": "keyframe_approved",
-      "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2). Senaristin güvenli yedeği uygulandı: silah kameraya doğrultulmuyor, kadraj altında aşağı eğik; Kenan'ın yüzü net (dudak senkronu). Kurgu: çekimden sonra siyah ekran 'HESAP — Yakında' kartı (üretim gerektirmez). Hâlâ reddedilirse: silah tamamen kadraj dışı, horoz sesi ekran dışı.",
-      "keyframe_url": "https://files.genaipro.io/image_b76d38e7-856f-4d85-a1de-49e9a6898095_0.png",
+      "clip_file": "clips/S06.mp4",
+      "status": "clip_approved",
+      "notes": "DIALOGUE_IN_CLIP. Omni 6 sn (1080p, omni_cost=2). Senaristin güvenli yedeği uygulandı: silah kameraya doğrultulmuyor, kadraj altında aşağı eğik; Kenan'ın yüzü net (dudak senkronu). Kurgu: çekimden sonra siyah ekran 'HESAP — Yakında' kartı (üretim gerektirmez). Hâlâ reddedilirse: silah tamamen kadraj dışı, horoz sesi ekran dışı. [clip_failed: Blocked by the provider's content safety filter. Please adjust your prompt or images.] [Yapımcı: v1 klibi içerik filtresine takıldı (silah + yerdeki kişi). Yedek: yalnız yüz yakın plan, silah kadraj dışında; anlam ses + S05'ten süreklilik ile]",
+      "keyframe_url": "https://files.genaipro.io/image_d5e70ab6-b418-4514-bc21-0c3366a395fe_0.png",
       "keyframe_file_variants": [
         "keyframes/S06_v1.png",
         "keyframes/S06_v2.png"
-      ]
+      ],
+      "clip_url": "https://files.genaipro.io/video_8ba07074-80d1-4569-9f1f-c24a4c9e1368_video_resolution_1080p.mp4",
+      "trim_start_s": 0
     }
   ]
 }
