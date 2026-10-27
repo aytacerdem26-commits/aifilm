@@ -13,5 +13,5 @@
 | 9 | Kurgu | tamamlandı | final/hesap-teaser.mp4 (32 sn, 1080x1920, altyazılı) + _nosubs; finish.py |
 | 10 | Final denetim | bekliyor | |
 
-**Harcanan kredi:** 21 (Veo) / bütçe ~25
+**Harcanan kredi:** 19 (Veo) / bütçe ~25
 **Sıradaki adım:** Kullanıcı izleyip geri bildirim verir
